@@ -7,8 +7,6 @@
 * [Python Packaging User Guide](https://packaging.python.org/en/latest/)
   * [pyproject.toml specification](https://packaging.python.org/en/latest/specifications/pyproject-toml/)
 
-* [ralsina/rst-cheatsheet: A two-page cheatsheet for restructured text](https://github.com/ralsina/rst-cheatsheet)
-
 ## Core Python Documentation
 
 * [Python 3 Documentation (python.org)](https://docs.python.org/3/index.html)
@@ -80,4 +78,7 @@
 * [requests](https://requests.kennethreitz.org/en/latest/)
 * [SQLAlchemy](https://www.sqlalchemy.org/)
 
+## Misc
+
+* [ralsina/rst-cheatsheet: A two-page cheatsheet for restructured text](https://github.com/ralsina/rst-cheatsheet)
 * [pyWhat/pywhat/Data/regex.json](https://github.com/bee-san/pyWhat/blob/main/pywhat/Data/regex.json)
