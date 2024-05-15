@@ -3,22 +3,86 @@
 ## Time Zones
 
 <div align='center'>
-
-|  P |  M |  C |  E |
-|:--:|:--:|:--:|:--:|
-| 10 | 11 | 12 |  1 |
-| 11 | 12 |  1 |  2 |
-| 12 |  1 |  2 |  3 |
-|  1 |  2 |  3 |  4 |
-|  2 |  3 |  4 |  5 |
-|  3 |  4 |  5 |  6 |
-|  4 |  5 |  6 |  7 |
-|  5 |  6 |  7 |  8 |
-|  6 |  7 |  8 |  9 |
-|  7 |  8 |  9 | 10 |
-|  8 |  9 | 10 | 11 |
-|  9 | 10 | 11 | 12 |
-
+<table>
+  <tr>
+    <th>P</th>
+    <th>M</th>
+    <th>C</th>
+    <th>E</th>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>12</td>
+    <td>1</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+  </tr>
+</table>
 </div>
 
 ## Topics
