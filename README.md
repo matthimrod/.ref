@@ -2,7 +2,7 @@
 
 ## Time Zones
 
-<div align='center'>
+<div>
 <table>
   <tr>
     <th>P</th>

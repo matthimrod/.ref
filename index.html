@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flex-item {
+            padding: 10px;
+            flex: 30%;
+        }
+
+        @media (max-width: 1200px) {
+            .flex-item {
+                flex: 50%;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .flex-item {
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Matt's Reference Pages</h1>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h2>Time Zone Reference</h2>
+            <table>
+                <tr>
+                    <th>P</th>
+                    <th>M</th>
+                    <th>C</th>
+                    <th>E</th>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="flex-item">
+            <h2>AWS</h2>
+            <ul>
+                <li><a href="https://docs.aws.amazon.com/cdk/api/v2/" target="_blank">
+                        AWS CDK Reference Documentation</a></li>
+                <ul>
+                    <li><a href="https://docs.aws.amazon.com/cdk/api/v2/python/" target="_blank">
+                            AWS CDK Python Reference</a></li>
+                </ul>
+                <li><a href="https://docs.aws.amazon.com/cli/latest/" target="_blank">
+                        AWS CLI Command Reference</a></li>
+                <li><a href="https://boto3.amazonaws.com/v1/documentation/api/latest/index.html" target="_blank">
+                        Boto3 documentation</a></li>
+                <ul>
+                    <li><a href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html"
+                            target="_blank">CloudWatch</a></li>
+                    <li><a href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html"
+                            target="_blank">EC2</a></li>
+                    <li><a href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html"
+                            target="_blank">Glue</a></li>
+                    <li><a href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html"
+                            target="_blank">IAM</a></li>
+                    <li><a href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html"
+                            target="_blank">Lambda</a></li>
+                    <li><a href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html"
+                            target="_blank">RDS</a></li>
+                    <li><a href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html"
+                            target="_blank">S3</a></li>
+                    <li><a href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html"
+                            target="_blank">SNS</a></li>
+                    <li><a href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html"
+                            target="_blank">SQS</a></li>
+                    <li><a href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html"
+                            target="_blank">SSM</a></li>
+                </ul>
+            </ul>
+
+        </div>
+
+        <div class="flex-item">
+            <h2>Python</h2>
+            <h3>Guides</h3>
+            <ul>
+                <li><a href="https://docs.python-guide.org/" target="_blank">
+                        The Hitchhiker’s Guide to Python</a></li>
+                <li><a href="https://pypi.org/" target="_blank">
+                        Python Package Index</a></li>
+                <li><a href="https://packaging.python.org/en/latest/" target="_blank">
+                        Python Packaging User Guide</a></li>
+                <ul>
+                    <li><a href="https://packaging.python.org/en/latest/specifications/pyproject-toml/"
+                            target="_blank">pyproject.toml specification</a></li>
+                </ul>
+            </ul>
+            <h3>Core Python Documentation</h3>
+            <ul>
+                <li><a href="https://docs.python.org/3/index.html" target="_blank">
+                        Python 3 Documentation (python.org)</a></li>
+                <li><a href="https://docs.python.org/3/py-modindex.html" target="_blank">
+                        Python Module Index</a></li>
+                <li><a href="https://docs.python.org/3/reference/index.html" target="_blank">
+                        The Python Language
+                        Reference</a></li>
+                <ul>
+                    <li><a href="https://docs.python.org/3/reference/lexical_analysis.html#escape-sequences"
+                            target="_blank">Escape Sequences</a></li>
+                    <li><a href="https://docs.python.org/3/library/stdtypes.html#truth-value-testing"
+                            target="_blank">Falsey Values</a></li>
+                    <li><a href="https://docs.python.org/3/library/string.html#formatstrings" target="_blank">
+                            Format Strings </a> /
+                        <a href="https://docs.python.org/3/library/string.html#format-specification-mini-language"
+                            target="_blank">Format Spec Mini-Language</a>
+                    </li>
+                </ul>
+                <li><a href="https://docs.python.org/3/library/index.html" target="_blank">
+                        The Python Standard Library</a></li>
+                <ul>
+                    <li><a href="https://docs.python.org/3/library/base64.html" target="_blank">
+                            base64</a></li>
+                    <li><a href="https://docs.python.org/3/library/collections.abc.html" target="_blank">
+                            collections.abc</a></li>
+                    <li><a href="https://docs.python.org/3/library/dataclasses.html" target="_blank">
+                            dataclasses</a>
+                    </li>
+                    <li><a href="https://docs.python.org/3/library/datetime.html" target="_blank">
+                            datetime</a>
+                        (<a href="https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes)"
+                            target="_blank">format codes</a>)</li>
+                    <li><a href="https://docs.python.org/3/library/hashlib.html" target="_blank">
+                            hashlib</a></li>
+                    <li><a href="https://docs.python.org/3/library/json.html" target="_blank">
+                            json</a></li>
+                    <li><a href="https://docs.python.org/3/library/logging.html" target="_blank">
+                            logging</a></li>
+                    <li><a href="https://docs.python.org/3/library/mimetypes.html" target="_blank">
+                            mimetypes</a></li>
+                    <li><a href="https://docs.python.org/3/library/os.html" target="_blank">
+                            os</a></li>
+                    <li><a href="https://docs.python.org/3/library/os.path.html" target="_blank">
+                            os.path</a></li>
+                    <li><a href="https://docs.python.org/3/library/pathlib.html" target="_blank">
+                            pathlib</a></li>
+                    <li><a href="https://docs.python.org/3/library/re.html" target="_blank">
+                            re</a></li>
+                    <li><a href="https://docs.python.org/3/library/sqlite3.html" target="_blank">
+                            sqlite3</a></li>
+                    <li><a href="https://docs.python.org/3/library/string.html" target="_blank">
+                            string</a></li>
+                    <li><a href="https://docs.python.org/3/library/sys.html" target="_blank">
+                            sys</a></li>
+                    <li><a href="https://docs.python.org/3/library/typing.html" target="_blank">
+                            typing</a></li>
+                    <li><a href="https://docs.python.org/3/library/urllib.parse.html" target="_blank">
+                            urllib.parse</a>
+                    </li>
+                    <li><a href="https://docs.python.org/3/library/venv.html" target="_blank">
+                            venv</a></li>
+                </ul>
+                <li><a href="https://docs.python.org/3/library/exceptions.html" target="_blank">
+                        Built-in Exceptions</a> </li>
+                <li><a href="https://docs.python.org/3/library/functions.html" target="_blank">
+                        Built-in Functions</a> </li>
+                <li><a href="https://docs.python.org/3/library/stdtypes.html" target="_blank">
+                        Built-in Types</a></li>
+                <ul>
+                    <li><a href="https://docs.python.org/3/library/stdtypes.html#bytes" target="_blank">
+                            bytes</a></li>
+                    <li><a href="https://docs.python.org/3/library/stdtypes.html#dict" target="_blank">
+                            dict</a></li>
+                    <li><a href="https://docs.python.org/3/library/stdtypes.html#list" target="_blank">
+                            list</a></li>
+                    <li><a href="https://docs.python.org/3/library/stdtypes.html#set" target="_blank">
+                            set</a></li>
+                    <li><a href="https://docs.python.org/3/library/stdtypes.html#str" target="_blank">
+                            str</a>
+                        (<a href="https://docs.python.org/3/library/stdtypes.html#string-methods" target="_blank">
+                            methods</a>,
+                        <a href="https://docs.python.org/3/library/stdtypes.html#printf-style-bytes-formatting"
+                            target="_blank">
+                            %-formatting</a>)
+                    </li>
+                    <li><a href="https://docs.python.org/3/library/stdtypes.html#tuple" target="_blank">
+                            tuple</a></li>
+                    <li><a href="https://docs.python.org/3/library/typing.html#typing.TypedDict" target="_blank">
+                            TypedDict</a></li>
+                    <li><a href="https://docs.python.org/3/library/stdtypes.html#context-manager-types" target="_blank">
+                            Context Manager</a></li>
+                </ul>
+            </ul>
+
+            <h3>Environment/Dependency Management</h3>
+
+            <ul>
+                <li><a href="https://pip.pypa.io/en/stable/" target="_blank">pip</a></li>
+                <li><a href="https://pipenv.pypa.io/en/latest/" target="_blank">pipenv</a></li>
+                <li><a href="https://github.com/pyenv-win/pyenv-win" target="_blank">pyenv-win</a></li>
+            </ul>
+
+            <h3>Code Analysis Tools</h3>
+            <ul>
+                <li><a href="https://docs.pytest.org/" target="_blank">pytest</a></li>
+                <li><a href="https://pytest-cov.readthedocs.io/en/latest/index.html" target="_blank">pytest-cov</a></li>
+                <li><a href="https://mypy.readthedocs.io/en/stable/index.html" target="_blank">mypy</a></li>
+                <li><a href="https://pylint.readthedocs.io/en/latest/" target="_blank">pylint</a></li>
+                <li><a href="https://github.com/PyCQA/pyflakes" target="_blank">pyflakes</a></li>
+                <li><a href="https://pycodestyle.pycqa.org/en/latest/" target="_blank">pycodestyle</a></li>
+                <li><a href="https://bandit.readthedocs.io/en/latest/" target="_blank">bandit</a></li>
+                <li><a href="https://www.checkov.io/" target="_blank">checkov</a></li>
+            </ul>
+            <h3>3rd Party Libraries</h3>
+            <ul>
+                <li><a href="https://github.com/assertpy/assertpy" target="_blank">assertpy</a></li>
+                <li><a href="https://ipython.readthedocs.io/en/stable/index.html" target="_blank">IPython</a></li>
+                <ul>
+                    <li><a href="https://ipython.readthedocs.io/en/stable/interactive/magics.html"
+                            target="_blank">Built-in magic commands</a></li>
+                </ul>
+                <li><a href="https://jupyter.org/" target="_blank">Jupyter</a></li>
+                <ul>
+                    <li><a href="https://medium.com/analytics-vidhya/the-ultimate-markdown-guide-for-jupyter-notebook-d5e5abf728fd"
+                            target="_blank">The Ultimate Markdown Guide (for Jupyter Notebook)</a></li>
+                </ul>
+                <li><a href="https://shopify.github.io/liquid/" target="_blank">liquid template language
+                        (shopify.github.io)</a></li>
+                <li><a href="https://github.com/localstack/localstack" target="_blank">localstack</a></li>
+                <li><a href="https://docs.getmoto.org/en/latest/#" target="_blank">moto</a></li>
+                <li><a href="https://pandas.pydata.org/docs/index.html" target="_blank">pandas</a></li>
+                <ul>
+                    <li><a href="https://pandas.pydata.org/docs/reference/index.html" target="_blank">API reference</a>
+                    </li>
+                </ul>
+                <li><a href="https://requests.kennethreitz.org/en/latest/" target="_blank">requests</a></li>
+                <li><a href="https://www.sqlalchemy.org/" target="_blank">SQLAlchemy</a></li>
+            </ul>
+            <h3>Misc</h3>
+            <ul>
+                <li><a href="https://github.com/ralsina/rst-cheatsheet" target="_blank">ralsina/rst-cheatsheet: A
+                        two-page cheatsheet for restructured text</a></li>
+                <li><a href="https://github.com/bee-san/pyWhat/blob/main/pywhat/Data/regex.json"
+                        target="_blank">pyWhat/pywhat/Data/regex.json</a></li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>
