@@ -1,87 +1,6 @@
 # Reference Pages
 
-## Time Zones
 
-<table>
-  <tr>
-    <th>P</th>
-    <th>M</th>
-    <th>C</th>
-    <th>E</th>
-  </tr>
-  <tr>
-    <td>10</td>
-    <td>11</td>
-    <td>12</td>
-    <td>1</td>
-  </tr>
-  <tr>
-    <td>11</td>
-    <td>12</td>
-    <td>1</td>
-    <td>2</td>
-  </tr>
-  <tr>
-    <td>12</td>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-    <td>5</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>4</td>
-    <td>5</td>
-    <td>6</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>5</td>
-    <td>6</td>
-    <td>7</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>6</td>
-    <td>7</td>
-    <td>8</td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td>7</td>
-    <td>8</td>
-    <td>9</td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>8</td>
-    <td>9</td>
-    <td>10</td>
-  </tr>
-  <tr>
-    <td>8</td>
-    <td>9</td>
-    <td>10</td>
-    <td>11</td>
-  </tr>
-  <tr>
-    <td>9</td>
-    <td>10</td>
-    <td>11</td>
-    <td>12</td>
-  </tr>
-</table>
 
 ## AWS
 
@@ -99,6 +18,86 @@
   * [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html)
   * [SQS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html)
   * [SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html)
+
+## Java
+
+* [Amazon Corretto JDK](https://aws.amazon.com/corretto/)
+* [OpenJDK](https://openjdk.org/) ([Download](https://openjdk.org/projects/jdk/))
+* [Apache Maven](https://maven.apache.org/) ([Download](https://maven.apache.org/download.cgi))
+* [Spring](https://spring.io/) ([Initializr](https://start.spring.io/))
+* [Maven Repository](https://mvnrepository.com/)
+
+### Tools
+
+* [JUnit 5](https://junit.org/junit5/)
+* [Project Lombok](https://projectlombok.org/)
+
+## Git
+
+### Create Respositories 
+
+* `git init [project name]` Creates a new local repository with the specified name
+* `git clone [url]` Downloads a project and its entire version history
+* `git flow init [-d]` Initialize Git Flow extensions
+
+### Make Changes
+
+* `git status` List all new or modified files to be committed
+* `git diff` Shows file differences not yet staged
+* `git add [file]` Snapshots the file in preparation for versioning
+* `git diff --staged` Shows file differences between staging and the last file version
+* `git commit -m "[descriptive message]"` Records file snapshots permanently in version history
+
+### Branching
+
+* `git branch` Lists all local branches in the current repository
+* `git branch [branch-name]` Creates a new branch
+* `git checkout [branch-name]` Switches to the specified branch and updates the working directory
+* `git merge [branch]` Combines the specified branch’s history into the current branch
+* `git branch -d [branch-name]` Deletes the specified branch
+* `git flow feature start [feature-name]` Create a Git Flow feature
+* `git flow feature finish [feature-name]` This will merge the changes into the local develop branch and delete the feature branch both locally and on the remote origin.
+
+
+### Refactor Filenames
+
+* `git rm [file]` Deletes the file from the working directory and stages the deletion
+* `git rm --cached [file]` Removes the file from version control but preserves the file locally
+* `git mv [file-original] [file-renamed]` Changes the file name and prepares it for commit
+
+### Stashing
+
+* `git stash` Temporarily stores all modified tracked files
+  * Add `-u` to also stash untracked files.
+  * Add `-a` to also stash 'ignored' files.
+* `git stash list` Lists all stashed changesets
+* `git stash pop` Restores the most recently stashed files
+* `git stash drop` Discards the most recently stashed changeset
+
+### History
+
+* `git log` Lists version history for the current branch
+* `git log --follow [file]` Lists version history for a file, including renames
+* `git diff [first-branch]...[second-branch]` Shows content differences between two branches
+* `git show [commit]` Outputs metadata and content changes of the specified commit
+* `git reset [commit]` Undoes all commits afer [commit], preserving changes locally
+* `git reset --hard [commit]` Discards all history and changes back to the specified commit
+
+### Synchronize Changes
+
+* `git fetch [bookmark]` Downloads all history from the repository bookmark
+* `git merge [bookmark]/[branch]` Combines bookmark’s branch into current local branch
+* `git push [alias] [branch]` Uploads all local branch commits to GitHub
+* `git pull` Downloads bookmark history and incorporates changes
+
+### Maintenance
+
+* `git gc` Git Cleanup -- Runs a number of housekeeping tasks within the current repository, such as compressing file revisions (to reduce disk space and increase performance), removing unreachable objects which may have been created from prior invocations of git add, packing refs, pruning reflog, rerere metadata or stale working trees. May also update ancillary indexes such as the commit-graph.
+* `git update-index --assume-unchanged [<file> ...]` Stop showing changes on a tracked file.
+* `git update-index --no-assume-unchanged [<file> ...]` Resume showing changes on a tracked file.
+* `git remote prune origin` or `git fetch --prune origin` Prune local branches that don't exist on the remote anymore
+
+Note: Feature branches that originated locally and were merged via a merge request won't be automatically removed, but you can find these with git branch -vv. The remote will say "; gone". 
 
 ## Python
 
@@ -184,3 +183,86 @@
 
 * [ralsina/rst-cheatsheet: A two-page cheatsheet for restructured text](https://github.com/ralsina/rst-cheatsheet)
 * [pyWhat/pywhat/Data/regex.json](https://github.com/bee-san/pyWhat/blob/main/pywhat/Data/regex.json)
+
+## Time Zones
+
+<table>
+  <tr>
+    <th>P</th>
+    <th>M</th>
+    <th>C</th>
+    <th>E</th>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>12</td>
+    <td>1</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+  </tr>
+</table>
