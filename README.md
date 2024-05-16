@@ -1,8 +1,5 @@
 # Reference Pages
 
-<div style="display: grid; grid-template-columns: auto auto auto; grid-gap: 20px">
-<div>
-
 ## Time Zones
 
 <table>
@@ -85,8 +82,6 @@
     <td>12</td>
   </tr>
 </table>
-</div>
-<div>
 
 ## AWS
 
@@ -104,9 +99,6 @@
   * [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html)
   * [SQS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html)
   * [SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html)
-
-</div>
-<div>
 
 ## Python
 
@@ -192,14 +184,3 @@
 
 * [ralsina/rst-cheatsheet: A two-page cheatsheet for restructured text](https://github.com/ralsina/rst-cheatsheet)
 * [pyWhat/pywhat/Data/regex.json](https://github.com/bee-san/pyWhat/blob/main/pywhat/Data/regex.json)
-
-</div>
-</div>
-
-## Topics
-
-* [AWS](AWS.md)
-* [Java](Java.md)
-* [Git](Git.md)
-* [Python](Python.md)
-* [Regular Expressions](Regex.md)
