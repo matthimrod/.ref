@@ -1,7 +1,6 @@
 # Reference Pages
 
-<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 20px">
-
+<div style="display: grid; grid-template-columns: auto auto auto; grid-gap: 20px">
 <div>
 
 ## Time Zones
@@ -87,6 +86,8 @@
   </tr>
 </table>
 </div>
+
+
 <div>
 
 ## AWS
