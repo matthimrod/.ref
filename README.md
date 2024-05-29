@@ -114,6 +114,7 @@ Note: Feature branches that originated locally and were merged via a merge reque
 
 ### Core Python Documentation
 
+* [Status of Python Versions](https://devguide.python.org/versions/)
 * [Python 3 Documentation (python.org)](https://docs.python.org/3/index.html)
 * [Python Module Index](https://docs.python.org/3/py-modindex.html)
 * [The Python Language Reference](https://docs.python.org/3/reference/index.html)
