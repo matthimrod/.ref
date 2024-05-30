@@ -1,3 +1,7 @@
+---
+title: Reference Pages
+---
+
 # Reference Pages
 
 * [AWS](#AWS)
@@ -190,6 +194,11 @@ Note: Feature branches that originated locally and were merged via a merge reque
 * [pyWhat/pywhat/Data/regex.json](https://github.com/bee-san/pyWhat/blob/main/pywhat/Data/regex.json)
 
 ## Time Zones
+
+|  P |  M |  C |  E |
+| -- | -- | -- | -- |
+| 10 | 11 | 12 |  1 |
+| 11 | 12 |  1 |  2 |
 
 <table>
   <tr>
