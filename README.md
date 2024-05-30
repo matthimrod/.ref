@@ -13,8 +13,10 @@ title: Reference Pages
 ## AWS
 
 * [AWS CDK Reference Documentation](https://docs.aws.amazon.com/cdk/api/v2/)
-  * [AWS CDK Python Reference](https://docs.aws.amazon.com/cdk/api/v2/python/)
 * [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/)
+* [AWS CDK Python Reference](https://docs.aws.amazon.com/cdk/api/v2/python/)
+  * [CloudWatch](https://docs.aws.amazon.com/cdk/api/v2/python/aws_cdk.aws_cloudwatch.html)
+  * [EC2](https://docs.aws.amazon.com/cdk/api/v2/python/aws_cdk.aws_ec2.html)
 * [Boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
   * [CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html)
   * [EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html)
@@ -199,6 +201,8 @@ Note: Feature branches that originated locally and were merged via a merge reque
 | -- | -- | -- | -- |
 | 10 | 11 | 12 |  1 |
 | 11 | 12 |  1 |  2 |
+| 12 |  1 |  2 |  3 |
+|  1 |  2 |  3 |  4 |
 
 <table>
   <tr>
