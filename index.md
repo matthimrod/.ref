@@ -167,20 +167,20 @@ Note: Feature branches that originated locally and were merged via a merge reque
 >O is for [od](https://www.gnu.org/software/coreutils/manual/html_node/od-invocation.html), which prints out things nice, while
 >P is for [passwd](https://en.wikipedia.org/wiki/Passwd), which reads in strings twice.
 >
->Q is for quota, a Berkeley-type fable, and
->R is for ranlib, for sorting ar [sic] table.
+>Q is for [quota](https://man.openbsd.org/quota.1), a Berkeley-type fable, and
+>R is for [ranlib](https://sourceware.org/binutils/docs/binutils/ranlib.html), for sorting [ar](https://sourceware.org/binutils/docs/binutils/ar.html) [sic] table.
 >
->S is for spell, which attempts to belittle, while
->T is for true, which does very little.
+>S is for [spell](https://savannah.gnu.org/projects/spell/), which attempts to belittle, while
+>T is for [true](https://www.gnu.org/software/coreutils/manual/html_node/true-invocation.html), which does very little.
 >
->U is for uniq, which is used after Sort, and
->V is for vi, which is hard to abort.
+>U is for [uniq](https://www.gnu.org/software/coreutils/manual/html_node/uniq-invocation.html), which is used after [Sort](https://www.gnu.org/software/coreutils/manual/html_node/sort-invocation.html), and
+>V is for [vi](https://ex-vi.sourceforge.net/), which is hard to abort.
 >
->W is for whoami, which tells you your name, while
->X is, well, X, of dubious fame.
+>W is for [whoami](https://www.gnu.org/software/coreutils/manual/html_node/whoami-invocation.html), which tells you your name, while
+>X is, well, [X](https://www.x.org/), of dubious fame.
 >
->Y is for yes, which makes an impression, and
->Z is for zcat, which handles compression.
+>Y is for [yes](https://www.gnu.org/software/coreutils/manual/html_node/yes-invocation.html), which makes an impression, and
+>Z is for [zcat](https://www.gnu.org/software/gzip/manual/gzip.html), which handles compression.
 
 * [GNU coreutils](https://www.gnu.org/software/coreutils/manual/html_node/index.html)
   * [base64](https://www.gnu.org/software/coreutils/manual/html_node/base64-invocation.html)
