@@ -143,11 +143,84 @@ Note: Feature branches that originated locally and were merged via a merge reque
 
 ## Linux
 
+>A is for [awk](https://www.gnu.org/software/gawk/manual/html_node/index.html), which runs like a snail, and
+>B is for [biff](https://en.wikipedia.org/wiki/Biff_(Unix)), which reads all your mail.
+>
+>C is for [cc](https://www.gnu.org/software/gcc/), as hackers recall, while
+>D is for [dd](https://www.gnu.org/software/coreutils/manual/html_node/dd-invocation.html), the command that does all.
+>
+>E is for [emacs](https://www.gnu.org/software/emacs/documentation.html), which rebinds your keys, and
+>F is for [fsck](https://en.wikipedia.org/wiki/Fsck), which rebuilds your trees.
+>
+>G is for [grep](https://www.gnu.org/software/grep/manual/html_node/index.html), a clever detective, while
+>H is for halt, which may seem defective.
+>
+>I is for [indent](https://www.gnu.org/software/indent/manual/indent/index.html), which rarely amuses, and
+>J is for [join](https://www.gnu.org/software/coreutils/manual/html_node/join-invocation.html), which nobody uses.
+>
+>K is for [kill](https://www.gnu.org/software/coreutils/manual/html_node/kill-invocation.html), which makes you the boss, while
+>L is for [lex](https://en.wikipedia.org/wiki/Lex_(software)), which is missing from DOS.
+>
+>M is for [more](https://en.wikipedia.org/wiki/More_(command)), from which [Less](https://www.greenwoodsoftware.com/less/) was begot, and
+>N is for [nice](https://www.gnu.org/software/coreutils/manual/html_node/nice-invocation.html), which it really is not.
+>
+>O is for [od](https://www.gnu.org/software/coreutils/manual/html_node/od-invocation.html), which prints out things nice, while
+>P is for [passwd](https://en.wikipedia.org/wiki/Passwd), which reads in strings twice.
+>
+>Q is for quota, a Berkeley-type fable, and
+>R is for ranlib, for sorting ar [sic] table.
+>
+>S is for spell, which attempts to belittle, while
+>T is for true, which does very little.
+>
+>U is for uniq, which is used after Sort, and
+>V is for vi, which is hard to abort.
+>
+>W is for whoami, which tells you your name, while
+>X is, well, X, of dubious fame.
+>
+>Y is for yes, which makes an impression, and
+>Z is for zcat, which handles compression.
+
 * [GNU coreutils](https://www.gnu.org/software/coreutils/manual/html_node/index.html)
+  * [base64](https://www.gnu.org/software/coreutils/manual/html_node/base64-invocation.html)
+  * [cat](https://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html)
+  * [chgrp](https://www.gnu.org/software/coreutils/manual/html_node/chgrp-invocation.html)
+  * [chmod](https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html)
+  * [chown](https://www.gnu.org/software/coreutils/manual/html_node/chown-invocation.html)
+  * [cp](https://www.gnu.org/software/coreutils/manual/html_node/cp-invocation.html)
+    * [install](https://www.gnu.org/software/coreutils/manual/html_node/install-invocation.html)
+  * [dd](https://www.gnu.org/software/coreutils/manual/html_node/dd-invocation.html)
+  * [df](https://www.gnu.org/software/coreutils/manual/html_node/df-invocation.html)
+  * [du](https://www.gnu.org/software/coreutils/manual/html_node/du-invocation.html)
+  * [echo](https://www.gnu.org/software/coreutils/manual/html_node/echo-invocation.html)
+  * [head](https://www.gnu.org/software/coreutils/manual/html_node/head-invocation.html)
+  * [join](https://www.gnu.org/software/coreutils/manual/html_node/join-invocation.html)
+  * [kill](https://www.gnu.org/software/coreutils/manual/html_node/kill-invocation.html)
+  * [ln](https://www.gnu.org/software/coreutils/manual/html_node/ln-invocation.html)
+  * [ls](https://www.gnu.org/software/coreutils/manual/html_node/ls-invocation.html)
+    * [dircolors](https://www.gnu.org/software/coreutils/manual/html_node/dircolors-invocation.html)
+  * [md5](https://www.gnu.org/software/coreutils/manual/html_node/md5sum-invocation.html)
+  * [mkdir](https://www.gnu.org/software/coreutils/manual/html_node/mkdir-invocation.html)
+  * [mv](https://www.gnu.org/software/coreutils/manual/html_node/mv-invocation.html)
+  * [rm](https://www.gnu.org/software/coreutils/manual/html_node/rm-invocation.html)
+    * [shred](https://www.gnu.org/software/coreutils/manual/html_node/shred-invocation.html)
+    * [unlink](https://www.gnu.org/software/coreutils/manual/html_node/unlink-invocation.html)
+  * [rmdir](https://www.gnu.org/software/coreutils/manual/html_node/rmdir-invocation.html)
+  * [sha1](https://www.gnu.org/software/coreutils/manual/html_node/sha1sum-invocation.html)
+  * [sort](https://www.gnu.org/software/coreutils/manual/html_node/sort-invocation.html)
+  * [split](https://www.gnu.org/software/coreutils/manual/html_node/split-invocation.html)
+  * [stat](https://www.gnu.org/software/coreutils/manual/html_node/stat-invocation.html)
+  * [tail](https://www.gnu.org/software/coreutils/manual/html_node/tail-invocation.html)
+  * [touch](https://www.gnu.org/software/coreutils/manual/html_node/touch-invocation.html)
+  * [wc](https://www.gnu.org/software/coreutils/manual/html_node/wc-invocation.html)
+
 * [GNU emacs](https://www.gnu.org/software/emacs/documentation.html)
+* [GNU grep](https://www.gnu.org/software/grep/manual/html_node/index.html)
 * [GNU gzip](https://www.gnu.org/software/gzip/manual/html_node/index.html)
 * [GNU nano](https://www.nano-editor.org/docs.php)
 * [GNU tar](https://www.gnu.org/software/tar/manual/html_node/index.html)
+* [GNU wget](https://www.gnu.org/software/wget/manual/html_node/index.html)
 
 
 ## Python
