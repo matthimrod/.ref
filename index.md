@@ -148,7 +148,7 @@ Note: Feature branches that originated locally and were merged via a merge reque
 
 | Sequence | Replacement | Description | 
 | :------: | :---------: | :---------- |
-| \.br\    | \n          | Carriage Return (nonstandard?) |
+| \\.br\    | \n          | Carriage Return (nonstandard?) |
 | \X0D\    | \n          | Carriage Return (Using \x##\ + Hex Character #) |
 | \X0A\    | \r          | Line Feed (Using \x##\ + Hex Character #) |
 | \F\      | \|           | Field Separator (MSH-1) |
