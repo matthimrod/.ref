@@ -153,7 +153,7 @@ Note: Feature branches that originated locally and were merged via a merge reque
 | \X0A\    | \r          | Line Feed (Using \x##\ + Hex Character #) |
 | \F\      | \|           | Field Separator (MSH-1) |
 | \S\      | ^           | Subfield Separator (MSH-2)[0] |
-| \R\      | ~           | Field Separator (MSH-2)[1] |
+| \R\      | ~           | Repetition Separator (MSH-2)[1] |
 | \E\      | \           | Escape Character (MSH-2)[2] |
 | \T\      | &           | Subcomponent Separator (MSH-2)[3] |
 
