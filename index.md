@@ -151,7 +151,7 @@ Note: Feature branches that originated locally and were merged via a merge reque
 | \.br\    | \n          | Carriage Return (nonstandard?) |
 | \X0D\    | \n          | Carriage Return (Using \x##\ + Hex Character #) |
 | \X0A\    | \r          | Line Feed (Using \x##\ + Hex Character #) |
-| \F\      | |           | Field Separator (MSH-1) |
+| \F\      | \|           | Field Separator (MSH-1) |
 | \S\      | ^           | Subfield Separator (MSH-2)[0] |
 | \R\      | ~           | Field Separator (MSH-2)[1] |
 | \E\      | \           | Escape Character (MSH-2)[2] |
