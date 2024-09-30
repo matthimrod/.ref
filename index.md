@@ -7,6 +7,7 @@ title: Reference Pages
 * [AWS](#AWS)
 * [Java](#java)
 * [Git](#git)
+* [HL7](#hl7)
 * [Linux](#linux)
 * [Python](#python)
 * [Time Zones](#time-zones)
@@ -139,6 +140,22 @@ title: Reference Pages
 * `git remote prune origin` or `git fetch --prune origin` Prune local branches that don't exist on the remote anymore
 
 Note: Feature branches that originated locally and were merged via a merge request won't be automatically removed, but you can find these with git branch -vv. The remote will say "; gone". 
+
+
+## HL7
+
+### Escape Sequences
+
+| Sequence | Replacement | Description | 
+| :------: | :---------: | :---------- |
+| \.br\    | \n          | Carriage Return (nonstandard?) |
+| \X0D\    | \n          | Carriage Return (Using \x##\ + Hex Character #) |
+| \X0A\    | \r          | Line Feed (Using \x##\ + Hex Character #) |
+| \F\      | |           | Field Separator (MSH-1) |
+| \S\      | ^           | Subfield Separator (MSH-2)[0] |
+| \R\      | ~           | Field Separator (MSH-2)[1] |
+| \E\      | \           | Escape Character (MSH-2)[2] |
+| \T\      | &           | Subcomponent Separator (MSH-2)[3] |
 
 
 ## Linux
