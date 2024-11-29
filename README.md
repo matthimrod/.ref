@@ -1,5 +1,6 @@
 ---
 title: Reference Pages
+permalink: /
 ---
 
 # Reference Pages
@@ -76,19 +77,28 @@ title: Reference Pages
 
 ## Git
 
-### Create Respositories 
+| Task                                                                       | Command                         |
+| -------------------------------------------------------------------------- | ------------------------------- |
+| Create a new repository with the specified name                            | `git init [project name]`       |
+| Download a working copy of a repository locally                            | `git clone [url]`               |
+| Initialize Git Flow extensions                                             | `git flow init [-d]`            |
+| List all new or modified files to be committed                             | `git status`                    |
 
-* `git init [project name]` Creates a new local repository with the specified name
-* `git clone [url]` Downloads a project and its entire version history
-* `git flow init [-d]` Initialize Git Flow extensions
+| Task                                                                       | Command                         |
+| -------------------------------------------------------------------------- | ------------------------------- |
+| Capture a copy of the file(s) in preparation for committing                | `git add [file]`                |
+| Removes discard changes that have been made to the working copy            | `git restore [file]`            |
+| Removes discard changes that have staged for commit, keep the working copy | `git restore --staged [file]`   |
+| Deletes the file from the working directory and stages the deletion        | `git rm [file]`                 |
+| Removes the file from version control but preserves the working copy       | `git rm --cached [file]`        |
+| Move/Rename the file and stage the action                                  | `git mv [source] [destination]` |
+| Show file differences not yet staged (local copy vs. repo)                 | `git diff [file]`               |
+| Show file differences staged for commit (staged copy vs. local copy)       | `git diff --staged [file`       |
+| Adds the staged changes permanently in version history                     | `git commit -m "[message]"`     |
+| Upload commits from the local coopy to the server                          | `git push`                      |
+| Downloads changes from the server to the local copy of the current branch  | `git pull`                      |
+| Downloads a copy of changes to the repository from the server              | `git fetch`                     |
 
-### Make Changes
-
-* `git status` List all new or modified files to be committed
-* `git diff` Shows file differences not yet staged
-* `git add [file]` Snapshots the file in preparation for versioning
-* `git diff --staged` Shows file differences between staging and the last file version
-* `git commit -m "[descriptive message]"` Records file snapshots permanently in version history
 
 ### Branching
 
@@ -103,9 +113,6 @@ title: Reference Pages
 
 ### Refactor Filenames
 
-* `git rm [file]` Deletes the file from the working directory and stages the deletion
-* `git rm --cached [file]` Removes the file from version control but preserves the file locally
-* `git mv [file-original] [file-renamed]` Changes the file name and prepares it for commit
 
 ### Stashing
 
@@ -127,10 +134,7 @@ title: Reference Pages
 
 ### Synchronize Changes
 
-* `git fetch [bookmark]` Downloads all history from the repository bookmark
-* `git merge [bookmark]/[branch]` Combines bookmark’s branch into current local branch
-* `git push [alias] [branch]` Uploads all local branch commits to GitHub
-* `git pull` Downloads bookmark history and incorporates changes
+
 
 ### Maintenance
 
