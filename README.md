@@ -156,6 +156,7 @@ Note: Feature branches that originated locally and were merged via a merge reque
 
 <details>
   <summary>A poem about Linux commands.</summary>
+
 >A is for [awk](https://www.gnu.org/software/gawk/manual/html_node/index.html), which runs like a snail, and
 >B is for [biff](https://en.wikipedia.org/wiki/Biff_(Unix)), which reads all your mail.
 >
@@ -194,6 +195,7 @@ Note: Feature branches that originated locally and were merged via a merge reque
 >
 >Y is for [yes](https://www.gnu.org/software/coreutils/manual/html_node/yes-invocation.html), which makes an impression, and
 >Z is for [zcat](https://www.gnu.org/software/gzip/manual/gzip.html), which handles compression.
+
 </details>
 
 * [GNU coreutils](https://www.gnu.org/software/coreutils/manual/html_node/index.html)
