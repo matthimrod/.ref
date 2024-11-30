@@ -1,3 +1,9 @@
+remote_theme: jekyll/minima
+plugins:
+  - jekyll-remote-theme
+minima:
+  skin: auto
+  
 title: Reference Pages
 description: Matt's quick reference links
 show_downloads: false
