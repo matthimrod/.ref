@@ -2,9 +2,6 @@
 title: Reference Pages
 permalink: /
 ---
-
-# Reference Pages
-
 * [AWS](#AWS)
 * [Java](#java)
 * [Git](#git)
@@ -13,7 +10,7 @@ permalink: /
 * [Python](#python)
 * [Time Zones](#time-zones)
 
-## AWS
+# AWS
 
 * [AWS CDK Reference Documentation](https://docs.aws.amazon.com/cdk/api/v2/)
 * [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/)
@@ -62,7 +59,7 @@ permalink: /
 | [X-Ray](https://aws.amazon.com/xray/)                                 | [Docs](https://docs.aws.amazon.com/xray/)               | [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html)           |                                                                              |                                                                         | [CDK](https://docs.aws.amazon.com/cdk/api/v2/python/aws_cdk.aws_xray.html)               | [CF](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_XRay.html)           |
 
 
-## Java
+# Java
 
 * [Amazon Corretto JDK](https://aws.amazon.com/corretto/)
 * [OpenJDK](https://openjdk.org/) ([Download](https://openjdk.org/projects/jdk/))
@@ -70,73 +67,66 @@ permalink: /
 * [Spring](https://spring.io/) ([Initializr](https://start.spring.io/))
 * [Maven Repository](https://mvnrepository.com/)
 
-### Tools
+## Tools
 
 * [JUnit 5](https://junit.org/junit5/)
 * [Project Lombok](https://projectlombok.org/)
 
-## Git
+# Git
 
-| Task                                                                       | Command                         |
-| -------------------------------------------------------------------------- | ------------------------------- |
-| Create a new repository with the specified name                            | `git init [project name]`       |
-| Download a working copy of a repository locally                            | `git clone [url]`               |
-| Initialize Git Flow extensions                                             | `git flow init [-d]`            |
-| List all new or modified files to be committed                             | `git status`                    |
+| Repostiory Operations                                                      | Command                             |
+| -------------------------------------------------------------------------- | ----------------------------------- |
+| Create a new repository with the specified name                            | `git init [project name]`           |
+| Download a working copy of a repository locally                            | `git clone [url]`                   |
+| Initialize Git Flow extensions                                             | `git flow init [-d]`                |
+| List all new or modified files to be committed                             | `git status`                        |
+| List the version history for the current branch                            | `git log [--graph] [--[short]stat]` |
+| List the version history for a given file (including renames)              | `git log --follow [file]`           |
+| Show the details of a given commit                                         | `git show [commit]`                 |
+| Reset the working copy "HEAD" to the state at the given commit             | `git reset [commit]`                |
+| Reset the working copy "HEAD" to the given commit and discard the changes  | `git reset --hard [commit]`         |
 
-| Task                                                                       | Command                         |
+
+| Commit Operations                                                          | Command                         |
 | -------------------------------------------------------------------------- | ------------------------------- |
 | Capture a copy of the file(s) in preparation for committing                | `git add [file]`                |
-| Removes discard changes that have been made to the working copy            | `git restore [file]`            |
-| Removes discard changes that have staged for commit, keep the working copy | `git restore --staged [file]`   |
-| Deletes the file from the working directory and stages the deletion        | `git rm [file]`                 |
-| Removes the file from version control but preserves the working copy       | `git rm --cached [file]`        |
+| Discard changes that have been made to the working copy                    | `git restore [file]`            |
+| Discard changes that have staged for commit, keep the working copy         | `git restore --staged [file]`   |
+| Delete the file from the working directory and stages the deletion         | `git rm [file]`                 |
+| Remove the file from version control but preserves the working copy        | `git rm --cached [file]`        |
 | Move/Rename the file and stage the action                                  | `git mv [source] [destination]` |
 | Show file differences not yet staged (local copy vs. repo)                 | `git diff [file]`               |
 | Show file differences staged for commit (staged copy vs. local copy)       | `git diff --staged [file`       |
-| Adds the staged changes permanently in version history                     | `git commit -m "[message]"`     |
+| Add the staged changes permanently in version history                      | `git commit -m "[message]"`     |
 | Upload commits from the local coopy to the server                          | `git push`                      |
-| Downloads changes from the server to the local copy of the current branch  | `git pull`                      |
-| Downloads a copy of changes to the repository from the server              | `git fetch`                     |
+| Download changes from the server to the local copy of the current branch   | `git pull`                      |
+| Download a copy of changes to the repository from the server               | `git fetch`                     |
+
+| Stash Operations                                                           | Command                              |
+| -------------------------------------------------------------------------- | ------------------------------------ |
+| Store a temporary copy of all modified, tracked files                      | `git stash [push] [-m "message"]`    |
+| Store a copy of all changed files (tracked, untracked, NOT ignored)        | `git stash [push] -u [-m "message"]` |
+| Store a copy of all changed files (tracked, untracked, AND ignored)        | `git stash [push] -a [-m "message"]` |
+| List all entries in the stash                                              |  `git stash list`                    |
+| Restore the most recent entry from the stash                               | `git stash pop`                      |
+| Discard the most recent entry from the stash                               | `git stash drop`                     | 
 
 
-### Branching
+## Branching
 
 * `git branch` Lists all local branches in the current repository
 * `git branch [branch-name]` Creates a new branch
+* `git branch -d [branch-name]` Deletes the specified branch
 * `git checkout [branch-name]` Switches to the specified branch and updates the working directory
 * `git merge [branch]` Combines the specified branch’s history into the current branch
-* `git branch -d [branch-name]` Deletes the specified branch
+* `git diff [first-branch]...[second-branch]` Shows content differences between two branches
 * `git flow feature start [feature-name]` Create a Git Flow feature
 * `git flow feature finish [feature-name]` This will merge the changes into the local develop branch and delete the feature branch both locally and on the remote origin.
 
 
-### Refactor Filenames
 
 
-### Stashing
-
-* `git stash` Temporarily stores all modified tracked files
-  * Add `-u` to also stash untracked files.
-  * Add `-a` to also stash 'ignored' files.
-* `git stash list` Lists all stashed changesets
-* `git stash pop` Restores the most recently stashed files
-* `git stash drop` Discards the most recently stashed changeset
-
-### History
-
-* `git log` Lists version history for the current branch
-* `git log --follow [file]` Lists version history for a file, including renames
-* `git diff [first-branch]...[second-branch]` Shows content differences between two branches
-* `git show [commit]` Outputs metadata and content changes of the specified commit
-* `git reset [commit]` Undoes all commits afer [commit], preserving changes locally
-* `git reset --hard [commit]` Discards all history and changes back to the specified commit
-
-### Synchronize Changes
-
-
-
-### Maintenance
+## Maintenance
 
 * `git gc` Git Cleanup -- Runs a number of housekeeping tasks within the current repository, such as compressing file revisions (to reduce disk space and increase performance), removing unreachable objects which may have been created from prior invocations of git add, packing refs, pruning reflog, rerere metadata or stale working trees. May also update ancillary indexes such as the commit-graph.
 * `git update-index --assume-unchanged [<file> ...]` Stop showing changes on a tracked file.
@@ -146,9 +136,9 @@ permalink: /
 Note: Feature branches that originated locally and were merged via a merge request won't be automatically removed, but you can find these with git branch -vv. The remote will say "; gone". 
 
 
-## HL7
+# HL7
 
-### Escape Sequences
+## Escape Sequences
 
 | Sequence | Replacement | Description | 
 | :------: | :---------: | :---------- |
@@ -162,8 +152,10 @@ Note: Feature branches that originated locally and were merged via a merge reque
 | \X0A\    | \r          | Line Feed (Using \x##\ + Hex Character #) |
 
 
-## Linux
+# Linux
 
+<details>
+  <summary>A poem about Linux commands.</summary>
 >A is for [awk](https://www.gnu.org/software/gawk/manual/html_node/index.html), which runs like a snail, and
 >B is for [biff](https://en.wikipedia.org/wiki/Biff_(Unix)), which reads all your mail.
 >
@@ -202,39 +194,70 @@ Note: Feature branches that originated locally and were merged via a merge reque
 >
 >Y is for [yes](https://www.gnu.org/software/coreutils/manual/html_node/yes-invocation.html), which makes an impression, and
 >Z is for [zcat](https://www.gnu.org/software/gzip/manual/gzip.html), which handles compression.
+</details>
 
 * [GNU coreutils](https://www.gnu.org/software/coreutils/manual/html_node/index.html)
-  * [base64](https://www.gnu.org/software/coreutils/manual/html_node/base64-invocation.html)
-  * [cat](https://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html)
-  * [chgrp](https://www.gnu.org/software/coreutils/manual/html_node/chgrp-invocation.html)
-  * [chmod](https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html)
-  * [chown](https://www.gnu.org/software/coreutils/manual/html_node/chown-invocation.html)
-  * [cp](https://www.gnu.org/software/coreutils/manual/html_node/cp-invocation.html)
-    * [install](https://www.gnu.org/software/coreutils/manual/html_node/install-invocation.html)
-  * [dd](https://www.gnu.org/software/coreutils/manual/html_node/dd-invocation.html)
-  * [df](https://www.gnu.org/software/coreutils/manual/html_node/df-invocation.html)
-  * [du](https://www.gnu.org/software/coreutils/manual/html_node/du-invocation.html)
-  * [echo](https://www.gnu.org/software/coreutils/manual/html_node/echo-invocation.html)
-  * [head](https://www.gnu.org/software/coreutils/manual/html_node/head-invocation.html)
-  * [join](https://www.gnu.org/software/coreutils/manual/html_node/join-invocation.html)
-  * [kill](https://www.gnu.org/software/coreutils/manual/html_node/kill-invocation.html)
-  * [ln](https://www.gnu.org/software/coreutils/manual/html_node/ln-invocation.html)
-  * [ls](https://www.gnu.org/software/coreutils/manual/html_node/ls-invocation.html)
-    * [dircolors](https://www.gnu.org/software/coreutils/manual/html_node/dircolors-invocation.html)
-  * [md5](https://www.gnu.org/software/coreutils/manual/html_node/md5sum-invocation.html)
-  * [mkdir](https://www.gnu.org/software/coreutils/manual/html_node/mkdir-invocation.html)
-  * [mv](https://www.gnu.org/software/coreutils/manual/html_node/mv-invocation.html)
-  * [rm](https://www.gnu.org/software/coreutils/manual/html_node/rm-invocation.html)
-    * [shred](https://www.gnu.org/software/coreutils/manual/html_node/shred-invocation.html)
-    * [unlink](https://www.gnu.org/software/coreutils/manual/html_node/unlink-invocation.html)
-  * [rmdir](https://www.gnu.org/software/coreutils/manual/html_node/rmdir-invocation.html)
-  * [sha1](https://www.gnu.org/software/coreutils/manual/html_node/sha1sum-invocation.html)
-  * [sort](https://www.gnu.org/software/coreutils/manual/html_node/sort-invocation.html)
-  * [split](https://www.gnu.org/software/coreutils/manual/html_node/split-invocation.html)
-  * [stat](https://www.gnu.org/software/coreutils/manual/html_node/stat-invocation.html)
-  * [tail](https://www.gnu.org/software/coreutils/manual/html_node/tail-invocation.html)
-  * [touch](https://www.gnu.org/software/coreutils/manual/html_node/touch-invocation.html)
-  * [wc](https://www.gnu.org/software/coreutils/manual/html_node/wc-invocation.html)
+
+| Output, Summarize, or Hash Files     | Command                                                                                      |
+| ------------------------------------ | -------------------------------------------------------------------------------------------- |
+| Write and concatenate files          | [`cat`](https://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html)         |
+| Transform data into printable data   | [`base64`](https://www.gnu.org/software/coreutils/manual/html_node/base64-invocation.html)   |
+| Output the first part of a file      | [`head`](https://www.gnu.org/software/coreutils/manual/html_node/head-invocation.html)       |
+| Output the last part of a file       | [`tail`](https://www.gnu.org/software/coreutils/manual/html_node/tail-invocation.html)       |
+| Split a file into pieces             | [`split`](https://www.gnu.org/software/coreutils/manual/html_node/split-invocation.html)     |
+| Print newline, word, and byte counts | [`wc`](https://www.gnu.org/software/coreutils/manual/html_node/wc-invocation.html)           |
+| Print or check MD5 digests           | [`md5sum`](https://www.gnu.org/software/coreutils/manual/html_node/md5sum-invocation.html)   |
+| Print or check SHA-1 digests         | [`sha1sum`](https://www.gnu.org/software/coreutils/manual/html_node/sha1sum-invocation.html) |
+
+| Operating on File Contents/Sorting | Command                                                                                |
+| -----------------------------------| -------------------------------------------------------------------------------------- |
+| Sort text files                    | [`sort`](https://www.gnu.org/software/coreutils/manual/html_node/sort-invocation.html) |
+| Shuffle text files                 | [`shuf`](https://www.gnu.org/software/coreutils/manual/html_node/shuf-invocation.html) |
+| Uniquify files                     | [`uniq`](https://www.gnu.org/software/coreutils/manual/html_node/uniq-invocation.html) |
+| Compare two sorted files by line   | [`comm`](https://www.gnu.org/software/coreutils/manual/html_node/comm-invocation.html) |
+| Join lines on a common field       | [`join`](https://www.gnu.org/software/coreutils/manual/html_node/join-invocation.html) |
+| Print a line of text               | [`echo`](https://www.gnu.org/software/coreutils/manual/html_node/echo-invocation.html) |
+
+| Directory Listing and Operations                     | Command                                                                                          |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| List directory contents                              | [`ls`](https://www.gnu.org/software/coreutils/manual/html_node/ls-invocation.html)               |
+| Color setup for `ls`                                 | [`dircolors`](https://www.gnu.org/software/coreutils/manual/html_node/dircolors-invocation.html) |
+| Copy files and directories                           | [`cp`](https://www.gnu.org/software/coreutils/manual/html_node/cp-invocation.html)               |
+| Copy files and set attributes                        | [`install`](https://www.gnu.org/software/coreutils/manual/html_node/install-invocation.html)     |
+| Convert and copy a file                              | [`dd`](https://www.gnu.org/software/coreutils/manual/html_node/dd-invocation.html)               |
+| Move or rename files or directories                  | [`mv`](https://www.gnu.org/software/coreutils/manual/html_node/mv-invocation.html)               |
+| Remove (delete) files or directories                 | [`rm`](https://www.gnu.org/software/coreutils/manual/html_node/rm-invocation.html)               |
+| Remove files more securely                           | [`shred`](https://www.gnu.org/software/coreutils/manual/html_node/shred-invocation.html)         |
+| Make links between files                             | [`ln`](https://www.gnu.org/software/coreutils/manual/html_node/ln-invocation.html)               |
+| Make a new directory                                 | [`mkdir`](https://www.gnu.org/software/coreutils/manual/html_node/mkdir-invocation.html)         |
+| Print the value of a symlink or cannonical file name | [`readlink`](https://www.gnu.org/software/coreutils/manual/html_node/readlink-invocation.html)   |
+| Remove an empty directory                            | [`rmdir`](https://www.gnu.org/software/coreutils/manual/html_node/rmdir-invocation.html)         |
+| Remove files via the unlink syscall                  | [`unlink`](https://www.gnu.org/software/coreutils/manual/html_node/unlink-invocation.html)       |
+| Report file system space usage                       | [`df`](https://www.gnu.org/software/coreutils/manual/html_node/df-invocation.html)               |
+| Estimate file space usage                            | [`du`](https://www.gnu.org/software/coreutils/manual/html_node/du-invocation.html)               |
+| Report file or file system status                    | [`stat`](https://www.gnu.org/software/coreutils/manual/html_node/stat-invocation.html)           |
+
+| File Attribute Manipulation    | Command                                                                                  |
+| ------------------------------ | ---------------------------------------------------------------------------------------- |
+| Change file owner and group    | [`chown`](https://www.gnu.org/software/coreutils/manual/html_node/chown-invocation.html) |
+| Change file group ownership    | [`chgrp`](https://www.gnu.org/software/coreutils/manual/html_node/chgrp-invocation.html) |
+| Change file access permissions | [`chmod`](https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html) |
+| Change file timestamp          | [`touch`](https://www.gnu.org/software/coreutils/manual/html_node/touch-invocation.html) |
+
+| File Name Manipulation                      | Command                                                                                        |
+| ------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| Strip directory and suffix from a file name | [`basename`](https://www.gnu.org/software/coreutils/manual/html_node/basename-invocation.html) |
+| Strip last file name component              | [`dirname`](https://www.gnu.org/software/coreutils/manual/html_node/dirname-invocation.html)   |
+| Check file name validity and portability    | [`pathchk`](https://www.gnu.org/software/coreutils/manual/html_node/pathchk-invocation.html)   |
+| Print the resolved file name                | [`realpath`](https://www.gnu.org/software/coreutils/manual/html_node/realpath-invocation.html) |
+
+| Working Context                         | Command                                                                                        |
+| --------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| Print the current working directory     | [`pwd`](https://www.gnu.org/software/coreutils/manual/html_node/pwd-invocation.html)           |
+| Print all or some environment variables | [`printenv`](https://www.gnu.org/software/coreutils/manual/html_node/printenv-invocation.html) |
+| Run a command immune to hangups         | [`nohup`](https://www.gnu.org/software/coreutils/manual/html_node/nohup-invocation.html)       |
+| Send a signal to a process              | [`kill`](https://www.gnu.org/software/coreutils/manual/html_node/kill-invocation.html)         |
+
 
 * [GNU emacs](https://www.gnu.org/software/emacs/documentation.html)
 * [GNU grep](https://www.gnu.org/software/grep/manual/html_node/index.html)
@@ -244,16 +267,16 @@ Note: Feature branches that originated locally and were merged via a merge reque
 * [GNU wget](https://www.gnu.org/software/wget/manual/html_node/index.html)
 
 
-## Python
+# Python
 
-### Guides
+## Guides
 
 * [The Hitchhiker’s Guide to Python](https://docs.python-guide.org/)
 * [Python Package Index](https://pypi.org/)
 * [Python Packaging User Guide](https://packaging.python.org/en/latest/)
   * [pyproject.toml specification](https://packaging.python.org/en/latest/specifications/pyproject-toml/)
 
-### Core Python Documentation
+## Core Python Documentation
 
 * [Status of Python Versions](https://devguide.python.org/versions/)
 * [Python 3 Documentation (python.org)](https://docs.python.org/3/index.html)
@@ -293,13 +316,13 @@ Note: Feature branches that originated locally and were merged via a merge reque
   * [TypedDict](https://docs.python.org/3/library/typing.html#typing.TypedDict)
   * [Context Manager](https://docs.python.org/3/library/stdtypes.html#context-manager-types)
 
-### Environment/Dependency Management
+## Environment/Dependency Management
 
 * [pip](https://pip.pypa.io/en/stable/)
 * [pipenv](https://pipenv.pypa.io/en/latest/)
 * [pyenv-win](https://github.com/pyenv-win/pyenv-win)
 
-### Code Analysis Tools
+## Code Analysis Tools
 
 * [pytest](https://docs.pytest.org/)
 * [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/index.html)
@@ -311,7 +334,7 @@ Note: Feature branches that originated locally and were merged via a merge reque
 * [bandit](https://bandit.readthedocs.io/en/latest/)
 * [checkov](https://www.checkov.io/)
 
-### 3rd Party Libraries
+## 3rd Party Libraries
 
 
 * [IPython](https://ipython.readthedocs.io/en/stable/index.html)
@@ -326,12 +349,12 @@ Note: Feature branches that originated locally and were merged via a merge reque
 * [requests](https://requests.kennethreitz.org/en/latest/)
 * [SQLAlchemy](https://www.sqlalchemy.org/)
 
-### Misc
+## Misc
 
 * [ralsina/rst-cheatsheet: A two-page cheatsheet for restructured text](https://github.com/ralsina/rst-cheatsheet)
 * [pyWhat/pywhat/Data/regex.json](https://github.com/bee-san/pyWhat/blob/main/pywhat/Data/regex.json)
 
-## Time Zones
+# Time Zones
 
 |  P |  M |  C |  E |
 | -- | -- | -- | -- |
