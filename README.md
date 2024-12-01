@@ -111,27 +111,25 @@ permalink: /
 | Restore the most recent entry from the stash                               | `git stash pop`                      |
 | Discard the most recent entry from the stash                               | `git stash drop`                     | 
 
-
-## Branching
-
-* `git branch` Lists all local branches in the current repository
-* `git branch [branch-name]` Creates a new branch
-* `git branch -d [branch-name]` Deletes the specified branch
-* `git checkout [branch-name]` Switches to the specified branch and updates the working directory
-* `git merge [branch]` Combines the specified branch’s history into the current branch
-* `git diff [first-branch]...[second-branch]` Shows content differences between two branches
-* `git flow feature start [feature-name]` Create a Git Flow feature
-* `git flow feature finish [feature-name]` This will merge the changes into the local develop branch and delete the feature branch both locally and on the remote origin.
-
-
-
+| Branch Operations                                                            | Command                                  |
+| ---------------------------------------------------------------------------- | ---------------------------------------- |
+| List the local branches in the current repository                            | `git branch [-l]`                        |
+| List the remote branches in the current repository                           | `git branch -r`                          |
+| List the both local and remote branches in the current repository            | `git branch -a`                          |
+| Create a new branch                                                          | `git branch [branch-name]`               |
+| Delete the specified branch                                                  | `git branch -d [branch-name]`            |
+| Switch to the specified branch and update the files in the working directory | `git checkout [branch-name]`             |
+| Combine the history from the specified branch into the current branch        | `git merge [branch]`                     |
+| Shows content differences between two branches                               | `git diff [first]...[second]`            |
+| Create a Git Flow feature branch                                             | `git flow feature start [feature-name]`  |
+| Finish a Git Flow feature branch (merge the changes and delete the branch)   | `git flow feature finish [feature-name]` |
 
 ## Maintenance
 
-* `git gc` Git Cleanup -- Runs a number of housekeeping tasks within the current repository, such as compressing file revisions (to reduce disk space and increase performance), removing unreachable objects which may have been created from prior invocations of git add, packing refs, pruning reflog, rerere metadata or stale working trees. May also update ancillary indexes such as the commit-graph.
-* `git update-index --assume-unchanged [<file> ...]` Stop showing changes on a tracked file.
-* `git update-index --no-assume-unchanged [<file> ...]` Resume showing changes on a tracked file.
-* `git remote prune origin` or `git fetch --prune origin` Prune local branches that don't exist on the remote anymore
+| Git Cleanup -- Runs a number of housekeeping tasks within the current repository, such as compressing file revisions (to reduce disk space and increase performance), removing unreachable objects which may have been created from prior invocations of git add, packing refs, pruning reflog, rerere metadata or stale working trees. May also update ancillary indexes such as the commit-graph. | `git gc` |
+| Stop showing changes on a tracked file. | `git update-index --assume-unchanged [<file> ...]` |
+| Resume showing changes on a tracked file. | `git update-index --no-assume-unchanged [<file> ...]` |
+| Prune local branches that don't exist on the remote anymore | `git remote prune origin` or `git fetch --prune origin` |
 
 Note: Feature branches that originated locally and were merged via a merge request won't be automatically removed, but you can find these with git branch -vv. The remote will say "; gone". 
 
@@ -154,51 +152,14 @@ Note: Feature branches that originated locally and were merged via a merge reque
 
 # Linux
 
-<details>
-  <summary>A poem about Linux commands.</summary>
-
->A is for [awk](https://www.gnu.org/software/gawk/manual/html_node/index.html), which runs like a snail, and
->B is for [biff](https://en.wikipedia.org/wiki/Biff_(Unix)), which reads all your mail.
->
->C is for [cc](https://www.gnu.org/software/gcc/), as hackers recall, while
->D is for [dd](https://www.gnu.org/software/coreutils/manual/html_node/dd-invocation.html), the command that does all.
->
->E is for [emacs](https://www.gnu.org/software/emacs/documentation.html), which rebinds your keys, and
->F is for [fsck](https://en.wikipedia.org/wiki/Fsck), which rebuilds your trees.
->
->G is for [grep](https://www.gnu.org/software/grep/manual/html_node/index.html), a clever detective, while
->H is for halt, which may seem defective.
->
->I is for [indent](https://www.gnu.org/software/indent/manual/indent/index.html), which rarely amuses, and
->J is for [join](https://www.gnu.org/software/coreutils/manual/html_node/join-invocation.html), which nobody uses.
->
->K is for [kill](https://www.gnu.org/software/coreutils/manual/html_node/kill-invocation.html), which makes you the boss, while
->L is for [lex](https://en.wikipedia.org/wiki/Lex_(software)), which is missing from DOS.
->
->M is for [more](https://en.wikipedia.org/wiki/More_(command)), from which [Less](https://www.greenwoodsoftware.com/less/) was begot, and
->N is for [nice](https://www.gnu.org/software/coreutils/manual/html_node/nice-invocation.html), which it really is not.
->
->O is for [od](https://www.gnu.org/software/coreutils/manual/html_node/od-invocation.html), which prints out things nice, while
->P is for [passwd](https://en.wikipedia.org/wiki/Passwd), which reads in strings twice.
->
->Q is for [quota](https://man.openbsd.org/quota.1), a Berkeley-type fable, and
->R is for [ranlib](https://sourceware.org/binutils/docs/binutils/ranlib.html), for sorting [ar](https://sourceware.org/binutils/docs/binutils/ar.html) [sic] table.
->
->S is for [spell](https://savannah.gnu.org/projects/spell/), which attempts to belittle, while
->T is for [true](https://www.gnu.org/software/coreutils/manual/html_node/true-invocation.html), which does very little.
->
->U is for [uniq](https://www.gnu.org/software/coreutils/manual/html_node/uniq-invocation.html), which is used after [Sort](https://www.gnu.org/software/coreutils/manual/html_node/sort-invocation.html), and
->V is for [vi](https://ex-vi.sourceforge.net/), which is hard to abort.
->
->W is for [whoami](https://www.gnu.org/software/coreutils/manual/html_node/whoami-invocation.html), which tells you your name, while
->X is, well, [X](https://www.x.org/), of dubious fame.
->
->Y is for [yes](https://www.gnu.org/software/coreutils/manual/html_node/yes-invocation.html), which makes an impression, and
->Z is for [zcat](https://www.gnu.org/software/gzip/manual/gzip.html), which handles compression.
-
-</details>
-
+* [A poem about Linux commands](/linux/)
 * [GNU coreutils](https://www.gnu.org/software/coreutils/manual/html_node/index.html)
+* [GNU emacs](https://www.gnu.org/software/emacs/documentation.html)
+* [GNU grep](https://www.gnu.org/software/grep/manual/html_node/index.html)
+* [GNU gzip](https://www.gnu.org/software/gzip/manual/html_node/index.html)
+* [GNU nano](https://www.nano-editor.org/docs.php)
+* [GNU tar](https://www.gnu.org/software/tar/manual/html_node/index.html)
+* [GNU wget](https://www.gnu.org/software/wget/manual/html_node/index.html)
 
 | Output, Summarize, or Hash Files     | Command                                                                                      |
 | ------------------------------------ | -------------------------------------------------------------------------------------------- |
@@ -259,14 +220,6 @@ Note: Feature branches that originated locally and were merged via a merge reque
 | Print all or some environment variables | [`printenv`](https://www.gnu.org/software/coreutils/manual/html_node/printenv-invocation.html) |
 | Run a command immune to hangups         | [`nohup`](https://www.gnu.org/software/coreutils/manual/html_node/nohup-invocation.html)       |
 | Send a signal to a process              | [`kill`](https://www.gnu.org/software/coreutils/manual/html_node/kill-invocation.html)         |
-
-
-* [GNU emacs](https://www.gnu.org/software/emacs/documentation.html)
-* [GNU grep](https://www.gnu.org/software/grep/manual/html_node/index.html)
-* [GNU gzip](https://www.gnu.org/software/gzip/manual/html_node/index.html)
-* [GNU nano](https://www.nano-editor.org/docs.php)
-* [GNU tar](https://www.gnu.org/software/tar/manual/html_node/index.html)
-* [GNU wget](https://www.gnu.org/software/wget/manual/html_node/index.html)
 
 
 # Python
