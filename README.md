@@ -124,14 +124,18 @@ permalink: /
 | Create a Git Flow feature branch                                             | `git flow feature start [feature-name]`  |
 | Finish a Git Flow feature branch (merge the changes and delete the branch)   | `git flow feature finish [feature-name]` |
 
-### Maintenance
-
-| Git Cleanup -- Runs a number of housekeeping tasks within the current repository, such as compressing file revisions (to reduce disk space and increase performance), removing unreachable objects which may have been created from prior invocations of git add, packing refs, pruning reflog, rerere metadata or stale working trees. May also update ancillary indexes such as the commit-graph. | `git gc` |
-| Stop showing changes on a tracked file. | `git update-index --assume-unchanged [<file> ...]` |
-| Resume showing changes on a tracked file. | `git update-index --no-assume-unchanged [<file> ...]` |
+| Maintenance                                                 | &nbsp;                                                  |
+| :---------------------------------------------------------- | :------------------------------------------------------ |
+| Git Cleanup                                                 | `git gc`                                                |
+| Stop showing changes on a tracked file.                     | `git update-index --assume-unchanged [<file> ...]`      |
+| Resume showing changes on a tracked file.                   | `git update-index --no-assume-unchanged [<file> ...]`   |
 | Prune local branches that don't exist on the remote anymore | `git remote prune origin` or `git fetch --prune origin` |
 
 Note: Feature branches that originated locally and were merged via a merge request won't be automatically removed, but you can find these with git branch -vv. The remote will say "; gone".
+
+### Git Cleanup
+
+Git Cleanup runs a number of housekeeping tasks within the current repository, such as compressing file revisions (to reduce disk space and increase performance), removing unreachable objects which may have been created from prior invocations of git add, packing refs, pruning reflog, rerere metadata or stale working trees. May also update ancillary indexes such as the commit-graph.
 
 ## HL7
 
@@ -334,14 +338,14 @@ Metacharacters that must be escaped: `^` `[` `.` `$` `{` `*` `(` `)` `\` `+` `|`
 | `{#,#}`     | # to # matches, inclusive (e.g., `{3,5}` = 3, 4, or 5) |
 | `{#,#}?`    | # to # matches, inclusive and ungreedy                 |
 
-| Ranges | &nbsp;                                               |
-| :----- | :--------------------------------------------------- |
-| `.`    | any character, typically excluding newline/linefeed  |
-| `|`    | or (e.g., `a|b` matches `a` or `b`)                  |
-| `()`   | capturing group (e.g., `Date: (\d{4}-\d{2}-\d{2})`)  |
-| `(?:)` | non-capturing/passive group (e.g., `(?:this|that)`)  |
-| `[]`   | characer range                                       |
-| `[^]`  | negative characer range                              |
+| Ranges | &nbsp;                                              |
+| :----- | :-------------------------------------------------- |
+| `.`    | any character, typically excluding newline/linefeed |
+| `      | `                                                   | or (e.g., `a | b` matches `a` or `b`) |
+| `()`   | capturing group (e.g., `Date: (\d{4}-\d{2}-\d{2})`) |
+| `(?:)` | non-capturing/passive group (e.g., `(?:this         | that)`)      |
+| `[]`   | characer range                                      |
+| `[^]`  | negative characer range                             |
 
 | Character Class | &nbsp;                                                                            |
 | :-------------- | :-------------------------------------------------------------------------------- |
