@@ -2,7 +2,7 @@
 title: Reference Pages
 permalink: /
 ---
-* [AWS](#AWS)
+* [AWS](#aws)
 * [Java](#java)
 * [Git](#git)
 * [HL7](#hl7)
@@ -10,21 +10,22 @@ permalink: /
 * [Python](#python)
 * [Time Zones](#time-zones)
 
-# AWS
+# Reference Pages
+
+## AWS
 
 * [AWS CDK Reference Documentation](https://docs.aws.amazon.com/cdk/api/v2/)
 * [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/)
 * [AWS CDK Python Reference](https://docs.aws.amazon.com/cdk/api/v2/python/)
 * [Boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
-* [CloudFormation Users Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html) 
+* [CloudFormation Users Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
 * [CloudFormation Template reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-reference.html)
 * [Moto: Mock AWS Services](https://docs.getmoto.org/en/latest/#)
 * [Moto - Configuratrion Options](https://docs.getmoto.org/en/latest/docs/configuration/index.html)
 * [Moto - Implemented Services](https://docs.getmoto.org/en/latest/docs/services/index.html)
 
-
-| Service                                                               | Docs                                                    | Boto3                                                                                                   | Moto                                                                         | CLI                                                                     | CDK                                                                                      | CF                                                                                           |
-| --------------------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| Service                                                               | &nbsp;                                                  | &nbsp;                                                                                                  | &nbsp;                                                                       | &nbsp;                                                                  | &nbsp;                                                                                   | &nbsp;                                                                                       |
+| :-------------------------------------------------------------------- | :------------------------------------------------------ | :------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------- | :---------------------------------------------------------------------- | :--------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------- |
 | [Batch](https://aws.amazon.com/batch/)                                | [Docs](https://docs.aws.amazon.com/batch/)              | [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html)          | [Moto](https://docs.getmoto.org/en/latest/docs/services/batch.html)          | [CLI](https://docs.aws.amazon.com/cli/latest/reference/batch/)          | [CDK](https://docs.aws.amazon.com/cdk/api/v2/python/aws_cdk.aws_batch.html)              | [CF](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_Batch.html)          |
 | [CloudFormation](https://aws.amazon.com/cloudformation/)              | [Docs](https://docs.aws.amazon.com/cloudformation/)     | [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html) | [Moto](https://docs.getmoto.org/en/latest/docs/services/cloudformation.html) | [CLI](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/) | [CDK](https://docs.aws.amazon.com/cdk/api/v2/python/aws_cdk.aws_cloudformation.html)     | [CF](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_CloudFormation.html) |
 | [CloudTrail](https://aws.amazon.com/cloudtrail/)                      | [Docs](https://docs.aws.amazon.com/cloudtrail/)         | [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html)     | [Moto](https://docs.getmoto.org/en/latest/docs/services/cloudtrail.html)     | [CLI](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/)     | [CDK](https://docs.aws.amazon.com/cdk/api/v2/python/aws_cdk.aws_cloudtrail.html)         | [CF](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_CloudTrail.html)     |
@@ -58,8 +59,7 @@ permalink: /
 | STS (Secure Token Service)                                            |                                                         | [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html)            | [Moto](https://docs.getmoto.org/en/latest/docs/services/sts.html)            | [CLI](https://docs.aws.amazon.com/cli/latest/reference/sts/)            |                                                                                          |                                                                                              |
 | [X-Ray](https://aws.amazon.com/xray/)                                 | [Docs](https://docs.aws.amazon.com/xray/)               | [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html)           |                                                                              |                                                                         | [CDK](https://docs.aws.amazon.com/cdk/api/v2/python/aws_cdk.aws_xray.html)               | [CF](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_XRay.html)           |
 
-
-# Java
+## Java
 
 * [Amazon Corretto JDK](https://aws.amazon.com/corretto/)
 * [OpenJDK](https://openjdk.org/) ([Download](https://openjdk.org/projects/jdk/))
@@ -67,52 +67,51 @@ permalink: /
 * [Spring](https://spring.io/) ([Initializr](https://start.spring.io/))
 * [Maven Repository](https://mvnrepository.com/)
 
-## Tools
+### Tools
 
 * [JUnit 5](https://junit.org/junit5/)
 * [Project Lombok](https://projectlombok.org/)
 
-# Git
+## Git
 
-| Repostiory Operations                                                      | Command                             |
-| -------------------------------------------------------------------------- | ----------------------------------- |
-| Create a new repository with the specified name                            | `git init [project name]`           |
-| Download a working copy of a repository locally                            | `git clone [url]`                   |
-| Initialize Git Flow extensions                                             | `git flow init [-d]`                |
-| List all new or modified files to be committed                             | `git status`                        |
-| List the version history for the current branch                            | `git log [--graph] [--[short]stat]` |
-| List the version history for a given file (including renames)              | `git log --follow [file]`           |
-| Show the details of a given commit                                         | `git show [commit]`                 |
-| Reset the working copy "HEAD" to the state at the given commit             | `git reset [commit]`                |
-| Reset the working copy "HEAD" to the given commit and discard the changes  | `git reset --hard [commit]`         |
+| Repostiory Operations                                                     | &nbsp;                              |
+| :------------------------------------------------------------------------ | :---------------------------------- |
+| Create a new repository with the specified name                           | `git init [project name]`           |
+| Download a working copy of a repository locally                           | `git clone [url]`                   |
+| Initialize Git Flow extensions                                            | `git flow init [-d]`                |
+| List all new or modified files to be committed                            | `git status`                        |
+| List the version history for the current branch                           | `git log [--graph] [--[short]stat]` |
+| List the version history for a given file (including renames)             | `git log --follow [file]`           |
+| Show the details of a given commit                                        | `git show [commit]`                 |
+| Reset the working copy "HEAD" to the state at the given commit            | `git reset [commit]`                |
+| Reset the working copy "HEAD" to the given commit and discard the changes | `git reset --hard [commit]`         |
 
+| Commit Operations                                                        | &nbsp;                          |
+| :----------------------------------------------------------------------- | :------------------------------ |
+| Capture a copy of the file(s) in preparation for committing              | `git add [file]`                |
+| Discard changes that have been made to the working copy                  | `git restore [file]`            |
+| Discard changes that have staged for commit, keep the working copy       | `git restore --staged [file]`   |
+| Delete the file from the working directory and stages the deletion       | `git rm [file]`                 |
+| Remove the file from version control but preserves the working copy      | `git rm --cached [file]`        |
+| Move/Rename the file and stage the action                                | `git mv [source] [destination]` |
+| Show file differences not yet staged (local copy vs. repo)               | `git diff [file]`               |
+| Show file differences staged for commit (staged copy vs. local copy)     | `git diff --staged [file`       |
+| Add the staged changes permanently in version history                    | `git commit -m "[message]"`     |
+| Upload commits from the local coopy to the server                        | `git push`                      |
+| Download changes from the server to the local copy of the current branch | `git pull`                      |
+| Download a copy of changes to the repository from the server             | `git fetch`                     |
 
-| Commit Operations                                                          | Command                         |
-| -------------------------------------------------------------------------- | ------------------------------- |
-| Capture a copy of the file(s) in preparation for committing                | `git add [file]`                |
-| Discard changes that have been made to the working copy                    | `git restore [file]`            |
-| Discard changes that have staged for commit, keep the working copy         | `git restore --staged [file]`   |
-| Delete the file from the working directory and stages the deletion         | `git rm [file]`                 |
-| Remove the file from version control but preserves the working copy        | `git rm --cached [file]`        |
-| Move/Rename the file and stage the action                                  | `git mv [source] [destination]` |
-| Show file differences not yet staged (local copy vs. repo)                 | `git diff [file]`               |
-| Show file differences staged for commit (staged copy vs. local copy)       | `git diff --staged [file`       |
-| Add the staged changes permanently in version history                      | `git commit -m "[message]"`     |
-| Upload commits from the local coopy to the server                          | `git push`                      |
-| Download changes from the server to the local copy of the current branch   | `git pull`                      |
-| Download a copy of changes to the repository from the server               | `git fetch`                     |
+| Stash Operations                                                    | &nbsp;                               |
+| :------------------------------------------------------------------ | :----------------------------------- |
+| Store a temporary copy of all modified, tracked files               | `git stash [push] [-m "message"]`    |
+| Store a copy of all changed files (tracked, untracked, NOT ignored) | `git stash [push] -u [-m "message"]` |
+| Store a copy of all changed files (tracked, untracked, AND ignored) | `git stash [push] -a [-m "message"]` |
+| List all entries in the stash                                       | `git stash list`                     |
+| Restore the most recent entry from the stash                        | `git stash pop`                      |
+| Discard the most recent entry from the stash                        | `git stash drop`                     |
 
-| Stash Operations                                                           | Command                              |
-| -------------------------------------------------------------------------- | ------------------------------------ |
-| Store a temporary copy of all modified, tracked files                      | `git stash [push] [-m "message"]`    |
-| Store a copy of all changed files (tracked, untracked, NOT ignored)        | `git stash [push] -u [-m "message"]` |
-| Store a copy of all changed files (tracked, untracked, AND ignored)        | `git stash [push] -a [-m "message"]` |
-| List all entries in the stash                                              |  `git stash list`                    |
-| Restore the most recent entry from the stash                               | `git stash pop`                      |
-| Discard the most recent entry from the stash                               | `git stash drop`                     | 
-
-| Branch Operations                                                            | Command                                  |
-| ---------------------------------------------------------------------------- | ---------------------------------------- |
+| Branch Operations                                                            | &nbsp;                                   |
+| :--------------------------------------------------------------------------- | :--------------------------------------- |
 | List the local branches in the current repository                            | `git branch [-l]`                        |
 | List the remote branches in the current repository                           | `git branch -r`                          |
 | List the both local and remote branches in the current repository            | `git branch -a`                          |
@@ -124,33 +123,31 @@ permalink: /
 | Create a Git Flow feature branch                                             | `git flow feature start [feature-name]`  |
 | Finish a Git Flow feature branch (merge the changes and delete the branch)   | `git flow feature finish [feature-name]` |
 
-## Maintenance
+### Maintenance
 
 | Git Cleanup -- Runs a number of housekeeping tasks within the current repository, such as compressing file revisions (to reduce disk space and increase performance), removing unreachable objects which may have been created from prior invocations of git add, packing refs, pruning reflog, rerere metadata or stale working trees. May also update ancillary indexes such as the commit-graph. | `git gc` |
 | Stop showing changes on a tracked file. | `git update-index --assume-unchanged [<file> ...]` |
 | Resume showing changes on a tracked file. | `git update-index --no-assume-unchanged [<file> ...]` |
 | Prune local branches that don't exist on the remote anymore | `git remote prune origin` or `git fetch --prune origin` |
 
-Note: Feature branches that originated locally and were merged via a merge request won't be automatically removed, but you can find these with git branch -vv. The remote will say "; gone". 
+Note: Feature branches that originated locally and were merged via a merge request won't be automatically removed, but you can find these with git branch -vv. The remote will say "; gone".
 
+## HL7
 
-# HL7
+### Escape Sequences
 
-## Escape Sequences
+| Sequence | Replacement | &nbsp;                                          |
+| :------: | :---------: | :---------------------------------------------- |
+|   \F\    |     \|      | Field Separator (MSH-1)                         |
+|   \S\    |      ^      | Subfield Separator [MSH-2](0)                   |
+|   \R\    |      ~      | Repetition Separator [MSH-2](1)                 |
+|   \E\    |      \      | Escape Character [MSH-2](2)                     |
+|   \T\    |      &      | Subcomponent Separator [MSH-2](3)               |
+|  \\.br\  |     \n      | Carriage Return (nonstandard?)                  |
+|  \X0D\   |     \n      | Carriage Return (Using \x##\ + Hex Character #) |
+|  \X0A\   |     \r      | Line Feed (Using \x##\ + Hex Character #)       |
 
-| Sequence | Replacement | Description | 
-| :------: | :---------: | :---------- |
-| \F\      | \|           | Field Separator (MSH-1) |
-| \S\      | ^           | Subfield Separator (MSH-2)[0] |
-| \R\      | ~           | Repetition Separator (MSH-2)[1] |
-| \E\      | \           | Escape Character (MSH-2)[2] |
-| \T\      | &           | Subcomponent Separator (MSH-2)[3] |
-| \\.br\    | \n          | Carriage Return (nonstandard?) |
-| \X0D\    | \n          | Carriage Return (Using \x##\ + Hex Character #) |
-| \X0A\    | \r          | Line Feed (Using \x##\ + Hex Character #) |
-
-
-# Linux
+## Linux
 
 * [A poem about Linux commands](/linux/)
 * [GNU coreutils](https://www.gnu.org/software/coreutils/manual/html_node/index.html)
@@ -161,8 +158,8 @@ Note: Feature branches that originated locally and were merged via a merge reque
 * [GNU tar](https://www.gnu.org/software/tar/manual/html_node/index.html)
 * [GNU wget](https://www.gnu.org/software/wget/manual/html_node/index.html)
 
-| Output, Summarize, or Hash Files     | Command                                                                                      |
-| ------------------------------------ | -------------------------------------------------------------------------------------------- |
+| Output, Summarize, or Hash Files     | &nbsp;                                                                                       |
+| :----------------------------------- | :------------------------------------------------------------------------------------------- |
 | Write and concatenate files          | [`cat`](https://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html)         |
 | Transform data into printable data   | [`base64`](https://www.gnu.org/software/coreutils/manual/html_node/base64-invocation.html)   |
 | Output the first part of a file      | [`head`](https://www.gnu.org/software/coreutils/manual/html_node/head-invocation.html)       |
@@ -172,8 +169,8 @@ Note: Feature branches that originated locally and were merged via a merge reque
 | Print or check MD5 digests           | [`md5sum`](https://www.gnu.org/software/coreutils/manual/html_node/md5sum-invocation.html)   |
 | Print or check SHA-1 digests         | [`sha1sum`](https://www.gnu.org/software/coreutils/manual/html_node/sha1sum-invocation.html) |
 
-| Operating on File Contents/Sorting | Command                                                                                |
-| -----------------------------------| -------------------------------------------------------------------------------------- |
+| Operating on File Contents/Sorting | &nbsp;                                                                                 |
+| :--------------------------------- | :------------------------------------------------------------------------------------- |
 | Sort text files                    | [`sort`](https://www.gnu.org/software/coreutils/manual/html_node/sort-invocation.html) |
 | Shuffle text files                 | [`shuf`](https://www.gnu.org/software/coreutils/manual/html_node/shuf-invocation.html) |
 | Uniquify files                     | [`uniq`](https://www.gnu.org/software/coreutils/manual/html_node/uniq-invocation.html) |
@@ -181,8 +178,8 @@ Note: Feature branches that originated locally and were merged via a merge reque
 | Join lines on a common field       | [`join`](https://www.gnu.org/software/coreutils/manual/html_node/join-invocation.html) |
 | Print a line of text               | [`echo`](https://www.gnu.org/software/coreutils/manual/html_node/echo-invocation.html) |
 
-| Directory Listing and Operations                     | Command                                                                                          |
-| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Directory Listing and Operations                     | &nbsp;                                                                                           |
+| :--------------------------------------------------- | :----------------------------------------------------------------------------------------------- |
 | List directory contents                              | [`ls`](https://www.gnu.org/software/coreutils/manual/html_node/ls-invocation.html)               |
 | Color setup for `ls`                                 | [`dircolors`](https://www.gnu.org/software/coreutils/manual/html_node/dircolors-invocation.html) |
 | Copy files and directories                           | [`cp`](https://www.gnu.org/software/coreutils/manual/html_node/cp-invocation.html)               |
@@ -200,38 +197,37 @@ Note: Feature branches that originated locally and were merged via a merge reque
 | Estimate file space usage                            | [`du`](https://www.gnu.org/software/coreutils/manual/html_node/du-invocation.html)               |
 | Report file or file system status                    | [`stat`](https://www.gnu.org/software/coreutils/manual/html_node/stat-invocation.html)           |
 
-| File Attribute Manipulation    | Command                                                                                  |
-| ------------------------------ | ---------------------------------------------------------------------------------------- |
+| File Attribute Manipulation    | &nbsp;                                                                                   |
+| :----------------------------- | :--------------------------------------------------------------------------------------- |
 | Change file owner and group    | [`chown`](https://www.gnu.org/software/coreutils/manual/html_node/chown-invocation.html) |
 | Change file group ownership    | [`chgrp`](https://www.gnu.org/software/coreutils/manual/html_node/chgrp-invocation.html) |
 | Change file access permissions | [`chmod`](https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html) |
 | Change file timestamp          | [`touch`](https://www.gnu.org/software/coreutils/manual/html_node/touch-invocation.html) |
 
-| File Name Manipulation                      | Command                                                                                        |
-| ------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| File Name Manipulation                      | &nbsp;                                                                                         |
+| :------------------------------------------ | :--------------------------------------------------------------------------------------------- |
 | Strip directory and suffix from a file name | [`basename`](https://www.gnu.org/software/coreutils/manual/html_node/basename-invocation.html) |
 | Strip last file name component              | [`dirname`](https://www.gnu.org/software/coreutils/manual/html_node/dirname-invocation.html)   |
 | Check file name validity and portability    | [`pathchk`](https://www.gnu.org/software/coreutils/manual/html_node/pathchk-invocation.html)   |
 | Print the resolved file name                | [`realpath`](https://www.gnu.org/software/coreutils/manual/html_node/realpath-invocation.html) |
 
-| Working Context                         | Command                                                                                        |
-| --------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| Working Context                         | &nbsp;                                                                                         |
+| :-------------------------------------- | :--------------------------------------------------------------------------------------------- |
 | Print the current working directory     | [`pwd`](https://www.gnu.org/software/coreutils/manual/html_node/pwd-invocation.html)           |
 | Print all or some environment variables | [`printenv`](https://www.gnu.org/software/coreutils/manual/html_node/printenv-invocation.html) |
 | Run a command immune to hangups         | [`nohup`](https://www.gnu.org/software/coreutils/manual/html_node/nohup-invocation.html)       |
 | Send a signal to a process              | [`kill`](https://www.gnu.org/software/coreutils/manual/html_node/kill-invocation.html)         |
 
+## Python
 
-# Python
-
-## Guides
+### Guides
 
 * [The Hitchhiker’s Guide to Python](https://docs.python-guide.org/)
 * [Python Package Index](https://pypi.org/)
 * [Python Packaging User Guide](https://packaging.python.org/en/latest/)
   * [pyproject.toml specification](https://packaging.python.org/en/latest/specifications/pyproject-toml/)
 
-## Core Python Documentation
+### Core Python Documentation
 
 * [Status of Python Versions](https://devguide.python.org/versions/)
 * [Python 3 Documentation (python.org)](https://docs.python.org/3/index.html)
@@ -271,13 +267,13 @@ Note: Feature branches that originated locally and were merged via a merge reque
   * [TypedDict](https://docs.python.org/3/library/typing.html#typing.TypedDict)
   * [Context Manager](https://docs.python.org/3/library/stdtypes.html#context-manager-types)
 
-## Environment/Dependency Management
+### Environment/Dependency Management
 
 * [pip](https://pip.pypa.io/en/stable/)
 * [pipenv](https://pipenv.pypa.io/en/latest/)
 * [pyenv-win](https://github.com/pyenv-win/pyenv-win)
 
-## Code Analysis Tools
+### Testing and Code Analysis Tools
 
 * [pytest](https://docs.pytest.org/)
 * [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/index.html)
@@ -289,8 +285,7 @@ Note: Feature branches that originated locally and were merged via a merge reque
 * [bandit](https://bandit.readthedocs.io/en/latest/)
 * [checkov](https://www.checkov.io/)
 
-## 3rd Party Libraries
-
+### 3rd Party Libraries
 
 * [IPython](https://ipython.readthedocs.io/en/stable/index.html)
   * [Built-in magic commands](https://ipython.readthedocs.io/en/stable/interactive/magics.html)
@@ -298,30 +293,120 @@ Note: Feature branches that originated locally and were merged via a merge reque
   * [The Ultimate Markdown Guide (for Jupyter Notebook)](https://medium.com/analytics-vidhya/the-ultimate-markdown-guide-for-jupyter-notebook-d5e5abf728fd)
 * [liquid template language (shopify.github.io)](https://shopify.github.io/liquid/)
 * [localstack](https://github.com/localstack/localstack)
-* [Moto]()(https://docs.getmoto.org/en/latest/#)
+* [Moto](<https://docs.getmoto.org/en/latest/#>)
 * [pandas](https://pandas.pydata.org/docs/index.html)
   * [API reference](https://pandas.pydata.org/docs/reference/index.html)
 * [requests](https://requests.kennethreitz.org/en/latest/)
 * [SQLAlchemy](https://www.sqlalchemy.org/)
 
-## Misc
+### Misc
 
 * [ralsina/rst-cheatsheet: A two-page cheatsheet for restructured text](https://github.com/ralsina/rst-cheatsheet)
 * [pyWhat/pywhat/Data/regex.json](https://github.com/bee-san/pyWhat/blob/main/pywhat/Data/regex.json)
 
-# Time Zones
+## Regular Expressions
 
-|  P |  M |  C |  E |
-| -- | -- | -- | -- |
-| 10 | 11 | 12 |  1 |
-| 11 | 12 |  1 |  2 |
-| 12 |  1 |  2 |  3 |
-|  1 |  2 |  3 |  4 |
-|  2 |  3 |  4 |  5 |
-|  3 |  4 |  5 |  6 |
-|  4 |  5 |  6 |  7 |
-|  5 |  6 |  7 |  8 |
-|  6 |  7 |  8 |  9 |
-|  7 |  8 |  9 | 10 |
-|  8 |  9 | 10 | 11 |
-|  9 | 10 | 11 | 12 |
+Metacharacters that must be escaped: `^` `[` `.` `$` `{` `*` `(` `)` `\` `+` `|` `?` `<` `>`
+
+| Anchors | &nbsp;            |
+| :------ | :---------------- |
+| `^`     | start of line     |
+| `$`     | end of line       |
+| `\A`    | start of string   |
+| `\Z`    | end of string     |
+| `\b`    | word boundary     |
+| `\B`    | not word boundary |
+| `\<`    | start of word ⚠️   |
+| `\>`    | end of word ⚠️     |
+
+| Quantifiers | &nbsp;                                                 |
+| :---------- | :----------------------------------------------------- |
+| `*`         | 0 or more                                              |
+| `*?`        | 0 or more, ungreedy                                    |
+| `+`         | 1 or more                                              |
+| `+?`        | 1 or more, ungreedy                                    |
+| `?`         | 0 or 1                                                 |
+| `??`        | 0 or 1, ungreedy                                       |
+| `{#}`       | Exacty # (e.g., `{3}` = exactly 3)                     |
+| `{#,}`      | # or more (e.g., `{3,}` = 3 or more)                   |
+| `{#,}?`     | # or more, ungreedy                                    |
+| `{#,#}`     | # to # matches, inclusive (e.g., `{3,5}` = 3, 4, or 5) |
+| `{#,#}?`    | # to # matches, inclusive and ungreedy                 |
+
+| Ranges | &nbsp;                                               |
+| :----- | :--------------------------------------------------- |
+| `.`    | any character, typically excluding newline/linefeed  |
+| `\|`   | or (e.g., `a\|b` matches `a` or `b`)                 |
+| `()`   | capturing group (e.g., `Date: (\d{4}-\d{2}-\d{2})`)  |
+| `(?:)` | non-capturing/passive group (e.g., `(?:this\|that)`) |
+| `[]`   | characer range                                       |
+| `[^]`  | negative characer range                              |
+
+| Character Class | &nbsp;                                                                            |
+| :-------------- | :-------------------------------------------------------------------------------- |
+| `\c`            | control character (e.g., ASCII 0-31 & 127), same as POSIX `[:word:]`              |
+| `\s`            | white space (e.g., `[\t\n\f\r ]` tab, newline, form feed, carriage returm, space) |
+| `\S`            | not white space                                                                   |
+| `\d`            | digit (e.g., `[0-9]`)                                                             |
+| `\D`            | Nnot digit                                                                         |
+| `\w`            | word (e.g., `[A-Za-z0-9_]`)                                                       |
+| `\W`            | not word                                                                          |
+
+| Escape Sequences       | &nbsp;                                       |
+| :--------------------- | :------------------------------------------- |
+| `\\`                   | literal backslash `` ` ``                    |
+| `\t`                   | tab                                          |
+| `\n`                   | newline/linefeed                             |
+| `\r`                   | carriage return                              |
+| `\f`                   | form feed                                    |
+| `\a`                   | alarm/bell                                   |
+| `\xhh`                 | hexadecimal character `hh`                   |
+| `\xxx` `\oxxx` `\Oxxx` | octal character `xxx`                        |
+| `\Q`                   | quote (disable pattern metacharacters)       |
+| `\E`                   | end quote (re-enable pattern metacharacters) |
+
+| POSIX Character Class | &nbsp;                                                                                                                               |
+| :-------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
+| `[:upper:]`           | any uppercase character (e.g., `[A-Z]`)                                                                                              |
+| `[:lower:]`           | any lowercase character (e.g., `[a-z]`)                                                                                              |
+| `[:alpha:]`           | any alphabetical character (e.g., `[A-Za-z]`)                                                                                        |
+| `[:alnum:]`           | any alphanumeric character (e.g., `[A-Za-z0-9]`)                                                                                     |
+| `[:digit:]`           | any decimal digit (e.g., `[0-9]`)                                                                                                    |
+| `[:xdigit:]`          | any hexadecimal digit (e.g., `[0-9a-fA-F]`)                                                                                          |
+| `[:punct:]`           | any graphical character excluding "word" chartacters (e.g., ``[-!"#$%&'()*+,./:;<=>?@[\\\]^_`{\|}~]``)                               |
+| `[:blank:]`           | any horizontal whitespace character (e.g., space or tab `\t`)                                                                        |
+| `[:space:]`           | any whitespace character, similar to `\s`\ but also includes vertical tab `\X0B` / `\013`                                            |
+| `[:cntrl:]`           | any control character (ASCII 0-31 & 127), same as `\c`                                                                               |
+| `[:graph:]`           | any character that is graphical, that is, visible. This class consists of all alphanumeric characters and all punctuation characters |
+| `[:print:]`           | all printable characters, which is the set of all graphical characters plus those whitespace characters which are not also controls. |
+| `[:word:]`            | any "word" character (e.g., [A-Za-z0-9_]), same as `\w`                                                                              |
+
+
+| Backreferences ⚠️ | &nbsp;                  |
+| :--------------- | :---------------------- |
+| `$n` or `\n`     | nth capturing group     |
+| ``$` ``          | before matched string   |
+| `$'`             | after matched string    |
+| `$+`             | last matched string     |
+| `$&`             | entire matched string   |
+| `$_`             | entire input string     |
+| `$$`             | literal dollar sign `$` |
+
+⚠️ Not universally supported
+
+## Time Zones
+
+|   P   |   M   |   C   |   E   |
+| :---: | :---: | :---: | :---: |
+|  10   |  11   |  12   |   1   |
+|  11   |  12   |   1   |   2   |
+|  12   |   1   |   2   |   3   |
+|   1   |   2   |   3   |   4   |
+|   2   |   3   |   4   |   5   |
+|   3   |   4   |   5   |   6   |
+|   4   |   5   |   6   |   7   |
+|   5   |   6   |   7   |   8   |
+|   6   |   7   |   8   |   9   |
+|   7   |   8   |   9   |  10   |
+|   8   |   9   |  10   |  11   |
+|   9   |  10   |  11   |  12   |
