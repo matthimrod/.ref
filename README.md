@@ -341,9 +341,9 @@ Metacharacters that must be escaped: `^` `[` `.` `$` `{` `*` `(` `)` `\` `+` `|`
 | Ranges | &nbsp;                                              |
 | :----- | :-------------------------------------------------- |
 | `.`    | any character, typically excluding newline/linefeed |
-| `      | `                                                   | or (e.g., `a | b` matches `a` or `b`) |
+| `|`    | or (e.g., `a | b` matches `a` or `b`)               |
 | `()`   | capturing group (e.g., `Date: (\d{4}-\d{2}-\d{2})`) |
-| `(?:)` | non-capturing/passive group (e.g., `(?:this         | that)`)      |
+| `(?:)` | non-capturing/passive group (e.g., `(?:this|that)`) |
 | `[]`   | characer range                                      |
 | `[^]`  | negative characer range                             |
 
