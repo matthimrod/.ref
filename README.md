@@ -79,7 +79,6 @@ permalink: /
 | :------------------------------------------------------------------------ | :---------------------------------- |
 | Create a new repository with the specified name                           | `git init [project name]`           |
 | Download a working copy of a repository locally                           | `git clone [url]`                   |
-| Initialize Git Flow extensions                                            | `git flow init [-d]`                |
 | List all new or modified files to be committed                            | `git status`                        |
 | List the version history for the current branch                           | `git log [--graph] [--[short]stat]` |
 | List the version history for a given file (including renames)             | `git log --follow [file]`           |
@@ -121,8 +120,6 @@ permalink: /
 | Switch to the specified branch and update the files in the working directory | `git checkout [branch-name]`             |
 | Combine the history from the specified branch into the current branch        | `git merge [branch]`                     |
 | Shows content differences between two branches                               | `git diff [first]...[second]`            |
-| Create a Git Flow feature branch                                             | `git flow feature start [feature-name]`  |
-| Finish a Git Flow feature branch (merge the changes and delete the branch)   | `git flow feature finish [feature-name]` |
 
 | Maintenance                                                 | &nbsp;                                                  |
 | :---------------------------------------------------------- | :------------------------------------------------------ |
@@ -132,6 +129,24 @@ permalink: /
 | Prune local branches that don't exist on the remote anymore | `git remote prune origin` or `git fetch --prune origin` |
 
 Note: Feature branches that originated locally and were merged via a merge request won't be automatically removed, but you can find these with git branch -vv. The remote will say "; gone".
+
+### Git Flow Extension
+
+* [Git Flow](https://github.com/nvie/gitflow)
+* [Using git-flow to automate your git branching workflow](https://jeffkreeftmeijer.com/git-flow/)
+
+| Git Flow Operations                                                          | &nbsp;                                   |
+| :--------------------------------------------------------------------------- | :--------------------------------------- |
+| Initialize Git Flow extensions                                               | `git flow init [-d]`                     |
+| Create a Git Flow feature branch                                             | `git flow feature start [feature-name]`  |
+| Finish a Git Flow feature branch (merge the changes and delete the branch)   | `git flow feature finish [feature-name]` |
+
+| Git Flow Workflows | &nbsp;                                                                                                                                    |
+| :----------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| init               | Initialize a new git repo with support for the branching model.                                                                           |
+| feature            | Used to add new features to the code. Created from develop and merged to develop.                                                         |
+| release            | Used to prepare a release from develop to be merged with master/main. Created from develop and merged to master/main and back to develop. |
+| hotfix             | Used to quickly address necessary changes for the main branch. Created from master/main and merged back to master/main and to develop.    |
 
 ### Git Cleanup
 
@@ -290,17 +305,25 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
 * [bandit](https://bandit.readthedocs.io/en/latest/)
 * [checkov](https://www.checkov.io/)
 
+### Templating
+
+* [liquid template language (shopify.github.io)](https://shopify.github.io/liquid/)
+* [liquid reference](https://shopify.dev/docs/api/liquid)
+
+### Data Frames
+* [pandas](https://pandas.pydata.org/docs/index.html)
+  * [API Reference](https://pandas.pydata.org/docs/reference/index.html)
+* [PySpark](https://spark.apache.org/docs/latest/api/python/index.html)
+  * [API Reference]
+
+
 ### 3rd Party Libraries
 
 * [IPython](https://ipython.readthedocs.io/en/stable/index.html)
   * [Built-in magic commands](https://ipython.readthedocs.io/en/stable/interactive/magics.html)
 * [Jupyter](https://jupyter.org/)
   * [The Ultimate Markdown Guide (for Jupyter Notebook)](https://medium.com/analytics-vidhya/the-ultimate-markdown-guide-for-jupyter-notebook-d5e5abf728fd)
-* [liquid template language (shopify.github.io)](https://shopify.github.io/liquid/)
 * [localstack](https://github.com/localstack/localstack)
-* [Moto](<https://docs.getmoto.org/en/latest/#>)
-* [pandas](https://pandas.pydata.org/docs/index.html)
-  * [API reference](https://pandas.pydata.org/docs/reference/index.html)
 * [requests](https://requests.kennethreitz.org/en/latest/)
 * [SQLAlchemy](https://www.sqlalchemy.org/)
 
