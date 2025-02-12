@@ -292,6 +292,7 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
 * [pip](https://pip.pypa.io/en/stable/)
 * [pipenv](https://pipenv.pypa.io/en/latest/)
 * [pyenv-win](https://github.com/pyenv-win/pyenv-win)
+* [uv](https://github.com/astral-sh/uv)
 
 ### Testing and Code Analysis Tools
 
@@ -314,7 +315,7 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
 * [pandas](https://pandas.pydata.org/docs/index.html)
   * [API Reference](https://pandas.pydata.org/docs/reference/index.html)
 * [PySpark](https://spark.apache.org/docs/latest/api/python/index.html)
-  * [API Reference]
+  * [API Reference](https://spark.apache.org/docs/latest/api/python/reference/index.html)
 
 
 ### 3rd Party Libraries
