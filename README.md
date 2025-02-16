@@ -267,11 +267,9 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
   * [textwrap](https://docs.python.org/3/library/textwrap.html): Text wrapping and filling
   * [unicodedata](https://docs.python.org/3/library/unicodedata.html): Unicode Character Database
   * [stringprep](https://docs.python.org/3/library/stringprep.html): Internet String Preparation
-  * [readline](https://docs.python.org/3/library/readline.html) GNU readline interface
-  * [rlcompleter](https://docs.python.org/3/library/rlcompleter.html): Completion function for GNU readline
-* [Binary Data Services](https://docs.python.org/3/library/binary.html)
+  [Binary Data Services](https://docs.python.org/3/library/binary.html)
   * [struct](https://docs.python.org/3/library/struct.html): Interpret bytes as packed binary data
-  * [codecs](https://docs.python.org/3/library/codecs.html)
+  * [codecs](https://docs.python.org/3/library/codecs.html): Codec registry and base classes
 * [Data Types](https://docs.python.org/3/library/datatypes.html)
   * [datetime](https://docs.python.org/3/library/datetime.html): Basic date and time types
     * [strftime/strptime format codes](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes)
@@ -285,7 +283,7 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
   * [weakref](https://docs.python.org/3/library/weakref.html): Weak references
   * [types](https://docs.python.org/3/library/types.html): Dynamic type creation and names for built-in types
   * [copy](https://docs.python.org/3/library/copy.html): Shallow and deep copy operations
-  * [pprint](https://docs.python.org/3/library/pprint.html: Data pretty printer
+  * [pprint](https://docs.python.org/3/library/pprint.html): Data pretty printer
   * [reprlib](https://docs.python.org/3/library/reprlib.html): Alternate repr() implementation
   * [enum](https://docs.python.org/3/library/enum.html): Support for enumerations
   * [graphlib](https://docs.python.org/3/library/graphlib.html): Functionality to operate with graph-like structures
@@ -311,7 +309,6 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
   * [fnmatch](https://docs.python.org/3/library/fnmatch.html): Unix filename pattern matching
   * [linecache](https://docs.python.org/3/library/linecache.html): Random access to text lines
   * [shutil](https://docs.python.org/3/library/shutil.html): High-level file operations
-
 
   * [base64](https://docs.python.org/3/library/base64.html)
   * [dataclasses](https://docs.python.org/3/library/dataclasses.html)
@@ -342,7 +339,7 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
     * [tuple](https://docs.python.org/3/library/stdtypes.html#tuple): an immutable sequences
     * [range](https://docs.python.org/3/library/stdtypes.html#range): an immutable sequence of numbers
     * [Text Sequence Type](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
-      * [str](https://docs.python.org/3/library/stdtypes.html#str) 
+      * [str](https://docs.python.org/3/library/stdtypes.html#str)
         * [str-specific methods](https://docs.python.org/3/library/stdtypes.html#string-methods)
         * [format string syntax](https://docs.python.org/3/library/string.html#format-string-syntax)
         * [format specification mini-language](https://docs.python.org/3/library/string.html#format-specification-mini-language)
@@ -383,11 +380,11 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
 * [liquid reference](https://shopify.dev/docs/api/liquid)
 
 ### Data Frames
+
 * [pandas](https://pandas.pydata.org/docs/index.html)
   * [API Reference](https://pandas.pydata.org/docs/reference/index.html)
 * [PySpark](https://spark.apache.org/docs/latest/api/python/index.html)
   * [API Reference](https://spark.apache.org/docs/latest/api/python/reference/index.html)
-
 
 ### 3rd Party Libraries
 
