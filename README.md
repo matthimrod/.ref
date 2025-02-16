@@ -257,6 +257,21 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
   * [Falsey Values](https://docs.python.org/3/library/stdtypes.html#truth-value-testing)
   * [Format Strings](https://docs.python.org/3/library/string.html#formatstrings) / [Format Spec Mini-Language](https://docs.python.org/3/library/string.html#format-specification-mini-language)
 * [The Python Standard Library](https://docs.python.org/3/library/index.html)
+* [Built-in Functions](https://docs.python.org/3/library/functions.html)
+* [Built-in Constants](https://docs.python.org/3/library/constants.html)
+* [Text Processing Services](https://docs.python.org/3/library/text.html)
+  * [string](https://docs.python.org/3/library/string.html): Common string operations
+  * [re](https://docs.python.org/3/library/re.html): Regular expression operations
+  * [difflib](https://docs.python.org/3/library/difflib.html): Helpers for computing deltas
+  * [textwrap](https://docs.python.org/3/library/textwrap.html): Text wrapping and filling
+  * [unicodedata](https://docs.python.org/3/library/unicodedata.html): Unicode Character Database
+  * [stringprep](https://docs.python.org/3/library/stringprep.html): Internet String Preparation
+  * [readline](https://docs.python.org/3/library/readline.html) GNU readline interface
+  * [rlcompleter](https://docs.python.org/3/library/rlcompleter.html): Completion function for GNU readline
+* [Binary Data Services](https://docs.python.org/3/library/binary.html)
+  * [struct](https://docs.python.org/3/library/struct.html): Interpret bytes as packed binary data
+  * [https://docs.python.org/3/library/codecs.html](https://docs.python.org/3/library/codecs.html)
+
   * [base64](https://docs.python.org/3/library/base64.html)
   * [collections.abc](https://docs.python.org/3/library/collections.abc.html)
   * [dataclasses](https://docs.python.org/3/library/dataclasses.html)
@@ -276,16 +291,37 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
   * [urllib.parse](https://docs.python.org/3/library/urllib.parse.html)
   * [venv](https://docs.python.org/3/library/venv.html)
 * [Built-in Exceptions](https://docs.python.org/3/library/exceptions.html)
-* [Built-in Functions](https://docs.python.org/3/library/functions.html)
+
 * [Built-in Types](https://docs.python.org/3/library/stdtypes.html)
-  * [bytes](https://docs.python.org/3/library/stdtypes.html#bytes)
-  * [dict](https://docs.python.org/3/library/stdtypes.html#dict)
-  * [list](https://docs.python.org/3/library/stdtypes.html#list)
+  * [boolean operations](https://docs.python.org/3/library/stdtypes.html#boolean-operations-and-or-not)
+  * [comparisons](https://docs.python.org/3/library/stdtypes.html#comparisons)
+  * [Boolean Type](https://docs.python.org/3/library/stdtypes.html#boolean-type-bool)
+    * [bool](https://docs.python.org/3/library/functions.html#bool): boolean
+  * [Numeric Types](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex)
+    * [int](https://docs.python.org/3/library/functions.html#int): integers
+    * [float](https://docs.python.org/3/library/functions.html#float): floating point (typically a double in underlying C)
+    * [complex](https://docs.python.org/3/library/functions.html#complex): real part + imaginary part (&radic;i)
+  * [Iterator Types](https://docs.python.org/3/library/stdtypes.html#iterator-types)
+  * [Sequence Types](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range)
+    * [list](https://docs.python.org/3/library/stdtypes.html#list): mutable sequences typically of homogenous data
+    * [tuple](https://docs.python.org/3/library/stdtypes.html#tuple): an immutable sequences
+    * [range](https://docs.python.org/3/library/stdtypes.html#range): an immutable sequence of numbers
+    * [Text Sequence Type](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
+      * [str](https://docs.python.org/3/library/stdtypes.html#str) 
+        * [str-specific methods](https://docs.python.org/3/library/stdtypes.html#string-methods)
+        * [format string syntax](https://docs.python.org/3/library/string.html#format-string-syntax)
+        * [format specification mini-language](https://docs.python.org/3/library/string.html#format-specification-mini-language)
+        * [printf-style string formatting](https://docs.python.org/3/library/stdtypes.html#printf-style-string-formatting)
+    * [Binary Sequence Types](https://docs.python.org/3/library/stdtypes.html#binary-sequence-types-bytes-bytearray-memoryview)
+      * [bytes](https://docs.python.org/3/library/stdtypes.html#bytes): immutable sequences of single bytes
+      * [bytearray](https://docs.python.org/3/library/stdtypes.html#bytearray): mutable sequences of single bytes
+      * [memoryview](https://docs.python.org/3/library/stdtypes.html#memoryview): objects that allow Python code to access the internal data of an object that supports the [buffer protocol](https://docs.python.org/3/c-api/buffer.html#bufferobjects) without copying.
+* [Set Types](https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset)
   * [set](https://docs.python.org/3/library/stdtypes.html#set)
-  * [str](https://docs.python.org/3/library/stdtypes.html#str) ([methods](https://docs.python.org/3/library/stdtypes.html#string-methods), [%-formatting](https://docs.python.org/3/library/stdtypes.html#printf-style-bytes-formatting))
-  * [tuple](https://docs.python.org/3/library/stdtypes.html#tuple)
-  * [TypedDict](https://docs.python.org/3/library/typing.html#typing.TypedDict)
-  * [Context Manager](https://docs.python.org/3/library/stdtypes.html#context-manager-types)
+  * [frozenset](https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset)
+* [Mapping Types](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict): currently only dict
+  * [dict](https://docs.python.org/3/library/stdtypes.html#dict): maps hashable values to arbitrary objects
+* [Context Manager Types](https://docs.python.org/3/library/stdtypes.html#context-manager-types)
 
 ### Environment/Dependency Management
 
