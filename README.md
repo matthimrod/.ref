@@ -252,6 +252,7 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
 * [Status of Python Versions](https://devguide.python.org/versions/)
 * [Python 3 Documentation (python.org)](https://docs.python.org/3/index.html)
 * [Python Module Index](https://docs.python.org/3/py-modindex.html)
+  * [Modules CLI](https://docs.python.org/3/library/cmdline.html)
 * [The Python Language Reference](https://docs.python.org/3/reference/index.html)
   * [Escape Sequences](https://docs.python.org/3/reference/lexical_analysis.html#escape-sequences)
   * [Falsey Values](https://docs.python.org/3/library/stdtypes.html#truth-value-testing)
@@ -270,12 +271,30 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
   * [rlcompleter](https://docs.python.org/3/library/rlcompleter.html): Completion function for GNU readline
 * [Binary Data Services](https://docs.python.org/3/library/binary.html)
   * [struct](https://docs.python.org/3/library/struct.html): Interpret bytes as packed binary data
-  * [https://docs.python.org/3/library/codecs.html](https://docs.python.org/3/library/codecs.html)
+  * [codecs](https://docs.python.org/3/library/codecs.html)
+* [Data Types](https://docs.python.org/3/library/datatypes.html)
+  * [datetime](https://docs.python.org/3/library/datetime.html): Basic date and time types
+    * [strftime/strptime format codes](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes)
+  * [zoneinfo](https://docs.python.org/3/library/zoneinfo.html): IANA time zone support
+  * [calendar](https://docs.python.org/3/library/calendar.html): General calendar-related functions
+  * [collections](https://docs.python.org/3/library/collections.html): Container datatypes
+  * [collections.abc](https://docs.python.org/3/library/collections.abc.html): Abstract Base Classes for Containers
+  * [heapq](https://docs.python.org/3/library/heapq.html): Heap queue algorithm
+  * [bisect](https://docs.python.org/3/library/bisect.html): Array bisection algorithm
+  * [array](https://docs.python.org/3/library/array.html): Efficient arrays of numeric values
+  * [weakref](https://docs.python.org/3/library/weakref.html): Weak references
+  * [types](https://docs.python.org/3/library/types.html): Dynamic type creation and names for built-in types
+  * [copy](https://docs.python.org/3/library/copy.html): Shallow and deep copy operations
+  * [pprint](https://docs.python.org/3/library/pprint.html: Data pretty printer
+  * [reprlib](https://docs.python.org/3/library/reprlib.html): Alternate repr() implementation
+  * [enum](https://docs.python.org/3/library/enum.html): Support for enumerations
+  * [graphlib](https://docs.python.org/3/library/graphlib.html): Functionality to operate with graph-like structures
+
+
+
 
   * [base64](https://docs.python.org/3/library/base64.html)
-  * [collections.abc](https://docs.python.org/3/library/collections.abc.html)
   * [dataclasses](https://docs.python.org/3/library/dataclasses.html)
-  * [datetime](https://docs.python.org/3/library/datetime.html) ([format codes](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes))
   * [hashlib](https://docs.python.org/3/library/hashlib.html)
   * [json](https://docs.python.org/3/library/json.html)
   * [logging](https://docs.python.org/3/library/logging.html)
