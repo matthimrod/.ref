@@ -289,8 +289,28 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
   * [reprlib](https://docs.python.org/3/library/reprlib.html): Alternate repr() implementation
   * [enum](https://docs.python.org/3/library/enum.html): Support for enumerations
   * [graphlib](https://docs.python.org/3/library/graphlib.html): Functionality to operate with graph-like structures
-
-
+* [Numeric and Mathematical Modules](https://docs.python.org/3/library/numeric.html)
+  * [numbers](https://docs.python.org/3/library/numbers.html): Numeric abstract base classes
+  * [math](https://docs.python.org/3/library/math.html): Mathematical functions
+  * [cmath](https://docs.python.org/3/library/cmath.html): Mathematical functions for complex numbers
+  * [decimal](https://docs.python.org/3/library/decimal.html): Decimal fixed-point and floating-point arithmetic
+  * [fractions](https://docs.python.org/3/library/fractions.html): Rational numbers
+  * [random](https://docs.python.org/3/library/random.html): Generate pseudo-random numbers
+  * [statistics](https://docs.python.org/3/library/statistics.html): Mathematical statistics functions
+* [Functional Programming Modules](https://docs.python.org/3/library/functional.html)
+  * [itertools](https://docs.python.org/3/library/itertools.html): Functions creating iterators for efficient looping
+  * [functools](https://docs.python.org/3/library/functools.html): Higher-order functions and operations on callable objects
+  * [operator](https://docs.python.org/3/library/operator.html): Standard operators as functions
+* [File and Directory Access](https://docs.python.org/3/library/filesys.html)
+  * [pathlib](https://docs.python.org/3/library/pathlib.html): Object-oriented filesystem paths
+  * [os.path](https://docs.python.org/3/library/os.path.html): Common pathname manipulations
+  * [stat](https://docs.python.org/3/library/stat.html): Interpreting stat() results
+  * [filecmp](https://docs.python.org/3/library/filecmp.html): File and Directory Comparisons
+  * [tempfile](https://docs.python.org/3/library/tempfile.html): Generate temporary files and directories
+  * [glob](https://docs.python.org/3/library/glob.html): Unix style pathname pattern expansion
+  * [fnmatch](https://docs.python.org/3/library/fnmatch.html): Unix filename pattern matching
+  * [linecache](https://docs.python.org/3/library/linecache.html): Random access to text lines
+  * [shutil](https://docs.python.org/3/library/shutil.html): High-level file operations
 
 
   * [base64](https://docs.python.org/3/library/base64.html)
@@ -300,11 +320,7 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
   * [logging](https://docs.python.org/3/library/logging.html)
   * [mimetypes](https://docs.python.org/3/library/mimetypes.html)
   * [os](https://docs.python.org/3/library/os.html)
-  * [os.path](https://docs.python.org/3/library/os.path.html)
-  * [pathlib](https://docs.python.org/3/library/pathlib.html)
-  * [re](https://docs.python.org/3/library/re.html)
   * [sqlite3](https://docs.python.org/3/library/sqlite3.html)
-  * [string](https://docs.python.org/3/library/string.html)
   * [sys](https://docs.python.org/3/library/sys.html)
   * [typing](https://docs.python.org/3/library/typing.html)
   * [urllib.parse](https://docs.python.org/3/library/urllib.parse.html)
