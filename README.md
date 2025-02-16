@@ -523,9 +523,6 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
 * [importlib.metadata](https://docs.python.org/3/library/importlib.metadata.html): Accessing package metadata
 * [The initialization of the sys.path module search path](https://docs.python.org/3/library/sys_path_init.html)
 
-</td>
-</tr>
-</table>
 
 #### [Python Language Services](https://docs.python.org/3/library/language.html)
 
