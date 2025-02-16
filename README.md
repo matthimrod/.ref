@@ -268,10 +268,6 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
 
 #### [Built-in Types](https://docs.python.org/3/library/stdtypes.html)
 
-<table>
-<tr style="width: 50%; valign: top">
-<td>
-
 * [boolean operations](https://docs.python.org/3/library/stdtypes.html#boolean-operations-and-or-not)
 * [comparisons](https://docs.python.org/3/library/stdtypes.html#comparisons)
 * [Boolean Type](https://docs.python.org/3/library/stdtypes.html#boolean-type-bool)
@@ -281,16 +277,6 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
   * [float](https://docs.python.org/3/library/functions.html#float): floating point (typically a double in underlying C)
   * [complex](https://docs.python.org/3/library/functions.html#complex): real part + imaginary part (&radic;i)
 * [Iterator Types](https://docs.python.org/3/library/stdtypes.html#iterator-types)
-* [Set Types](https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset)
-  * [set](https://docs.python.org/3/library/stdtypes.html#set)
-  * [frozenset](https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset)
-* [Mapping Types](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict): currently only dict
-  * [dict](https://docs.python.org/3/library/stdtypes.html#dict): maps hashable values to arbitrary objects
-* [Context Manager Types](https://docs.python.org/3/library/stdtypes.html#context-manager-types)
-
-</td>
-<td style="width: 50%; valign: top">
-
 * [Sequence Types](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range)
   * [list](https://docs.python.org/3/library/stdtypes.html#list): mutable sequences typically of homogenous data
   * [tuple](https://docs.python.org/3/library/stdtypes.html#tuple): an immutable sequences
@@ -305,14 +291,12 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
     * [bytes](https://docs.python.org/3/library/stdtypes.html#bytes): immutable sequences of single bytes
     * [bytearray](https://docs.python.org/3/library/stdtypes.html#bytearray): mutable sequences of single bytes
     * [memoryview](https://docs.python.org/3/library/stdtypes.html#memoryview): objects that allow Python code to access the internal data of an object that supports the [buffer protocol](https://docs.python.org/3/c-api/buffer.html#bufferobjects) without copying.
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr style="width: 50%; valign: top">
-<td>
+* [Set Types](https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset)
+  * [set](https://docs.python.org/3/library/stdtypes.html#set)
+  * [frozenset](https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset)
+* [Mapping Types](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict): currently only dict
+  * [dict](https://docs.python.org/3/library/stdtypes.html#dict): maps hashable values to arbitrary objects
+* [Context Manager Types](https://docs.python.org/3/library/stdtypes.html#context-manager-types)
 
 #### [Text Processing Services](https://docs.python.org/3/library/text.html)
 
@@ -423,9 +407,6 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
 * [optparse](https://docs.python.org/3/library/optparse.html): Parser for command line options
 * [getpass](https://docs.python.org/3/library/getpass.html): Portable password input
 * [fileinput](https://docs.python.org/3/library/fileinput.html): Iterate over lines from multiple input streams
-
-</td>
-<td style="width: 50%; valign: top">
 
 #### [Concurrent Execution](https://docs.python.org/3/library/concurrency.html)
 
@@ -676,7 +657,6 @@ Metacharacters that must be escaped: `^` `[` `.` `$` `{` `*` `(` `)` `\` `+` `|`
 | `[:graph:]`           | any character that is graphical, that is, visible. This class consists of all alphanumeric characters and all punctuation characters |
 | `[:print:]`           | all printable characters, which is the set of all graphical characters plus those whitespace characters which are not also controls. |
 | `[:word:]`            | any "word" character (e.g., [A-Za-z0-9_]), same as `\w`                                                                              |
-
 
 | Backreferences ⚠️ | &nbsp;                  |
 | :--------------- | :---------------------- |
