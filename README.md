@@ -6,6 +6,7 @@ permalink: /
 * [Java](#java)
 * [Git](#git)
 * [HL7](#hl7)
+* [JavaScript](#javascript)
 * [Linux](#linux)
 * [Python](#python)
 * [Regular Expressions](#regular-expressions)
@@ -154,6 +155,10 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
 
 ## HL7
 
+* [Mirth Connect Releases](https://github.com/nextgenhealthcare/connect/releases)
+* [Mirth Connect User Guide](https://downloads.mirthcorp.com/connect-user-guide/latest/mirth-connect-user-guide.pdf)
+* [Mirth Connect Administrator Launcher Downloads](https://mirthdownloadarchive.s3.amazonaws.com/mcal-downloads.html)
+
 ### Escape Sequences
 
 | Sequence | Replacement | &nbsp;                                          |
@@ -166,6 +171,19 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
 |  \\.br\  |     \n      | Carriage Return (nonstandard?)                  |
 |  \X0D\   |     \n      | Carriage Return (Using \x##\ + Hex Character #) |
 |  \X0A\   |     \r      | Line Feed (Using \x##\ + Hex Character #)       |
+
+## JavaScript
+
+* [JavaScript - Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+* [JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+
+#### Fundamental Objects
+
+* [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+* [Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
+* [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+* [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
 
 ## Linux
 
