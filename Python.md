@@ -403,6 +403,7 @@ def worker(payload: Any, *args, **kwargs) -> Any:
 
     # use args/kwargs like a normal funciton
     # do something to populate work_result
+    logger.info("Info about this thread's work: %s", something)
 
     return work_result
 
@@ -416,7 +417,7 @@ def main():
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_THREADS) as executor:
         result_futures = []
-        for payload in paylaods:
+        for payload in payloads:
             # Submit the payload to the executor and append the resulting "future" to a list.
             result_futures.append(executor.submit(worker, payload, *args, **kwargs))
             
