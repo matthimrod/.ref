@@ -347,6 +347,9 @@ permalink: /python/
 
 ### Multithreaded Processor
 
+* Creates the worker threads as [Thread](https://docs.python.org/3/library/threading.html#thread-objects) objects.
+* Uses [Queue](https://docs.python.org/3/library/queue.html#module-queue) objects to get data into and out of the worker threads -- a work queue for the inputs and a result queue for the outputs.
+
 ```python
 import logging
 import threading
@@ -392,6 +395,11 @@ def main():
 ```
 
 ### Multithreaded Processor using ThreadPoolExecutor
+
+* The worker function is written like a normal function with normal inputs and returning its result.
+* Uses [concurrent.futures.ThreadPoolExecutor](https://docs.python.org/3/library/concurrent.futures.html#threadpoolexecutor) to handle creating the threads, getting parameters to the function, and getting results back to the caller.
+* Submitting a payload returns a [Future](https://docs.python.org/3/library/concurrent.futures.html#future-objects) object which is similar to a JavaScript Promise.
+* Iterate through the collection of future objects with [concurrent.futures.as_completed](https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.as_completed) to get the objects that are completed as they complete.
 
 ```python
 import concurrent.futures
