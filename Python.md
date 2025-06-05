@@ -1,3 +1,8 @@
+---
+title: Python
+permalink: /python/
+---
+
 # Python
 
 ## Guides
@@ -352,6 +357,7 @@ def worker(work_queue: Queue[Any], result_queue: Queue[Any]) -> None:
     while not work_queue.empty():
         work_payload = work_queue.get()
 
+        # all incoming data needs to be in queue object
         # do something to populate work_result
         logger.info("Info about this thread's work: %s", something)
 
@@ -392,7 +398,7 @@ import concurrent.futures
 import logging
 
 
-def worker(*args, **kwargs) -> Any:
+def worker(payload: Any, *args, **kwargs) -> Any:
     logger = logging.getLogger(__name__).getChild(f'thread {threading.current_thread()}')
 
     # use args/kwargs like a normal funciton
