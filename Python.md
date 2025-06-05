@@ -424,3 +424,34 @@ def main():
         for future in concurrent.futures.as_completed(result_futures):
             results.append(future.result())
 ```
+
+### Requests Session with Larger Thread Pool
+
+```python
+from requests import Session
+from requests.adapters import HTTPAdapter
+
+MAX_THREADS = 20
+MAX_POOL_SIZE = 2 * MAX_THREADS
+# The pool size should be double the thread count so that each thread can get a new connection
+
+with Session() as session:
+    adapter = HTTPAdapter(pool_connections=MAX_POOL_SIZE, pool_maxsize=MAX_POOL_SIZE)
+    session.mount("https://", adapter)
+    session.mount("http://", adapter)
+
+    # ...
+```
+
+### S3 Client with Larger Thread Pool
+
+```python
+from boto3 import Session
+from botocore.config import Config
+
+MAX_THREADS = 20
+MAX_POOL_SIZE = 2 * MAX_THREADS
+# The pool size should be double the thread count so that each thread can get a new connection
+
+client = Session().client('s3', config=Config(max_pool_connections=MAX_POOL_SIZE))
+```
