@@ -345,10 +345,65 @@ permalink: /python/
 
 ## Sample Patterns
 
+### Command-line Argument Parsing / Runnable Executable
+
+* Uses [argparse](https://docs.python.org/3/library/argparse.html)
+* Runner function for use in pyproject.toml [project.scripts] section
+
+#### pyproject.toml
+
+```toml
+[project.scripts]
+main = "main:run"
+```
+
+#### main.py
+
+```python
+class MainKwargs[TypedDict]:
+  config_file: str
+  output_path: str
+  loglevel: str
+  filter: list[str]
+
+
+def main(**kwargs: Unpack[MainKwargs]):
+  ...
+
+
+def run() -> None:
+    """
+    Runner Function
+    """
+    parser = argparse.ArgumentParser(prog='ProgramName',
+                                     description='What the program does',
+                                     epilog='Text at the bottom of help')
+    parser.add_argument('-c', '--config_file', required=True, help="Config file path")
+    parser.add_argument('-o', '--output_path', default=f'output-{datetime.now():%Y%m%d%H%M%S}.txt'
+                        help="Output directory for the generated files")
+    parser.add_argument('-l', '--loglevel',
+                        help='Specifies the level of verbosity for logging.',
+                        choices=['CRITICAL', 'ERROR', 'WARNING', 'INFO', 'DEBUG', 'NOTSET'],
+                        default='INFO')
+    parser.add_argument('-f', '--filter', required=False,
+                        help='Filter the sources to run against.', nargs='*', default=[])
+    args = parser.parse_args()
+
+    main(config_file=args.config_file,
+         output_path=args.output_path,
+         source_path=args.loglevel,
+         filter=args.filter)
+
+
+if __name__ == '__main__':
+    run()
+```
+
 ### Multithreaded Processor
 
 * Creates the worker threads as [Thread](https://docs.python.org/3/library/threading.html#thread-objects) objects.
 * Uses [Queue](https://docs.python.org/3/library/queue.html#module-queue) objects to get data into and out of the worker threads -- a work queue for the inputs and a result queue for the outputs.
+* **Note:** Boto3 Sessions are [not threadsafe](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/session.html#multithreading-or-multiprocessing-with-sessions)!
 
 ```python
 import logging
@@ -400,6 +455,7 @@ def main():
 * Uses [concurrent.futures.ThreadPoolExecutor](https://docs.python.org/3/library/concurrent.futures.html#threadpoolexecutor) to handle creating the threads, getting parameters to the function, and getting results back to the caller.
 * Submitting a payload returns a [Future](https://docs.python.org/3/library/concurrent.futures.html#future-objects) object which is similar to a JavaScript Promise.
 * Iterate through the collection of future objects with [concurrent.futures.as_completed](https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.as_completed) to get the objects that are completed as they complete.
+* **Note:** Boto3 Sessions are [not threadsafe](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/session.html#multithreading-or-multiprocessing-with-sessions)!
 
 ```python
 import concurrent.futures
