@@ -61,6 +61,27 @@ permalink: /
 | [STS (Secure Token Service)](https://aws.amazon.com/iam/)               | [Docs (IAM)](https://docs.aws.amazon.com/iam/)          | [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html)            | [Moto](https://docs.getmoto.org/en/latest/docs/services/sts.html)            | [CLI](https://docs.aws.amazon.com/cli/latest/reference/sts/)            | &nbsp;                                                                                   | &nbsp;                                                                                       |
 | [X-Ray](https://aws.amazon.com/xray/)                                   | [Docs](https://docs.aws.amazon.com/xray/)               | [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html)           |                                                                              |                                                                         | [CDK](https://docs.aws.amazon.com/cdk/api/v2/python/aws_cdk.aws_xray.html)               | [CF](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_XRay.html)           |
 
+## Certificates
+
+* [Certbot](https://certbot.eff.org/)
+* [Let's Encrypt](https://letsencrypt.org/)
+
+### Using Certbot with unexposed domains
+
+cloudflare.ini:
+
+```text
+# Cloudflare API token used by Certbot
+dns_cloudflare_api_token = be967a3beb4d7048d57f1b3ddc51d52d
+```
+
+commands:
+
+```bash
+apt install certbot python-is-python3 python3-certbot-dns-cloudflare
+certbot certonly --dns-cloudflare --dns-cloudflare-credentials /path/to/cloudflare.ini -d domain.name.com -n
+```
+
 ## Java
 
 * [Amazon Corretto JDK](https://aws.amazon.com/corretto/)
