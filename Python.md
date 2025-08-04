@@ -59,6 +59,18 @@ if __name__ == '__main__':
     run()
 ```
 
+### Test for List of Elements in a List
+
+* Uses a generator expression inside the `any()` or `all()` functions.
+
+```python
+any(x in test_list for x in list_of_values)
+```
+
+```python
+all(x in test_list for x in list_of_values)
+```
+
 ### Multithreaded Processor
 
 * Creates the worker threads as [Thread](https://docs.python.org/3/library/threading.html#thread-objects) objects.
