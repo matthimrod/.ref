@@ -157,7 +157,8 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
 ## HL7
 
 * [Mirth Connect Releases](https://github.com/nextgenhealthcare/connect/releases)
-* [Mirth Connect User Guide](https://downloads.mirthcorp.com/connect-user-guide/latest/mirth-connect-user-guide.pdf)
+* [Mirth Connect User Guide PDF](https://downloads.mirthcorp.com/connect-user-guide/latest/mirth-connect-user-guide.pdf)
+* [Mirth Connect User Guide PDF](https://docs.nextgen.com/en-US/mirth%C2%AE-connect-by-nextgen-healthcare-user-guide-3231169)
 * [Mirth Connect Administrator Launcher Downloads](https://mirthdownloadarchive.s3.amazonaws.com/mcal-downloads.html)
 
 ### Escape Sequences
