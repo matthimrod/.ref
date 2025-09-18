@@ -589,6 +589,8 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
 
 ### 3rd Party Libraries
 
+* [pillow - Python Image Library](https://hugovk-pillow.readthedocs.io/en/stable/index.html)
+  * [Image Formats](https://hugovk-pillow.readthedocs.io/en/stable/handbook/image-file-formats.html)
 * [IPython](https://ipython.readthedocs.io/en/stable/index.html)
   * [Built-in magic commands](https://ipython.readthedocs.io/en/stable/interactive/magics.html)
 * [Jupyter](https://jupyter.org/)
