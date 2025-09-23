@@ -292,6 +292,8 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
 
 #### [Built-in Types](https://docs.python.org/3/library/stdtypes.html)
 
+[Special Method Names](https://docs.python.org/3/reference/datamodel.html#specialnames)
+
 * [boolean operations](https://docs.python.org/3/library/stdtypes.html#boolean-operations-and-or-not)
 * [comparisons](https://docs.python.org/3/library/stdtypes.html#comparisons)
 * [Boolean Type](https://docs.python.org/3/library/stdtypes.html#boolean-type-bool)
