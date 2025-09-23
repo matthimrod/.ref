@@ -374,6 +374,8 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
 #### [File and Directory Access](https://docs.python.org/3/library/filesys.html)
 
 * [pathlib](https://docs.python.org/3/library/pathlib.html): Object-oriented filesystem paths
+  * [Why you should be using pathlib](https://treyhunner.com/2018/12/why-you-should-be-using-pathlib/)
+  * [No really, pathlib is great](https://treyhunner.com/2019/01/no-really-pathlib-is-great/)
 * [os.path](https://docs.python.org/3/library/os.path.html): Common pathname manipulations
 * [stat](https://docs.python.org/3/library/stat.html): Interpreting stat() results
 * [filecmp](https://docs.python.org/3/library/filecmp.html): File and Directory Comparisons
