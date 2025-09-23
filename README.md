@@ -293,6 +293,7 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
 #### [Built-in Types](https://docs.python.org/3/library/stdtypes.html)
 
 [Special Method Names](https://docs.python.org/3/reference/datamodel.html#specialnames)
+[Dunder Method Cheat Sheet](https://www.pythonmorsels.com/every-dunder-method/#cheat-sheet)
 
 * [boolean operations](https://docs.python.org/3/library/stdtypes.html#boolean-operations-and-or-not)
 * [comparisons](https://docs.python.org/3/library/stdtypes.html#comparisons)
