@@ -567,16 +567,32 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
 * [pip](https://pip.pypa.io/en/stable/)
 * [pipenv](https://pipenv.pypa.io/en/latest/)
 * [pyenv-win](https://github.com/pyenv-win/pyenv-win)
-* [uv](https://github.com/astral-sh/uv)
+* [uv](https://docs.astral.sh/uv/)
+  * [GitHub](https://github.com/astral-sh/uv)
+
+#### uv
+
+Installing
+
+```shell
+curl -LsSf https://astral.sh/uv/install.sh | sh
+wget -qO- https://astral.sh/uv/install.sh | sh
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+pip install uv
+winget install --id=astral-sh.uv  -e
+```
 
 ### Testing and Code Analysis Tools
 
+* [assertpy](https://github.com/assertpy/assertpy)
 * [pytest](https://docs.pytest.org/)
 * [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/index.html)
-* [assertpy](https://github.com/assertpy/assertpy)
 * [mypy](https://mypy.readthedocs.io/en/stable/index.html)
+* [ruff](https://docs.astral.sh/ruff/)
+  * [Rules](https://docs.astral.sh/ruff/rules/)
 * [pylint](https://pylint.readthedocs.io/en/latest/)
 * [pyflakes](https://github.com/PyCQA/pyflakes)
+* [flake8](https://pypi.org/project/flake8/)
 * [pycodestyle](https://pycodestyle.pycqa.org/en/latest/)
 * [bandit](https://bandit.readthedocs.io/en/latest/)
 * [checkov](https://www.checkov.io/)
