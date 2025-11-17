@@ -13,6 +13,14 @@ permalink: /
 * [SSL/Certificates](#ssl-certificates)
 * [Time Zones](#time-zones)
 
+## Misc
+
+* [Edit CLI Editor](https://learn.microsoft.com/en-us/windows/edit/)
+* [Windows Package Manager (winget)](https://learn.microsoft.com/en-us/windows/package-manager/)
+* [Windows PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/)
+* [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/)
+* [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/)
+
 ## AWS
 
 * [AWS CDK Reference Documentation](https://docs.aws.amazon.com/cdk/api/v2/)
