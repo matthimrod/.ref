@@ -6,6 +6,7 @@ permalink: /
 * [Java](#java)
 * [Git](#git)
 * [HL7 / Mirth Connect](#hl7-mirth-connect)
+* [Java](#java)
 * [JavaScript](#javascript)
 * [Linux](#linux)
 * [Python](#python)
@@ -15,12 +16,21 @@ permalink: /
 
 ## Misc
 
+* [Google Technical Writing Courses](https://developers.google.com/tech-writing/)
 * [Explain Shell](https://explainshell.com/)
+* [JMESPath Specification](https://jmespath.org/specification.html)
 * [Edit CLI Editor](https://learn.microsoft.com/en-us/windows/edit/)
 * [Windows Package Manager (winget)](https://learn.microsoft.com/en-us/windows/package-manager/)
 * [Windows PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/)
 * [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/)
 * [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/)
+
+### Data Stuff
+
+* [Mockaroo](https://www.mockaroo.com)
+* [Synthea](https://synthea.mitre.org)
+* [The Book of OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/) Observational Health Data Sciences and Informatics
+* [ODHSI OMOP CDM](https://ohdsi.github.io/CommonDataModel/) Observational Medical Outcomes Partnership (OMOP) Common Data Model (CDM)
 
 ## AWS
 
@@ -34,6 +44,15 @@ permalink: /
 * [Moto: Mock AWS Services](https://docs.getmoto.org/en/latest/#)
 * [Moto - Configuratrion Options](https://docs.getmoto.org/en/latest/docs/configuration/index.html)
 * [Moto - Implemented Services](https://docs.getmoto.org/en/latest/docs/services/index.html)
+* [LocalStack](https://github.com/localstack/localstack)
+  * [Local Development with AWS on LocalStack](https://reflectoring.io/aws-localstack/)
+* [Serverless Land](https://serverlessland.com/)
+
+### Powertools for AWS Lambda (Python)
+
+* [Documentation](https://docs.powertools.aws.dev/lambda/python/latest/)
+* [API Reference](https://docs.powertools.aws.dev/lambda/python/latest/api/)
+* [GitHub repository](https://github.com/aws-powertools/powertools-lambda-python)
 
 | Service                                                                 | &nbsp;                                                  | &nbsp;                                                                                                  | &nbsp;                                                                       | &nbsp;                                                                  | &nbsp;                                                                                   | &nbsp;                                                                                       |
 | :---------------------------------------------------------------------- | :------------------------------------------------------ | :------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------- | :---------------------------------------------------------------------- | :--------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------- |
@@ -73,19 +92,6 @@ permalink: /
 | [SSM (Simple Systems Manager)](https://aws.amazon.com/systems-manager/) | [Docs](https://docs.aws.amazon.com/systems-manager/)    | [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html)            | [Moto](https://docs.getmoto.org/en/latest/docs/services/ssm.html)            | [CLI](https://docs.aws.amazon.com/cli/latest/reference/ssm/)            | [CDK](https://docs.aws.amazon.com/cdk/api/v2/python/aws_cdk.aws_ssm.html)                | [CF](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_SSM.html)            |
 | [STS (Secure Token Service)](https://aws.amazon.com/iam/)               | [Docs (IAM)](https://docs.aws.amazon.com/iam/)          | [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html)            | [Moto](https://docs.getmoto.org/en/latest/docs/services/sts.html)            | [CLI](https://docs.aws.amazon.com/cli/latest/reference/sts/)            | &nbsp;                                                                                   | &nbsp;                                                                                       |
 | [X-Ray](https://aws.amazon.com/xray/)                                   | [Docs](https://docs.aws.amazon.com/xray/)               | [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html)           |                                                                              |                                                                         | [CDK](https://docs.aws.amazon.com/cdk/api/v2/python/aws_cdk.aws_xray.html)               | [CF](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_XRay.html)           |
-
-## Java
-
-* [Amazon Corretto JDK](https://aws.amazon.com/corretto/)
-* [OpenJDK](https://openjdk.org/) ([Download](https://openjdk.org/projects/jdk/))
-* [Apache Maven](https://maven.apache.org/) ([Download](https://maven.apache.org/download.cgi))
-* [Spring](https://spring.io/) ([Initializr](https://start.spring.io/))
-* [Maven Repository](https://mvnrepository.com/)
-
-### Tools
-
-* [JUnit 5](https://junit.org/junit5/)
-* [Project Lombok](https://projectlombok.org/)
 
 ## Git
 
@@ -190,6 +196,23 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
 |  \\.br\  |     \n      | Carriage Return (nonstandard?)                  |
 |  \X0D\   |     \n      | Carriage Return (Using \x##\ + Hex Character #) |
 |  \X0A\   |     \r      | Line Feed (Using \x##\ + Hex Character #)       |
+
+
+## Java
+
+* [Amazon Corretto JDK](https://aws.amazon.com/corretto/)
+* [OpenJDK](https://openjdk.org/) ([Download](https://openjdk.org/projects/jdk/))
+* [Apache Maven](https://maven.apache.org/) ([Download](https://maven.apache.org/download.cgi))
+* [Spring](https://spring.io/) 
+  * [Initializr](https://start.spring.io/)
+  * [Initializr with Java 21 and Apache Camel](https://start.spring.io/#!type=maven-project&language=java&packaging=jar&jvmVersion=21&dependencies=camel)
+* [Maven Repository](https://mvnrepository.com/)
+
+### Tools
+
+* [Dependency-Check-Maven](https://dependency-check.github.io/DependencyCheck/dependency-check-maven/index.html)
+* [JUnit 5](https://junit.org/junit5/)
+* [Project Lombok](https://projectlombok.org/)
 
 ## JavaScript
 
