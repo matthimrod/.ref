@@ -5,7 +5,8 @@ permalink: /
 * [AWS](#aws)
 * [Java](#java)
 * [Git](#git)
-* [HL7](#hl7)
+* [HL7 / Mirth Connect](#hl7-mirth-connect)
+* [Java](#java)
 * [JavaScript](#javascript)
 * [Linux](#linux)
 * [Python](#python)
@@ -15,14 +16,25 @@ permalink: /
 
 ## Misc
 
+* [Google Technical Writing Courses](https://developers.google.com/tech-writing/)
+* [Explain Shell](https://explainshell.com/)
+* [JMESPath Specification](https://jmespath.org/specification.html)
 * [Edit CLI Editor](https://learn.microsoft.com/en-us/windows/edit/)
 * [Windows Package Manager (winget)](https://learn.microsoft.com/en-us/windows/package-manager/)
 * [Windows PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/)
 * [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/)
 * [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/)
 
+### Data Stuff
+
+* [Mockaroo](https://www.mockaroo.com)
+* [Synthea](https://synthea.mitre.org)
+* [The Book of OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/) Observational Health Data Sciences and Informatics
+* [ODHSI OMOP CDM](https://ohdsi.github.io/CommonDataModel/) Observational Medical Outcomes Partnership (OMOP) Common Data Model (CDM)
+
 ## AWS
 
+* [Amazon Web Services In Plain English](https://expeditedsecurity.com/aws-in-plain-english/)
 * [AWS CDK Reference Documentation](https://docs.aws.amazon.com/cdk/api/v2/)
 * [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/)
 * [AWS CDK Python Reference](https://docs.aws.amazon.com/cdk/api/v2/python/)
@@ -32,6 +44,15 @@ permalink: /
 * [Moto: Mock AWS Services](https://docs.getmoto.org/en/latest/#)
 * [Moto - Configuratrion Options](https://docs.getmoto.org/en/latest/docs/configuration/index.html)
 * [Moto - Implemented Services](https://docs.getmoto.org/en/latest/docs/services/index.html)
+* [LocalStack](https://github.com/localstack/localstack)
+  * [Local Development with AWS on LocalStack](https://reflectoring.io/aws-localstack/)
+* [Serverless Land](https://serverlessland.com/)
+
+### Powertools for AWS Lambda (Python)
+
+* [Documentation](https://docs.powertools.aws.dev/lambda/python/latest/)
+* [API Reference](https://docs.powertools.aws.dev/lambda/python/latest/api/)
+* [GitHub repository](https://github.com/aws-powertools/powertools-lambda-python)
 
 | Service                                                                 | &nbsp;                                                  | &nbsp;                                                                                                  | &nbsp;                                                                       | &nbsp;                                                                  | &nbsp;                                                                                   | &nbsp;                                                                                       |
 | :---------------------------------------------------------------------- | :------------------------------------------------------ | :------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------- | :---------------------------------------------------------------------- | :--------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------- |
@@ -71,19 +92,6 @@ permalink: /
 | [SSM (Simple Systems Manager)](https://aws.amazon.com/systems-manager/) | [Docs](https://docs.aws.amazon.com/systems-manager/)    | [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html)            | [Moto](https://docs.getmoto.org/en/latest/docs/services/ssm.html)            | [CLI](https://docs.aws.amazon.com/cli/latest/reference/ssm/)            | [CDK](https://docs.aws.amazon.com/cdk/api/v2/python/aws_cdk.aws_ssm.html)                | [CF](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_SSM.html)            |
 | [STS (Secure Token Service)](https://aws.amazon.com/iam/)               | [Docs (IAM)](https://docs.aws.amazon.com/iam/)          | [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html)            | [Moto](https://docs.getmoto.org/en/latest/docs/services/sts.html)            | [CLI](https://docs.aws.amazon.com/cli/latest/reference/sts/)            | &nbsp;                                                                                   | &nbsp;                                                                                       |
 | [X-Ray](https://aws.amazon.com/xray/)                                   | [Docs](https://docs.aws.amazon.com/xray/)               | [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html)           |                                                                              |                                                                         | [CDK](https://docs.aws.amazon.com/cdk/api/v2/python/aws_cdk.aws_xray.html)               | [CF](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_XRay.html)           |
-
-## Java
-
-* [Amazon Corretto JDK](https://aws.amazon.com/corretto/)
-* [OpenJDK](https://openjdk.org/) ([Download](https://openjdk.org/projects/jdk/))
-* [Apache Maven](https://maven.apache.org/) ([Download](https://maven.apache.org/download.cgi))
-* [Spring](https://spring.io/) ([Initializr](https://start.spring.io/))
-* [Maven Repository](https://mvnrepository.com/)
-
-### Tools
-
-* [JUnit 5](https://junit.org/junit5/)
-* [Project Lombok](https://projectlombok.org/)
 
 ## Git
 
@@ -164,12 +172,17 @@ Note: Feature branches that originated locally and were merged via a merge reque
 
 Git Cleanup runs a number of housekeeping tasks within the current repository, such as compressing file revisions (to reduce disk space and increase performance), removing unreachable objects which may have been created from prior invocations of git add, packing refs, pruning reflog, rerere metadata or stale working trees. May also update ancillary indexes such as the commit-graph.
 
-## HL7
+## HL7 Mirth Connect
 
+* [Caristix HL7 V2 Reference](https://hl7-definition.caristix.com/v2/)
+* [HAPI FHIR](https://hapifhir.io)
+* [HL7 International](www.hl7.org/)
+* [HL7 FHIR](https://hl7.org/fhir/)
 * [Mirth Connect Releases](https://github.com/nextgenhealthcare/connect/releases)
 * [Mirth Connect User Guide PDF](https://downloads.mirthcorp.com/connect-user-guide/latest/mirth-connect-user-guide.pdf)
 * [Mirth Connect User Guide PDF](https://docs.nextgen.com/en-US/mirth%C2%AE-connect-by-nextgen-healthcare-user-guide-3231169)
 * [Mirth Connect Administrator Launcher Downloads](https://mirthdownloadarchive.s3.amazonaws.com/mcal-downloads.html)
+* [Rhino](https://rhino.github.io/) (the JS engine that Mirth Connect uses.)
 
 ### Escape Sequences
 
@@ -184,11 +197,29 @@ Git Cleanup runs a number of housekeeping tasks within the current repository, s
 |  \X0D\   |     \n      | Carriage Return (Using \x##\ + Hex Character #) |
 |  \X0A\   |     \r      | Line Feed (Using \x##\ + Hex Character #)       |
 
+
+## Java
+
+* [Amazon Corretto JDK](https://aws.amazon.com/corretto/)
+* [OpenJDK](https://openjdk.org/) ([Download](https://openjdk.org/projects/jdk/))
+* [Apache Maven](https://maven.apache.org/) ([Download](https://maven.apache.org/download.cgi))
+* [Spring](https://spring.io/) 
+  * [Initializr](https://start.spring.io/)
+  * [Initializr with Java 21 and Apache Camel](https://start.spring.io/#!type=maven-project&language=java&packaging=jar&jvmVersion=21&dependencies=camel)
+* [Maven Repository](https://mvnrepository.com/)
+
+### Tools
+
+* [Dependency-Check-Maven](https://dependency-check.github.io/DependencyCheck/dependency-check-maven/index.html)
+* [JUnit 5](https://junit.org/junit5/)
+* [Project Lombok](https://projectlombok.org/)
+
 ## JavaScript
 
 * [JavaScript - Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 * [JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+* [Rhino](https://rhino.github.io/) (the JS engine that Mirth Connect uses.)
 
 #### Fundamental Objects
 
@@ -593,8 +624,22 @@ winget install --id=astral-sh.uv  -e
 ### Testing and Code Analysis Tools
 
 * [assertpy](https://github.com/assertpy/assertpy)
+  * [strings](https://github.com/assertpy/assertpy#strings)
+  * [numbers](https://github.com/assertpy/assertpy#numbers)
+  * [lists](https://github.com/assertpy/assertpy#lists)
+  * [tuples](https://github.com/assertpy/assertpy#tuples)
+  * [dicts](https://github.com/assertpy/assertpy#dicts)
+  * [sets](https://github.com/assertpy/assertpy#sets)
+  * [booleans](https://github.com/assertpy/assertpy#booleans)
+  * [none](https://github.com/assertpy/assertpy#none)
+  * [dates](https://github.com/assertpy/assertpy#dates)
+  * [files](https://github.com/assertpy/assertpy#files)
+  * [objects](https://github.com/assertpy/assertpy#objects)
+  * [failure](https://github.com/assertpy/assertpy#failure)
+  * [soft assertions](https://github.com/assertpy/assertpy#soft-assertions)
 * [pytest](https://docs.pytest.org/)
 * [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/index.html)
+  * [reporting](https://pytest-cov.readthedocs.io/en/latest/reporting.html)
 * [mypy](https://mypy.readthedocs.io/en/stable/index.html)
 * [ruff](https://docs.astral.sh/ruff/)
   * [Rules](https://docs.astral.sh/ruff/rules/)
@@ -610,12 +655,15 @@ winget install --id=astral-sh.uv  -e
 * [liquid template language (shopify.github.io)](https://shopify.github.io/liquid/)
 * [liquid reference](https://shopify.dev/docs/api/liquid)
 
-### Data Frames
+### Database, Data Frames, and Data Modeling
 
 * [pandas](https://pandas.pydata.org/docs/index.html)
   * [API Reference](https://pandas.pydata.org/docs/reference/index.html)
+* [pydantic](https://docs.pydantic.dev/latest/)
+  * [github](https://github.com/pydantic/pydantic)
 * [PySpark](https://spark.apache.org/docs/latest/api/python/index.html)
   * [API Reference](https://spark.apache.org/docs/latest/api/python/reference/index.html)
+* [SQLAlchemy](https://www.sqlalchemy.org/)
 
 ### 3rd Party Libraries
 
@@ -627,7 +675,7 @@ winget install --id=astral-sh.uv  -e
   * [The Ultimate Markdown Guide (for Jupyter Notebook)](https://medium.com/analytics-vidhya/the-ultimate-markdown-guide-for-jupyter-notebook-d5e5abf728fd)
 * [localstack](https://github.com/localstack/localstack)
 * [requests](https://requests.kennethreitz.org/en/latest/)
-* [SQLAlchemy](https://www.sqlalchemy.org/)
+  * [SSL Cert Verification](https://requests.kennethreitz.org/en/latest/user/advanced/#ssl-cert-verification)
 
 ### Misc
 
