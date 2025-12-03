@@ -4,7 +4,6 @@ permalink: /
 ---
 * [AWS](#aws)
 * [Java](#java)
-* [Git](#git)
 * [HL7 / Mirth Connect](#hl7-mirth-connect)
 * [Java](#java)
 * [JavaScript](#javascript)

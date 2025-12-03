@@ -1,6 +1,6 @@
 ---
-title: Python
-permalink: /python/
+title: Git
+permalink: /git/
 ---
 
 ## Git
