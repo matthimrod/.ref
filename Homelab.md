@@ -13,6 +13,7 @@ permalink: /lab/
 * [Gitea Installation](https://docs.gitea.com/installation/install-from-binary)
   * [Gitea on Proxmox (and Cloudflare Zero Trust)](https://cachaza.cc/blog/03-self-hosted-gitea/)
 * [HCP Packer](https://developer.hashicorp.com/packer/docs/intro)
+* [Plex for Docker](https://github.com/plexinc/pms-docker)
 
 ## Ubuntu Tutorials
 
