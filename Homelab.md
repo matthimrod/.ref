@@ -15,6 +15,12 @@ permalink: /lab/
 * [HCP Packer](https://developer.hashicorp.com/packer/docs/intro)
 * [Plex for Docker](https://github.com/plexinc/pms-docker)
 
+### S3 Storage
+
+* [Garage](https://garagehq.deuxfleurs.fr/)
+* [Minio](https://www.min.io/)
+* [S3GW](https://s3gw.tech/)
+
 ## Ubuntu Tutorials
 
 * [Chrony](https://documentation.ubuntu.com/server/how-to/networking/chrony-client/)
