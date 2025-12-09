@@ -255,6 +255,8 @@ Metacharacters that must be escaped: `^` `[` `.` `$` `{` `*` `(` `)` `\` `+` `|`
 ## SSL Certificates
 
 * [Certbot](https://certbot.eff.org/)
+  * [certbot-dns-cloudflare](https://certbot-dns-cloudflare.readthedocs.io/en/stable/)
+  * [Cloudflare DDNS](https://github.com/timothymiller/cloudflare-ddns)
 * [Let's Encrypt](https://letsencrypt.org/)
 
 ### Using Certbot with unexposed domains

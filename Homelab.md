@@ -6,9 +6,12 @@ permalink: /lab/
 ## Mini Rack Gear
 
 * [Project MINI RACK](https://mini-rack.jeffgeerling.com/#table-of-contents)
+  * [Project MINI RACK GitHub](https://github.com/geerlingguy/mini-rack)
+* [Mini Rack 1U Pi NAS](https://github.com/wiretap-retro/Mini-Rack-1U-Pi-NAS/)
 
 ## Projects and Project Ideas
 
+* [Cloudflare DDNS](https://github.com/timothymiller/cloudflare-ddns)
 * [CyberChef](https://github.com/gchq/CyberChef/)
 * [etckeeper](https://etckeeper.branchable.com/)
 * [Gitea Installation](https://docs.gitea.com/installation/install-from-binary)
