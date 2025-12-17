@@ -195,9 +195,6 @@ client = Session().client('s3', config=Config(max_pool_connections=MAX_POOL_SIZE
 
 ## Compound Statements
 
-* [assignment expression](https://docs.python.org/3/reference/expressions.html#grammar-token-python-grammar-assignment_expression)
-* [suite](https://docs.python.org/3/reference/compound_stmts.html#grammar-token-python-grammar-suite)
-
 ### [if](https://docs.python.org/3/reference/compound_stmts.html#the-if-statement)
 
 ```
