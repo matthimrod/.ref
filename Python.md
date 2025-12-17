@@ -193,6 +193,111 @@ MAX_POOL_SIZE = 2 * MAX_THREADS
 client = Session().client('s3', config=Config(max_pool_connections=MAX_POOL_SIZE))
 ```
 
+## Compound Statements
+
+* [assignment expression](https://docs.python.org/3/reference/expressions.html#grammar-token-python-grammar-assignment_expression)
+* [suite](https://docs.python.org/3/reference/compound_stmts.html#grammar-token-python-grammar-suite)
+
+### [if](https://docs.python.org/3/reference/compound_stmts.html#the-if-statement)
+
+```
+if [condition]: 
+    [block to run if condition is true; skip the rest]
+elif [condition]: 
+    [block to run if condition is true; skip the rest]
+else: 
+    [block to run if no condition was true]
+```
+
+### [while](https://docs.python.org/3/reference/compound_stmts.html#the-while-statement)
+
+```
+while [condition]:
+    [block repeated while condition remans true]
+else:
+    [executed after block is false]
+```
+
+* `continue` will terminate the block and skip to the next repetition
+* `break` will terminate the entire loop without running "else"
+
+### [for](https://docs.python.org/3/reference/compound_stmts.html#the-for-statement)
+
+```
+for [target list] in [iterable expression]:
+    [block repeated for each item yielded from iterable expression using target list]
+else:
+    [block to run after the iterable is consumed]
+```
+
+* `continue` terminates the block and skips to the next iteration
+* `break` terminates the entire loop without running "else"
+
+### [try](https://docs.python.org/3/reference/compound_stmts.html#the-try-statement)
+
+```
+try:
+    [block]
+except[*] [expression] [as [identifier]]:
+    [block to handle exception]
+else:
+    [block to run if no exception occurs]
+finally:
+    [block to run after try/except/else]
+```
+
+* An `expression`-less `except` clause, if present, must be last; it matches any exception.
+* `except*` clause(s) specify one or more handlers for groups of exceptions ([BaseExceptionGroup](https://docs.python.org/3/library/exceptions.html#BaseExceptionGroup) instances).
+* `except` and `except*` can't be mixed. 
+
+### [with](https://docs.python.org/3/reference/compound_stmts.html#the-with-statement)
+
+```
+with [context_manager] as [target]:
+    [block]
+```
+
+* "Compound with blocks" consist of multiple [`expression` as `target`] in a tuple (see below)
+* The context manager's `__exit__()` method is invoked regardless of whether an exception occurs in the context manager.
+
+is semantically equivalent to:
+
+```
+context_manager = (EXPRESSION)
+enter = type(context_manager).__enter__
+exit = type(context_manager).__exit__
+value = enter(context_manager)
+hit_except = False
+
+try:
+    TARGET = value
+    [block]
+except:
+    hit_except = True
+    if not exit(context_manager, *sys.exc_info()):
+        raise
+finally:
+    if not hit_except:
+        exit(context_manager, None, None, None)
+```
+
+#### Compound with:
+
+```
+with A() as a, B() as b:
+    [block]
+```
+
+is semantically equivalent to:
+
+```
+with A() as a:
+    with B() as b:
+        [block]
+```
+
+### [match](https://docs.python.org/3/reference/compound_stmts.html#the-match-statement)
+
 ## Python
 
 ### Guides
