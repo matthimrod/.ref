@@ -13,6 +13,7 @@ permalink: /lab/
 
 * [Cloudflare DDNS](https://github.com/timothymiller/cloudflare-ddns)
 * [CyberChef](https://github.com/gchq/CyberChef/)
+* [DBeaver](https://dbeaver.io/) - MySQL, SQL Server, PostgreSQL
 * [DnsMasq](https://thekelleys.org.uk/dnsmasq/doc.html)
   * [Manpage](https://thekelleys.org.uk/dnsmasq/docs/dnsmasq-man.html)
 * [etckeeper](https://etckeeper.branchable.com/)
