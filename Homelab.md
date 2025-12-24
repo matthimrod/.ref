@@ -19,6 +19,7 @@ permalink: /lab/
 * [etckeeper](https://etckeeper.branchable.com/)
 * [Gitea Installation](https://docs.gitea.com/installation/install-from-binary)
   * [Gitea on Proxmox (and Cloudflare Zero Trust)](https://cachaza.cc/blog/03-self-hosted-gitea/)
+* [Homarr](https://homarr.dev/)
 * [Immich](https://immich.app/)
   * [Docker Compose](https://docs.immich.app/install/docker-compose/)
 * [HCP Packer](https://developer.hashicorp.com/packer/docs/intro)
