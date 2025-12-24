@@ -25,6 +25,7 @@ permalink: /lab/
 * [MeshCentral](https://meshcentral.com/) / [MeshCommander](https://www.meshcommander.com/)
 * [OpenSourceAlternativeTo...](https://opensourcealternative.to/alternatives-to)
 * [Plex for Docker](https://github.com/plexinc/pms-docker)
+* [Awesome-SelfHosted](https://github.com/awesome-selfhosted/awesome-selfhosted)
 
 ### S3 Storage
 
