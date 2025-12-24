@@ -73,6 +73,7 @@ permalink: /
 * [Dependency-Check-Maven](https://dependency-check.github.io/DependencyCheck/dependency-check-maven/index.html)
 * [JUnit 5](https://junit.org/junit5/)
 * [Project Lombok](https://projectlombok.org/)
+* [SDKMAN!](https://sdkman.io/)
 
 ## JavaScript
 

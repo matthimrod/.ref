@@ -13,10 +13,16 @@ permalink: /lab/
 
 * [Cloudflare DDNS](https://github.com/timothymiller/cloudflare-ddns)
 * [CyberChef](https://github.com/gchq/CyberChef/)
+* [DnsMasq](https://thekelleys.org.uk/dnsmasq/doc.html)
+  * [Manpage](https://thekelleys.org.uk/dnsmasq/docs/dnsmasq-man.html)
 * [etckeeper](https://etckeeper.branchable.com/)
 * [Gitea Installation](https://docs.gitea.com/installation/install-from-binary)
   * [Gitea on Proxmox (and Cloudflare Zero Trust)](https://cachaza.cc/blog/03-self-hosted-gitea/)
+* [Immich](https://immich.app/)
+  * [Docker Compose](https://docs.immich.app/install/docker-compose/)
 * [HCP Packer](https://developer.hashicorp.com/packer/docs/intro)
+* [MeshCentral](https://meshcentral.com/) / [MeshCommander](https://www.meshcommander.com/)
+* [OpenSourceAlternativeTo...](https://opensourcealternative.to/alternatives-to)
 * [Plex for Docker](https://github.com/plexinc/pms-docker)
 
 ### S3 Storage
@@ -24,6 +30,7 @@ permalink: /lab/
 * [Garage](https://garagehq.deuxfleurs.fr/)
 * [Minio](https://www.min.io/)
 * [S3GW](https://s3gw.tech/)
+* [Presto/PrestoDB/PrestoSQL](https://prestodb.io/)
 
 ## Ubuntu Tutorials
 
