@@ -23,7 +23,13 @@ permalink: /AWS/
 
 * [Documentation](https://docs.powertools.aws.dev/lambda/python/latest/)
 * [API Reference](https://docs.powertools.aws.dev/lambda/python/latest/api/)
-* [GitHub repository](https://github.com/aws-powertools/powertools-lambda-python)
+* [GitHub](https://github.com/aws-powertools/powertools-lambda-python)
+
+### SDK for pandas
+
+* [Documentation](https://aws-sdk-pandas.readthedocs.io/en/stable/)
+* [API Reference](https://aws-sdk-pandas.readthedocs.io/en/stable/api.html)
+* [GitHub](https://github.com/aws/aws-sdk-pandas)
 
 | Service                                                                 | &nbsp;                                                  | &nbsp;                                                                                                  | &nbsp;                                                                       | &nbsp;                                                                  | &nbsp;                                                                                   | &nbsp;                                                                                       |
 | :---------------------------------------------------------------------- | :------------------------------------------------------ | :------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------- | :---------------------------------------------------------------------- | :--------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------- |
