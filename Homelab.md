@@ -16,6 +16,7 @@ permalink: /lab/
 * [DBeaver](https://dbeaver.io/) - MySQL, SQL Server, PostgreSQL
 * [DnsMasq](https://thekelleys.org.uk/dnsmasq/doc.html)
   * [Manpage](https://thekelleys.org.uk/dnsmasq/docs/dnsmasq-man.html)
+* [Easy2Boot](https://easy2boot.xyz/) - combination of grub4dos, grubfm, and ventoy
 * [etckeeper](https://etckeeper.branchable.com/)
 * [Gitea Installation](https://docs.gitea.com/installation/install-from-binary)
   * [Gitea on Proxmox (and Cloudflare Zero Trust)](https://cachaza.cc/blog/03-self-hosted-gitea/)
@@ -24,6 +25,7 @@ permalink: /lab/
   * [Docker Compose](https://docs.immich.app/install/docker-compose/)
 * [HCP Packer](https://developer.hashicorp.com/packer/docs/intro)
 * [MeshCentral](https://meshcentral.com/) / [MeshCommander](https://www.meshcommander.com/)
+* [Nginx Proxy Manager](https://nginxproxymanager.com/)
 * [OpenSourceAlternativeTo...](https://opensourcealternative.to/alternatives-to)
 * [Plex for Docker](https://github.com/plexinc/pms-docker)
 * [Awesome-SelfHosted](https://github.com/awesome-selfhosted/awesome-selfhosted)
@@ -53,6 +55,13 @@ permalink: /lab/
 * [Cloud-Init Documentation](https://cloudinit.readthedocs.io/en/latest/index.html)
 * [Ubuntu iSCSI](https://documentation.ubuntu.com/server/how-to/storage/iscsi-initiator-or-client/)
 * [QEMU CLI](https://qemu-project.gitlab.io/qemu/system/invocation.html)
+* [Incus](https://linuxcontainers.org/incus/)
+* [IncusOS](https://linuxcontainers.org/incus-os/)
+  * [Github](https://github.com/lxc/incus-os)
+  * [Image Downloader](https://incusos-customizer.linuxcontainers.org/ui/)
+  * [Installing in a Proxmox](https://linuxcontainers.org/incus-os/docs/main/getting-started/installation/virtual-proxmox/)
+  * [XDA Developers: Who needs Proxmox? I'm finally trying out Incus](https://www.xda-developers.com/who-needs-proxmox-im-finally-trying-out-incus/)
+  * [VirtualizationHowto: IncusOS Is the New Minimal Hypervisor OS Changing Home Labs in 2025](https://www.virtualizationhowto.com/2025/11/incusos-is-the-new-minimal-hypervisor-os-changing-home-labs-in-2025/)
 
 ## Kubernetes Implementations
 
