@@ -9,6 +9,10 @@ permalink: /lab/
   * [Project MINI RACK GitHub](https://github.com/geerlingguy/mini-rack)
 * [Mini Rack 1U Pi NAS](https://github.com/wiretap-retro/Mini-Rack-1U-Pi-NAS/)
 
+Non-Rack:
+
+* [PcPartPicker](https://pcpartpicker.com/)
+
 ## Projects and Project Ideas
 
 * [Cloudflare DDNS](https://github.com/timothymiller/cloudflare-ddns)
@@ -62,6 +66,11 @@ permalink: /lab/
   * [Installing in a Proxmox](https://linuxcontainers.org/incus-os/docs/main/getting-started/installation/virtual-proxmox/)
   * [XDA Developers: Who needs Proxmox? I'm finally trying out Incus](https://www.xda-developers.com/who-needs-proxmox-im-finally-trying-out-incus/)
   * [VirtualizationHowto: IncusOS Is the New Minimal Hypervisor OS Changing Home Labs in 2025](https://www.virtualizationhowto.com/2025/11/incusos-is-the-new-minimal-hypervisor-os-changing-home-labs-in-2025/)
+
+## Visualization
+
+* [diagrams.net](https://app.diagrams.net/)
+  * [Draw.io]](https://www.drawio.com/)
 
 ## Kubernetes Implementations
 
