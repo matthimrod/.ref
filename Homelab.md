@@ -66,6 +66,9 @@ Non-Rack:
   * [Installing in a Proxmox](https://linuxcontainers.org/incus-os/docs/main/getting-started/installation/virtual-proxmox/)
   * [XDA Developers: Who needs Proxmox? I'm finally trying out Incus](https://www.xda-developers.com/who-needs-proxmox-im-finally-trying-out-incus/)
   * [VirtualizationHowto: IncusOS Is the New Minimal Hypervisor OS Changing Home Labs in 2025](https://www.virtualizationhowto.com/2025/11/incusos-is-the-new-minimal-hypervisor-os-changing-home-labs-in-2025/)
+* [Proxmox VE Helper-Scripts](https://community-scripts.github.io/ProxmoxVE/)
+  * [Github](https://github.com/community-scripts/ProxmoxVE/)
+
 
 ## Visualization
 
