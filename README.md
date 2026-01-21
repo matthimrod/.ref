@@ -93,6 +93,7 @@ permalink: /
 * [JUnit 5](https://junit.org/junit5/)
 * [Project Lombok](https://projectlombok.org/)
 * [SDKMAN!](https://sdkman.io/)
+  * [posh-sdk](https://github.com/HewlettPackard/posh-sdk) (which is actually a fork of the Groovy enVironment Manager (gvm))
 
 ## JavaScript
 
