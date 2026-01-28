@@ -297,6 +297,12 @@ with A() as a:
 
 ## Python
 
+Check available package versions:
+
+```bash
+uvx pip index versions <package>
+```
+
 ### Guides
 
 * [The Hitchhiker’s Guide to Python](https://docs.python-guide.org/)
