@@ -705,3 +705,9 @@ You may have to run `uv sync --all-groups` to re-add any git-based packages.
 [Building and publishing a package / updating versions](https://docs.astral.sh/uv/guides/package/#updating-your-version)
 
 The --bump option supports the following common version components: major, minor, patch, stable, alpha, beta, rc, post, and dev.
+
+#### Jupyter Lab/Notebook
+
+```
+uv run --with jupyter jupyter lab
+```
