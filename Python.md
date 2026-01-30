@@ -3,6 +3,10 @@ title: Python
 permalink: /python/
 ---
 
+## Work Notes
+
+* [Retrofit Checklist](https://upmcenterprises.atlassian.net/wiki/spaces/ITS/pages/3813638146/Python+Retrofit+Checklist)
+
 ## Sample Patterns
 
 ### Command-line Argument Parsing / Runnable Executable
