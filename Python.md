@@ -679,3 +679,29 @@ winget install --id=astral-sh.uv  -e
 
 * [ralsina/rst-cheatsheet: A two-page cheatsheet for restructured text](https://github.com/ralsina/rst-cheatsheet)
 * [pyWhat/pywhat/Data/regex.json](https://github.com/bee-san/pyWhat/blob/main/pywhat/Data/regex.json)
+
+### UV Cheat Sheet
+
+#### Check available package versions
+
+`pip index` is not supported by the `uv pip` command. The workaround is running `pip index` via `uvx`:
+
+```bash
+uvx pip index versions <package>
+```
+
+#### Update a dependent package without adding it explicity
+
+The froezn environment is built from the lockfile, so you an sync a dependency to its latest version:
+
+```
+uv sync --upgrade-package <package>
+```
+
+You may have to run `uv sync --all-groups` to re-add any git-based packages.
+
+#### Version management
+
+[Building and publishing a package / updating versions](https://docs.astral.sh/uv/guides/package/#updating-your-version)
+
+The --bump option supports the following common version components: major, minor, patch, stable, alpha, beta, rc, post, and dev.
