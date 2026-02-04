@@ -114,6 +114,21 @@ permalink: /
 
 ## Linux
 
+### Recipes
+
+Copy single file with sudo
+
+```
+sudo cat <file> | ssh <host> sudo tee <path>
+```
+
+
+Copy files with sudo
+
+```
+sudo tar -zc * | ssh <host> sudo tar -zxC <destination directory>
+```
+
 * [A poem about Linux commands](/linux/)
 * [GNU coreutils](https://www.gnu.org/software/coreutils/manual/html_node/index.html)
 * [GNU emacs](https://www.gnu.org/software/emacs/documentation.html)
