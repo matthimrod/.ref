@@ -8,6 +8,7 @@ permalink: /
 * [Homelab](/lab/)
 * [Java](#java)
 * [JavaScript](#javascript)
+* [Kubernetes](#kubernetes)
 * [Linux](#linux)
 * [Python](/Python/)
 * [Regular Expressions](#regular-expressions)
@@ -112,20 +113,42 @@ permalink: /
 * [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
 * [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
 
+## Kubernetes
+
+* [kubernetes documentation](https://kubernetes.io/docs/home/)
+* [kubectl reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
+* [k3s cli tools](https://docs.k3s.io/cli)
+
+Get Traefik logs
+
+```sh
+kubectl logs -n kube-system -l app.kubernetes.io/name=traefik
+```
+
+Restart Traefik
+
+```sh
+kubectl rollout restart deployment traefik -n kube-system
+```
+
 ## Linux
+
+* [trzsz](https://trzsz.github.io/)
+  * [trzsz installation](https://trzsz.github.io/#installation)
+  * [trzsz manual](https://trzsz.github.io/#trzsz-manual)
+* [ttyd](https://github.com/tsl0922/ttyd)
 
 ### Recipes
 
 Copy single file with sudo
 
-```
+```sh
 sudo cat <file> | ssh <host> sudo tee <path>
 ```
 
-
 Copy files with sudo
 
-```
+```sh
 sudo tar -zc * | ssh <host> sudo tar -zxC <destination directory>
 ```
 
