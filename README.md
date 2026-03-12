@@ -152,6 +152,18 @@ Copy files with sudo
 sudo tar -zc * | ssh <host> sudo tar -zxC <destination directory>
 ```
 
+Install uv and trzsz
+
+```sh
+curl -LsSf https://astral.sh/uv/install.sh | sh
+. ~/.local/bin/env
+cd ~/.local
+uv venv
+uv pip install trzsz
+ln -s ~/.local/.venv/bin/trz ~/.local/bin/trz
+ln -s ~/.local/.venv/bin/tsz ~/.local/bin/tsz
+```
+
 * [A poem about Linux commands](/linux/)
 * [GNU coreutils](https://www.gnu.org/software/coreutils/manual/html_node/index.html)
 * [GNU emacs](https://www.gnu.org/software/emacs/documentation.html)
