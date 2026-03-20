@@ -201,7 +201,7 @@ client = Session().client('s3', config=Config(max_pool_connections=MAX_POOL_SIZE
 
 ### [if](https://docs.python.org/3/reference/compound_stmts.html#the-if-statement)
 
-```
+```python
 if [condition]: 
     [block to run if condition is true; skip the rest]
 elif [condition]: 
@@ -212,7 +212,7 @@ else:
 
 ### [while](https://docs.python.org/3/reference/compound_stmts.html#the-while-statement)
 
-```
+```python
 while [condition]:
     [block repeated while condition remans true]
 else:
@@ -224,7 +224,7 @@ else:
 
 ### [for](https://docs.python.org/3/reference/compound_stmts.html#the-for-statement)
 
-```
+```python
 for [target list] in [iterable expression]:
     [block repeated for each item yielded from iterable expression using target list]
 else:
@@ -236,7 +236,7 @@ else:
 
 ### [try](https://docs.python.org/3/reference/compound_stmts.html#the-try-statement)
 
-```
+```python
 try:
     [block]
 except[*] [expression] [as [identifier]]:
@@ -249,11 +249,11 @@ finally:
 
 * An `expression`-less `except` clause, if present, must be last; it matches any exception.
 * `except*` clause(s) specify one or more handlers for groups of exceptions ([BaseExceptionGroup](https://docs.python.org/3/library/exceptions.html#BaseExceptionGroup) instances).
-* `except` and `except*` can't be mixed. 
+* `except` and `except*` can't be mixed.
 
 ### [with](https://docs.python.org/3/reference/compound_stmts.html#the-with-statement)
 
-```
+```python
 with [context_manager] as [target]:
     [block]
 ```
@@ -263,7 +263,7 @@ with [context_manager] as [target]:
 
 is semantically equivalent to:
 
-```
+```python
 context_manager = (EXPRESSION)
 enter = type(context_manager).__enter__
 exit = type(context_manager).__exit__
@@ -282,22 +282,48 @@ finally:
         exit(context_manager, None, None, None)
 ```
 
-#### Compound with:
+#### Compound with
 
-```
+* Using grouping parentheses to break the statement into multiple lines is only supported in Python 3.10+
+
+```python
 with A() as a, B() as b:
+    [block]
+```
+
+or
+
+```python
+with (
+    A() as a, 
+    B() as b,
+):
     [block]
 ```
 
 is semantically equivalent to:
 
-```
+```python
 with A() as a:
     with B() as b:
         [block]
 ```
 
-### [match](https://docs.python.org/3/reference/compound_stmts.html#the-match-statement)
+### [match](https://docs.python.org/3/reference/compound_stmts.html#the-match-statement) *Python 3.10+*
+
+also known in other languages as 'switch' or 'case'
+
+```python
+match [subject]:
+    case [value]:
+        [block]
+    case [value] if [guard]:
+        [block]
+    case _:  # Default case
+        [block]
+```
+
+* `[value]` can include capture patterns.
 
 ## Python
 
@@ -569,14 +595,14 @@ uvx pip index versions <package>
 * [sys.monitoring](https://docs.python.org/3/library/sys.monitoring.html): Execution event monitoring
 * [sysconfig](https://docs.python.org/3/library/sysconfig.html): Provide access to Python’s configuration information
 * [builtins](https://docs.python.org/3/library/builtins.html): Built-in objects
-* [__main__](https://docs.python.org/3/library/__main__.html): Top-level code environment
+* [\_\_main__](https://docs.python.org/3/library/__main__.html): Top-level code environment
 * [warnings](https://docs.python.org/3/library/warnings.html): Warning control
 * [dataclasses](https://docs.python.org/3/library/dataclasses.html): Data Classes
 * [contextlib](https://docs.python.org/3/library/contextlib.html): Utilities for with-statement contexts
 * [abc](https://docs.python.org/3/library/abc.html): Abstract Base Classes
 * [atexit](https://docs.python.org/3/library/atexit.html): Exit handlers
 * [traceback](https://docs.python.org/3/library/traceback.html): Print or retrieve a stack traceback
-* [__future__](https://docs.python.org/3/library/__future__.html): Future statement definitions
+* [\_\_future__](https://docs.python.org/3/library/__future__.html): Future statement definitions
 * [gc](https://docs.python.org/3/library/gc.html): Garbage Collector interface
 * [inspect](https://docs.python.org/3/library/inspect.html): Inspect live objects
 * [site](https://docs.python.org/3/library/site.html): Site-specific configuration hook
@@ -698,7 +724,7 @@ uvx pip index versions <package>
 
 The froezn environment is built from the lockfile, so you an sync a dependency to its latest version:
 
-```
+```python
 uv sync --upgrade-package <package>
 ```
 
@@ -712,6 +738,6 @@ The --bump option supports the following common version components: major, minor
 
 #### Jupyter Lab/Notebook
 
-```
+```python
 uv run --with jupyter jupyter lab
 ```
