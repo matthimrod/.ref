@@ -325,6 +325,21 @@ match [subject]:
 
 * `[value]` can include capture patterns.
 
+* *Python 3.10+*
+* also known in other languages as 'switch' or 'case'
+
+```python
+match [subject]:
+    case [value]:
+        [block]
+    case [value] if [guard]:
+        [block]
+    case _:  # Default case
+        [block]
+```
+
+* `[value]` can include capture patterns.
+
 ## Python
 
 Check available package versions:
