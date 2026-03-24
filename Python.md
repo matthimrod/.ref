@@ -309,24 +309,11 @@ with A() as a:
         [block]
 ```
 
-### [match](https://docs.python.org/3/reference/compound_stmts.html#the-match-statement) *Python 3.10+*
-
-also known in other languages as 'switch' or 'case'
-
-```python
-match [subject]:
-    case [value]:
-        [block]
-    case [value] if [guard]:
-        [block]
-    case _:  # Default case
-        [block]
-```
-
-* `[value]` can include capture patterns.
+### [match](https://docs.python.org/3/reference/compound_stmts.html#the-match-statement)
 
 * *Python 3.10+*
 * also known in other languages as 'switch' or 'case'
+* `[value]` can include capture patterns.
 
 ```python
 match [subject]:
@@ -337,8 +324,6 @@ match [subject]:
     case _:  # Default case
         [block]
 ```
-
-* `[value]` can include capture patterns.
 
 ## Python
 
