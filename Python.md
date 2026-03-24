@@ -268,18 +268,15 @@ context_manager = (EXPRESSION)
 enter = type(context_manager).__enter__
 exit = type(context_manager).__exit__
 value = enter(context_manager)
-hit_except = False
 
 try:
     TARGET = value
     [block]
 except:
-    hit_except = True
     if not exit(context_manager, *sys.exc_info()):
         raise
-finally:
-    if not hit_except:
-        exit(context_manager, None, None, None)
+else:
+    exit(context_manager, None, None, None)
 ```
 
 #### Compound with
@@ -299,7 +296,7 @@ with (
     [block]
 ```
 
-is semantically equivalent to:
+Both are semantically equivalent to:
 
 ```python
 with A() as a:
