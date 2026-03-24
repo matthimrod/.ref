@@ -284,14 +284,12 @@ finally:
 
 #### Compound with
 
-* Using grouping parentheses to break the statement into multiple lines is only supported in Python 3.10+
-
 ```python
 with A() as a, B() as b:
     [block]
 ```
 
-or
+* Python 3.10+
 
 ```python
 with (
