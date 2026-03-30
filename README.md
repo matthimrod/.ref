@@ -140,6 +140,10 @@ kubectl rollout restart deployment traefik -n kube-system
 
 ### Recipes
 
+* [Pimoroni Unicorn Hat HD](https://github.com/pimoroni/unicorn-hat-hd)
+* [Pimoroni Unicorn Hat Mini](https://github.com/pimoroni/unicornhatmini-python)
+* [Raspberry Pi Zero USB Gadget](https://learn.adafruit.com/turning-your-raspberry-pi-zero-into-a-usb-gadget)
+
 Copy single file with sudo
 
 ```sh
