@@ -10,7 +10,7 @@ permalink: /
 * [JavaScript](#javascript)
 * [Kubernetes](#kubernetes)
 * [Linux](#linux)
-* [Python](/Python/)
+* [Python](/python/)
 * [Regular Expressions](#regular-expressions)
 * [SSL/Certificates](#ssl-certificates)
 * [Time Zones](#time-zones)
