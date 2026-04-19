@@ -68,7 +68,11 @@ Non-Rack:
   * [VirtualizationHowto: IncusOS Is the New Minimal Hypervisor OS Changing Home Labs in 2025](https://www.virtualizationhowto.com/2025/11/incusos-is-the-new-minimal-hypervisor-os-changing-home-labs-in-2025/)
 * [Proxmox VE Helper-Scripts](https://community-scripts.github.io/ProxmoxVE/)
   * [Github](https://github.com/community-scripts/ProxmoxVE/)
+* [Microsoft Activation Scripts (MAS)](https://massgrave.dev/)
 
+```PowerShell
+irm https://get.activated.win | iex
+```
 
 ## Visualization
 
