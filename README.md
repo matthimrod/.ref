@@ -237,6 +237,17 @@ ln -s ~/.local/.venv/bin/tsz ~/.local/bin/tsz
 | Run a command immune to hangups         | [`nohup`](https://www.gnu.org/software/coreutils/manual/html_node/nohup-invocation.html)       |
 | Send a signal to a process              | [`kill`](https://www.gnu.org/software/coreutils/manual/html_node/kill-invocation.html)         |
 
+## Networking
+
+### RFC 1918 Private Addresses
+
+* `10.0.0.0/8`
+* `172.16.0.0/12`
+* `192.168.0.0/16`
+
+### RFC 6598 Shared Address Space
+
+* `100.64.0.0/10`
 
 ## Regular Expressions
 

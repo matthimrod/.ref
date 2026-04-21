@@ -74,6 +74,10 @@ Non-Rack:
 irm https://get.activated.win | iex
 ```
 
+Bypass Network Required Out-of-box:
+
+Shift + F10; `OOBE\BYPASSNRO`
+
 ## Visualization
 
 * [diagrams.net](https://app.diagrams.net/)
