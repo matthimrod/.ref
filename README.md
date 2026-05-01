@@ -351,7 +351,7 @@ cloudflare.ini:
 
 ```text
 # Cloudflare API token used by Certbot
-dns_cloudflare_api_token = be967a3beb4d7048d57f1b3ddc51d52d
+dns_cloudflare_api_token = 0123456789abcdef0123456789abcdef
 ```
 
 commands:
@@ -359,6 +359,18 @@ commands:
 ```bash
 apt install certbot python-is-python3 python3-certbot-dns-cloudflare
 certbot certonly --dns-cloudflare --dns-cloudflare-credentials /path/to/cloudflare.ini -d domain.name.com -n
+```
+
+## Vi/Vim
+
+#### Change File Format in Vim
+
+* consider `dos2unix`
+
+```
+:e ++ff=dos
+:set ff=unix
+:wq
 ```
 
 ## Time Zones
