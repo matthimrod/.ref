@@ -1,6 +1,7 @@
 ---
 title: Reference Pages
 permalink: /
+nav: false
 ---
 * [AWS](/AWS)
 * [Java](/java)
