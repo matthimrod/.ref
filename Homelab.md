@@ -1,6 +1,6 @@
 ---
 title: Homelab Reference Page
-permalink: /lab/
+permalink: /lab
 ---
 
 ## Mini Rack Gear
@@ -71,12 +71,19 @@ Non-Rack:
 * [Microsoft Activation Scripts (MAS)](https://massgrave.dev/)
 
 ```PowerShell
-irm https://get.activated.win | iex
+Invoke-RestMethod https://get.activated.win | Invoke-Expression
 ```
 
 Bypass Network Required Out-of-box:
 
-Shift + F10; `OOBE\BYPASSNRO`
+Command Prompt: Shift + F10
+
+One of:
+
+```Commandline
+OOBE\BYPASSNRO
+start ms-cxh:localonly
+```
 
 ## Visualization
 
