@@ -78,6 +78,7 @@ Note: Feature branches that originated locally and were merged via a merge reque
 | release            | Used to prepare a release from develop to be merged with master/main. Created from develop and merged to master/main and back to develop. |
 | hotfix             | Used to quickly address necessary changes for the main branch. Created from master/main and merged back to master/main and to develop.    |
 
+
 #### Git Flow Equivalents
 
 ```
@@ -126,6 +127,52 @@ git tag <version>
 git checkout develop
 git merge --no-ff hotfix/<version>
 git branch -d hotfix/<version>
+```
+
+### Merging
+
+#### Merge & Squash 
+
+* Creates one clean commit in the target branch.
+* Leaves feature branch intact.
+
+```
+git checkout develop
+git pull
+git merge --squash feature/name
+git commit -m "Add feature X"
+```
+
+#### Interactive Rebase & Merge
+
+* Pick and clen up commits before merging normally.
+* Rewrites commit history
+
+```
+git checkout feature-branch
+git rebase -i main
+```
+
+Pick/squash commits to combine.
+
+```
+git checkout main
+git merge feature-branch
+```
+
+#### Squash _n_ Commits
+
+Rebase:
+
+```
+git rebase -i HEAD~n
+```
+
+Soft Reset:
+
+```
+git reset --soft HEAD~n
+git commit -m "Message"
 ```
 
 
