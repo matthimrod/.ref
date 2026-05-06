@@ -40,6 +40,77 @@ ln -s ~/.local/.venv/bin/trz ~/.local/bin/trz
 ln -s ~/.local/.venv/bin/tsz ~/.local/bin/tsz
 ```
 
+## VIM Reference
+
+### Cursor Movement
+
+|     |               |
+| :-: | :------------ |
+|   h | left          |
+|   j | down          |
+|   k | up            |
+|   l | right         |
+|   $ | end of line   |
+|   0 | start of line |
+
+### Editing
+
+|       |                                  |
+| :---: | :------------------------------- |
+|   r   | Replace a character              |
+|   R   | Replace mode at cursor           |
+|   i   | Insert mode at cursor            |
+|   I   | Insert mode at beginning of line |
+|   o   | Insert mode, insert line below   |
+|   O   | Insert mode, insert line above   |
+|   a   | Insert mode after cursor         |
+|   A   | Insert mode at end of line       |
+|   J   | Join the line below with a space |
+|   gJ  | Join line below without a space  |
+| [Esc] | Exit insert/replace mode         |
+
+### Copy & Paste
+
+|        |                     |
+| :----: | :------------------ |
+|   yy   | yank (copy) line    |
+|  2yy   | yank 2 lines        |
+|   yw   | yank word           |
+| Y / y$ | yank to end of line |
+|   p    | put (paste) after cursor  |
+|   P    | put (paste) before cursor |
+|   dd   | cut line            |
+|  2dd   | cut 2 lines         |
+|   dw   | cut word            |
+
+### Visual Commands
+
+|       |                                  |
+| :---: | :------------------------------- |
+|  &gt; | Shift text right                 |
+|  &lt; | Shift text left                  |
+|   y   | yank (copy) marked text          |
+|   d   | delete marked text               |
+|   ~   | change case                      |
+|   u   | transform to lowercase           |
+|   U   | transform to uppercase           |
+
+### Saving & Exiting
+
+|                      |                           |
+| :------------------- | :------------------------ |
+| :e[dit] file         | edit [file] in new buffer |
+| :bn[ext]             | next buffer               |
+| :bp[revious]         | previous buffer           |
+| :buffers or :ls      | list all open buffers     |
+| :w[rite]             | write (save)              |
+| :w[rite] !sudo tee % | write using sudo          |
+| :w[rite]q[uit] or ZZ | save and exit             |
+| :sav[eas] file       | save as [file]            |
+| :q[uit]! or ZQ       | exit without saving       |
+
+## GNU References
+
 * [GNU coreutils](https://www.gnu.org/software/coreutils/manual/html_node/index.html)
 * [GNU emacs](https://www.gnu.org/software/emacs/documentation.html)
 * [GNU grep](https://www.gnu.org/software/grep/manual/html_node/index.html)
@@ -107,6 +178,8 @@ ln -s ~/.local/.venv/bin/tsz ~/.local/bin/tsz
 | Print all or some environment variables | [`printenv`](https://www.gnu.org/software/coreutils/manual/html_node/printenv-invocation.html) |
 | Run a command immune to hangups         | [`nohup`](https://www.gnu.org/software/coreutils/manual/html_node/nohup-invocation.html)       |
 | Send a signal to a process              | [`kill`](https://www.gnu.org/software/coreutils/manual/html_node/kill-invocation.html)         |
+
+## Poetry
 
 A is for [awk](https://www.gnu.org/software/gawk/manual/html_node/index.html), which runs like a snail, and<br />
 B is for [biff](https://en.wikipedia.org/wiki/Biff_(Unix)), which reads all your mail.
