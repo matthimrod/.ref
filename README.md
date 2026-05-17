@@ -4,6 +4,7 @@ permalink: /
 nav: false
 ---
 * [AWS](/AWS)
+* [Bash](/bash)
 * [Java](/java)
 * [HL7](/hl7)
   * [Escape Sequences](/hl7#escape-sequences)
