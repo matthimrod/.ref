@@ -3,6 +3,8 @@ title: Bash
 permalink: /bash
 ---
 
+[bash](https://www.gnu.org/software/bash/)
+
 ## Conditional and Looping Statements
 
 ## [if](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#index-if)
