@@ -136,6 +136,7 @@ def main():
 ```python
 import concurrent.futures
 import logging
+from tqdm import tqdm
 
 
 def worker(payload: Any, *args, **kwargs) -> Any:
@@ -153,7 +154,6 @@ def main():
 
     # ...
     payloads: list[Any] = # some data
-    results = []
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_THREADS) as executor:
         result_futures = []
@@ -162,8 +162,12 @@ def main():
             result_futures.append(executor.submit(worker, payload, *args, **kwargs))
             
         # Iterate through the "futures" until they're complete and append the results to a list.
-        for future in concurrent.futures.as_completed(result_futures):
-            results.append(future.result())
+        results = [
+                future.result() 
+                for future in tqdm(
+                    concurrent.futures.as_completed(futures), total=len(futures), desc="Fetching results"
+                )
+            ]
 ```
 
 ### Requests Session with Larger Thread Pool
