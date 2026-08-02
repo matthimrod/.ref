@@ -12,6 +12,8 @@ env:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    container:
+      image: ubuntu:latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
@@ -22,6 +24,8 @@ jobs:
         env:
           GITHUB_SSH_KEY: ${{ secrets.GITHUB_SSH_KEY }}
         run: |
+          apt-get install --update -y git openssh-client
+
           # 1. Setup the SSH key for GitHub
           mkdir -p ~/.ssh
           echo "$GITHUB_SSH_KEY" > ~/.ssh/id_ed25519
