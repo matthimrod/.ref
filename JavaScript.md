@@ -1,6 +1,6 @@
 ---
 title: JavaScript
-permalink: /javascript
+permalink: /javascript/
 ---
 
 ## JavaScript

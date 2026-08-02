@@ -31,4 +31,4 @@ jobs:
           git remote add github git@github.com:${{ env.GITHUB_USER }}/${{ env.GITHUB_REPO }}.git || true
           
           GIT_SSH_COMMAND="ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no" \
-            git push github HEAD:${{ github.ref_name }} --force-with-lease
+            git push github HEAD:${{ gitea.ref_name }} --force-with-lease

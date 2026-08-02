@@ -1,6 +1,6 @@
 ---
 title: Python
-permalink: /python
+permalink: /python/
 ---
 
 ## Sample Patterns

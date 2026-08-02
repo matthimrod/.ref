@@ -1,5 +1,5 @@
 ---
-title: Linux Reference Page
+title: Linux
 permalink: /linux/
 ---
 

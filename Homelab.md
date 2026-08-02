@@ -1,6 +1,6 @@
 ---
-title: Homelab Reference Page
-permalink: /lab
+title: Homelab
+permalink: /lab/
 ---
 
 ## Mini Rack Gear

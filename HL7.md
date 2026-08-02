@@ -1,6 +1,6 @@
 ---
 title: HL7
-permalink: /hl7
+permalink: /hl7/
 ---
 
 ## HL7

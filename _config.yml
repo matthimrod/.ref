@@ -4,6 +4,19 @@ plugins:
 minima:
   skin: auto
   
-title: Reference Pages
-description: Matt's quick reference links
+title: Notes (GitHub Version)
+description: Matt's Public Reference Links
 show_downloads: false
+
+minima:
+  nav_pages:
+    - README.md
+    - AWS.md
+    - Bash.md
+    - Git.md
+    - HL7.md
+    - Homelab.md
+    - Java.md
+    - JavaScript.md
+    - Linux.md
+    - Python.md

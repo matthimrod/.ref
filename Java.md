@@ -1,6 +1,6 @@
 ---
 title: Java
-permalink: /java
+permalink: /java/
 ---
 
 ## Java

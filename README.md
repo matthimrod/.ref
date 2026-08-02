@@ -1,7 +1,6 @@
 ---
-title: Reference Pages
+title: Index
 permalink: /
-nav: false
 ---
 * [AWS](/AWS)
 * [Bash](/bash)
