@@ -13,25 +13,20 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
       - name: Push to GitHub via SSH
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         run: |
-          # 1. Setup the SSH key for GitHub
           mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           
-          # 2. Add GitHub to known_hosts to prevent interactive prompts
           ssh-keyscan -t rsa,ecdsa,ed25519 github.com >> ~/.ssh/known_hosts
-          
-          # 3. Configure git to use SSH with the variables
+
+          if [ -f .git/shallow ]; then
+            git fetch --unshallow github || true
+          fi
+
           git remote add github git@github.com:${{ env.GITHUB_USER }}/${{ env.GITHUB_REPO }}.git
-          
-          # 4. Push changes
+
           git push github main --force-with-lease
