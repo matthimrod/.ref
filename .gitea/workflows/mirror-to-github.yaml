@@ -22,10 +22,10 @@ jobs:
 
       - name: Push to GitHub via SSH
         env:
-          GITHUB_SSH_KEY: ${{ secrets.GITHUB_SSH_KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         run: |
           mkdir -p ~/.ssh
-          echo "$GITHUB_SSH_KEY" > ~/.ssh/id_ed25519
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           
           git remote add github git@github.com:${{ env.GITHUB_USER }}/${{ env.GITHUB_REPO }}.git || true
