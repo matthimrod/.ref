@@ -12,22 +12,24 @@ env:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    steps:
+steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
       - name: Push to GitHub via SSH
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          GITHUB_SSH_KEY: ${{ secrets.GITHUB_SSH_KEY }}
         run: |
-          cd ${{ github.workspace }}
-
+          # 1. Setup the SSH key for GitHub
           mkdir -p ~/.ssh
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          echo "$GITHUB_SSH_KEY" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           
-          if [ -f .git/shallow ]; then
-            git fetch --unshallow || true
-          fi
+          # 2. Configure git remote
+          git remote add github git@github.com:${{ env.GITHUB_USER }}/${{ env.GITHUB_REPO }}.git || true
           
-          git remote add github git@github.com:${{ env.GITHUB_USER }}/${{ env.GITHUB_REPO }}.git
-          
-          GIT_SSH_COMMAND="ssh -i /root/.ssh/id_ed25519 -o StrictHostKeyChecking=no" \
+          # 3. Push using an environment variable that forces SSH to ignore host key prompts
+          GIT_SSH_COMMAND="ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no" \
             git push github HEAD:${{ github.ref_name }} --force-with-lease
