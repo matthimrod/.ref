@@ -13,7 +13,7 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     container:
-      image: ubuntu:latest
+      image: catthehacker/ubuntu:full-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
@@ -24,16 +24,11 @@ jobs:
         env:
           GITHUB_SSH_KEY: ${{ secrets.GITHUB_SSH_KEY }}
         run: |
-          apt-get install --update -y git openssh-client
-
-          # 1. Setup the SSH key for GitHub
           mkdir -p ~/.ssh
           echo "$GITHUB_SSH_KEY" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           
-          # 2. Configure git remote
           git remote add github git@github.com:${{ env.GITHUB_USER }}/${{ env.GITHUB_REPO }}.git || true
           
-          # 3. Push using an environment variable that forces SSH to ignore host key prompts
           GIT_SSH_COMMAND="ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no" \
             git push github HEAD:${{ github.ref_name }} --force-with-lease
