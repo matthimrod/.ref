@@ -21,12 +21,11 @@ jobs:
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           
-          ssh-keyscan -t rsa,ecdsa,ed25519 github.com >> ~/.ssh/known_hosts
-
           if [ -f .git/shallow ]; then
-            git fetch --unshallow github || true
+            git fetch --unshallow || true
           fi
-
+          
           git remote add github git@github.com:${{ env.GITHUB_USER }}/${{ env.GITHUB_REPO }}.git
-
-          git push github main --force-with-lease
+          
+          GIT_SSH_COMMAND="ssh -i /root/.ssh/id_ed25519 -o StrictHostKeyChecking=no" \
+            git push github HEAD:${{ github.ref_name }} --force-with-lease
