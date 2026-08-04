@@ -5,5 +5,5 @@
 $content-width:    1200px;
 
 @import
-  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/skins/{{ site.minima.skin | default: 'dark' }}",
   "minima/initialize";
