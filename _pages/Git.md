@@ -3,6 +3,12 @@ title: Git
 permalink: /git/
 ---
 
+Git Clone vis SSH Jumphost
+
+```shell
+git -c core.sshCommand="ssh -J user@jumphost.com" clone git@gitea.matthimrod.com:username/repository.git
+```
+
 ## Git
 
 | Repostiory Operations                                                     | &nbsp;                              |

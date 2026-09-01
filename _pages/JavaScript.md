@@ -3,8 +3,6 @@ title: JavaScript
 permalink: /javascript/
 ---
 
-## JavaScript
-
 * [JavaScript - Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 * [JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)

@@ -3,6 +3,16 @@ title: Homelab
 permalink: /lab/
 ---
 
+## RFC 1918 Private Addresses (NAT)
+
+* `10.0.0.0/8`
+* `172.16.0.0/12`
+* `192.168.0.0/16`
+
+## RFC 6598 Shared Address Space (CG-NAT)
+
+* `100.64.0.0/10`
+
 ## Mini Rack Gear
 
 * [Project MINI RACK](https://mini-rack.jeffgeerling.com/#table-of-contents)
@@ -78,21 +88,6 @@ Non-Rack:
 * [Proxmox VE Helper-Scripts](https://community-scripts.github.io/ProxmoxVE/)
   * [Github](https://github.com/community-scripts/ProxmoxVE/)
 * [Microsoft Activation Scripts (MAS)](https://massgrave.dev/)
-
-```PowerShell
-Invoke-RestMethod https://get.activated.win | Invoke-Expression
-```
-
-Bypass Network Required Out-of-box:
-
-Command Prompt: Shift + F10
-
-One of:
-
-```Commandline
-OOBE\BYPASSNRO
-start ms-cxh:localonly
-```
 
 ## Visualization
 

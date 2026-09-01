@@ -1,0 +1,70 @@
+main:
+  - title: "Gmail"
+    url: https://gmail.com
+    target: _blank
+  - title: "Calendar"
+    url: https://google.com/calendar
+    target: _blank
+  - title: "Messages"
+    url: https://messages.google.com/web
+    target: _blank
+#  - title: "External Link"
+#    url: https://google.com
+#    target: _blank
+
+
+side:
+  - title: "Programming"
+    children:
+    - title: "AWS"
+      url: /aws/
+    - title: "Azure"
+      url: /azure/
+    - title: "Bash"
+      url: /bash/
+    - title: "Batch"
+      url: /batch/
+    - title: "Git"
+      url: /git/
+    - title: "Java"
+      url: /java/
+    - title: "JavaScript"
+      url: /javascript/
+    - title: "Python"
+      url: /python/
+    - title: "Regular Expressions"
+      url: /regex/
+
+  - title: "Data"
+    children:
+    - title: "HL7"
+      url: /hl7/
+
+  - title: "Linux"
+    url: /linux/
+
+  - title: "Setup"
+    url: /setup/
+
+  - title: "Social Media"
+    children:
+    - title: "BlueSky"
+      url: https://bsky.app/
+    - title: "GitHub"
+      url: https://github.com/
+    - title: "LinkedIn"
+      url: http://www.linkedin.com/
+    - title: "Reddit"
+      url: https://www.reddit.com/
+    - title: "YouTube"
+      url: https://www.youtube.com/
+
+  - title: "Getting Around"
+    url: /transit/
+    children:
+    - title: "PennDOT Cams"
+      url: /transit/#PennDOT-Cameras
+    - title: "Parking Options"
+      url: /transit/#Parking-Options
+    - title: "Food Options"
+      url: /transit/#Food-Options

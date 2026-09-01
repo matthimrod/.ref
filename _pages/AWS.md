@@ -1,9 +1,16 @@
 ---
 title: AWS
 permalink: /AWS/
+toc: false
+classes: wide
 ---
 
-## AWS
+<style>
+  table tr:nth-child(even) { background-color: #f2f2f2 !important; }
+  @media (prefers-color-scheme: dark) {
+    table tr:nth-child(even) { background-color: #2d2d2d !important; }
+  }
+</style>
 
 * [Amazon Web Services In Plain English](https://expeditedsecurity.com/aws-in-plain-english/)
 * [AWS CDK Reference Documentation](https://docs.aws.amazon.com/cdk/api/v2/)
@@ -18,18 +25,12 @@ permalink: /AWS/
 * [LocalStack](https://github.com/localstack/localstack)
   * [Local Development with AWS on LocalStack](https://reflectoring.io/aws-localstack/)
 * [Serverless Land](https://serverlessland.com/)
-
-### Powertools for AWS Lambda (Python)
-
-* [Documentation](https://docs.powertools.aws.dev/lambda/python/latest/)
-* [API Reference](https://docs.powertools.aws.dev/lambda/python/latest/api/)
-* [GitHub](https://github.com/aws-powertools/powertools-lambda-python)
-
-### SDK for pandas
-
-* [Documentation](https://aws-sdk-pandas.readthedocs.io/en/stable/)
-* [API Reference](https://aws-sdk-pandas.readthedocs.io/en/stable/api.html)
-* [GitHub](https://github.com/aws/aws-sdk-pandas)
+* [Powertools for AWS Lambda (Python)](https://docs.powertools.aws.dev/lambda/python/latest/)
+  * [API Reference](https://docs.powertools.aws.dev/lambda/python/latest/api/)
+  * [GitHub](https://github.com/aws-powertools/powertools-lambda-python)
+* [AWS SDK for Pandas](https://aws-sdk-pandas.readthedocs.io/en/stable/)
+  * [API Reference](https://aws-sdk-pandas.readthedocs.io/en/stable/api.html)
+  * [GitHub](https://github.com/aws/aws-sdk-pandas)
 
 | Service                                                                 | &nbsp;                                                  | &nbsp;                                                                                                  | &nbsp;                                                                       | &nbsp;                                                                  | &nbsp;                                                                                   | &nbsp;                                                                                       |
 | :---------------------------------------------------------------------- | :------------------------------------------------------ | :------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------- | :---------------------------------------------------------------------- | :--------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------- |

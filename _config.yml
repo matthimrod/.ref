@@ -1,22 +1,27 @@
-remote_theme: jekyll/minima
+theme: minimal-mistakes-jekyll
+
 plugins:
   - jekyll-remote-theme
-minima:
-  skin: dark
   
 title: Notes (GitHub Version)
-description: Matt's Public Reference Links
-show_downloads: false
+description: Matt's Reference Links
 
-minima:
-  nav_pages:
-    - README.md
-    - AWS.md
-    - Bash.md
-    - Git.md
-    - HL7.md
-    - Homelab.md
-    - Java.md
-    - JavaScript.md
-    - Linux.md
-    - Python.md
+url: "https://ref.matthimrod.com"
+baseurl: ""
+
+minimal_mistakes_skin: "dark"
+show_downloads: false
+enable_copy_code_button: true
+include: ["_pages"]
+
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      toc: true
+      toc_sticky: false
+      sidebar:
+        - nav: "side"

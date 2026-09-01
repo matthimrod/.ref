@@ -3,20 +3,18 @@ title: Linux
 permalink: /linux/
 ---
 
-## Linux
-
 * [trzsz](https://trzsz.github.io/)
   * [trzsz installation](https://trzsz.github.io/#installation)
   * [trzsz manual](https://trzsz.github.io/#trzsz-manual)
 * [ttyd](https://github.com/tsl0922/ttyd)
-
-### Recipes
-
 * [Pimoroni Unicorn Hat HD](https://github.com/pimoroni/unicorn-hat-hd)
 * [Pimoroni Unicorn Hat Mini](https://github.com/pimoroni/unicornhatmini-python)
 * [Raspberry Pi Zero USB Gadget](https://learn.adafruit.com/turning-your-raspberry-pi-zero-into-a-usb-gadget)
+  * SHARED_ADDR is in /usr/bin/rpi-usb-gadget
+  * echo "dhcp-option=3" > /etc/NetworkManager/dnsmasq-shared.d/no-route.conf
 
 Copy single file with sudo
+
 
 ```sh
 sudo cat <file> | ssh <host> sudo tee <path>
@@ -109,6 +107,16 @@ ln -s ~/.local/.venv/bin/tsz ~/.local/bin/tsz
 | :sav[eas] file       | save as [file]            |
 | :q[uit]! or ZQ       | exit without saving       |
 
+**Change Line Endings**:
+
+Consider `dos2unix`
+
+```plaintext
+:e ++ff=dos
+:set ff=unix
+:wq
+```
+
 ## GNU References
 
 * [GNU coreutils](https://www.gnu.org/software/coreutils/manual/html_node/index.html)
@@ -178,6 +186,20 @@ ln -s ~/.local/.venv/bin/tsz ~/.local/bin/tsz
 | Print all or some environment variables | [`printenv`](https://www.gnu.org/software/coreutils/manual/html_node/printenv-invocation.html) |
 | Run a command immune to hangups         | [`nohup`](https://www.gnu.org/software/coreutils/manual/html_node/nohup-invocation.html)       |
 | Send a signal to a process              | [`kill`](https://www.gnu.org/software/coreutils/manual/html_node/kill-invocation.html)         |
+
+## JournalCtl
+
+Previous Boot:
+
+```shell
+journalctl -b -1
+```
+
+Kernel Messages Only
+
+```shell
+journalctl -b -1 -k
+```
 
 ## Poetry
 

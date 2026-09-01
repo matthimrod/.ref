@@ -3,14 +3,12 @@ title: HL7
 permalink: /hl7/
 ---
 
-## HL7
-
 * [Caristix HL7 V2 Reference](https://hl7-definition.caristix.com/v2/)
 * [HAPI FHIR](https://hapifhir.io)
 * [HL7 International](www.hl7.org/)
 * [HL7 FHIR](https://hl7.org/fhir/)
 
-### Escape Sequences
+## Escape Sequences
 
 | Sequence | Replacement | &nbsp;                                          |
 | :------: | :---------: | :---------------------------------------------- |
