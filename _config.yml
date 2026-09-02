@@ -1,6 +1,7 @@
 remote_theme: "mmistakes/minimal-mistakes@4.28.1"
 
 plugins:
+  - jekyll-include-cache
   - jekyll-remote-theme
   
 title: Notes (GitHub Version)
