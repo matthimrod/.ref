@@ -34,6 +34,7 @@ Non-Rack:
 * [etckeeper](https://etckeeper.branchable.com/)
 * [Gitea Installation](https://docs.gitea.com/installation/install-from-binary)
   * [Gitea on Proxmox (and Cloudflare Zero Trust)](https://cachaza.cc/blog/03-self-hosted-gitea/)
+* [Google Apps Script](https://script.google.com/)
 * [Homarr](https://homarr.dev/)
 * [Homebox](https://homebox.software/)
   * [https://github.com/sysadminsmedia/homebox/discussions/1096](https://github.com/sysadminsmedia/homebox/discussions/1096)
