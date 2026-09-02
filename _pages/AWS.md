@@ -1,6 +1,6 @@
 ---
 title: AWS
-permalink: /AWS/
+permalink: /aws/
 toc: false
 classes: wide
 ---
