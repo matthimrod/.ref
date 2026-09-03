@@ -2,7 +2,8 @@
 title: Index
 permalink: /
 ---
-* [AWS](/AWS)
+* [AWS](/aws)
+* [Azure](/azure/)
 * [Bash](/bash)
 * [Batch](#batch)
 * [Java](/java)
