@@ -2,244 +2,137 @@
 title: Index
 permalink: /
 ---
-* [AWS](/aws)
-* [Azure](/azure/)
-* [Bash](/bash)
-* [Batch](#batch)
-* [Java](/java)
-* [HL7](/hl7)
-  * [Escape Sequences](/hl7#escape-sequences)
-  * [Mirth Connect](/hl7#mirth-connect)
-* [Git](/git)
-  * [Git Flow](/git#git-flow-equivalents)
-* [Homelab](/lab)
-* [Java](/java)
-* [JavaScript](/javascript)
-* [Linux](/linux)
-* [Python](/python)
-* [Kubernetes](#kubernetes)
-* [Networking](#networking)
-* [Regular Expressions](#regular-expressions)
-* [SSL/Certificates](#ssl-certificates)
+
+<style>
+  table tr:nth-child(even) { background-color: #f2f2f2 !important; }
+  @media (prefers-color-scheme: dark) {
+    table tr:nth-child(even) { background-color: #2d2d2d !important; }
+  }
+</style>
+
+[![Build and Deploy Workflow](https://gitea.matthimrod.com/matthimrod/.ref/actions/workflows/deploy.yaml/badge.svg?branch=main)](https://gitea.matthimrod.com/matthimrod/.ref/actions?workflow=deploy.yaml)
+
 * [Time Zones](#time-zones)
+
+## MX Keys Mini Fn Key
+
+| Key               | Action                                            |
+| :---------------- | :------------------------------------------------ |
+| Fn + `O` (3 secs) | MacOs (&#x2325; Option and &#x2318; Command keys) |
+| Fn + `P` (3 secs) | Windows/Linux (Start and Alt keys)                |
+| Fn + `U` (3 secs) | Swap Special Characters (MacOS)                   |
+| Fn + `B`          | Pause/Break                                       |
+| Fn + &#x1f81c;    | Home                                              |
+| Fn + &#x1f81e;    | End                                               |
+| Fn + &#x1f81d;    | PgUp                                              |
+| Fn + &#x1f81f;    | PgDown                                            |
+
+"Work" MX Keys Mini has Caps Lock remapped to &#x2318; Command.
+{: .notice--warning}
+
+## Apple
+
+* [Mac Keyboard Shortcuts](https://support.apple.com/en-us/102650)
+* [Keyboard shortcuts in Terminal](https://support.apple.com/guide/terminal/keyboard-shortcuts-trmlshtcts/mac)
+
+### Mac Keyboard Shortcuts
+
+| Key                                              | Action                                    |
+| :---                                             | :---                                      |
+| &#x2318; Command + `Z`                           | Undo                                      |
+| &#x2318; Command + `X`                           | Cut                                       |
+| &#x2318; Command + `C`                           | Copy                                      |
+| &#x2318; Command + `V`                           | Paste                                     |
+| &#x2318; Command + `A`                           | Select All                                |
+| &#x2318; Command + `F`                           | Find                                      |
+| &#x2318; Command + `G`                           | Find Again                                |
+| &#x2318; Command + `H`                           | Hide                                      |
+| &#x2318; Command + `M`                           | Minimize (to the dock)                    |
+| &#x2318; Command + `O`                           | Open                                      |
+| &#x2318; Command + `P`                           | Print                                     |
+| &#x2318; Command + `Q`                           | Quit                                      |
+| &#x2318; Command + `S`                           | Save                                      |
+| &#x2318; Command + `T`                           | New Tab                                   |
+| &#x2318; Command + `W`                           | Close Current Window                      |
+| &#x2325; Option + &#x2318; Command + `Esc`       | Force Quit                                |
+| &#x2318; Command + Spacebar / `Fn` + `E`         | Spotlight (Search)                        |
+| &#x2318; Command + &#x21e5; Tab                  | Switch applications                       |
+| &#x2318; Command + `` ` `` (grave)               | Switch windows (current app only)         |
+| &#x2325; Option + &#x2318; Command + `Q`         | Lock Screen                               |
+| &#x21e7; Shift + &#x2318; Command + `Q`          | Log Out                                   |
+| &#x2325; Option + Log Out / Shutdown / Restart   | Skip confirmation                         |
+| &#x232b; Delete / &#x2303; Control + `H`         | "Right" Delete (aka Backspace)            |
+| `Fn` + &#x232b; Delete / &#x2303; Control + `D`  | Left Delete                               |
+| &#x2325; Option + &#x232b; Delete                | Delete the word to the left of the cursor |
+| Fn + &#x25c0;                                    | Home                                      |
+| Fn + &#x25b6;                                    | End                                       |
+| Fn + &#x25b2;                                    | PgUp                                      |
+| Fn + &#x25bc;                                    | PgDown                                    |
+| &#x2318; Command + &#x25c0;                      | Move to Beginning of Line                 |
+| &#x2318; Command + &#x25b6;                      | Move to End of Line                       |
+| &#x2325; Option + &#x25c0;                       | Move to Left One Word                     |
+| &#x2325; Option + &#x25b6;                       | Move to End fo the Line                   |
+| &#x2318; Command + &#x25b2;                      | Move to Beginning of Document             |
+| &#x2318; Command + &#x25bc;                      | Move to End fo the Document               |
+
+## AI
+
+* [Copilot](https://copilot.microsoft.com/)
+* [Gemini](https://gemini.google.com/)
+
+## Beard
+
+* ~~[Artius Man](https://artiusman.com/)~~
+  * ~~[DIY Beard Kit](https://artiusman.com/collections/beard-oil/products/diy-beard-kit)~~
+* [Beard Octane](https://beardoctane.com/)
+
+&nbsp;
+
+* [Beard Octane Neutral Lather Conditioning Wash](https://beardoctane.com/collections/beard-wash/products/neutral-lather-conditioning-wash)
+* [Beard Octane Neutral Beard Conditioner](https://beardoctane.com/collections/beard-conditioner/products/neutral-beard-conditioner)
+* [Beard Octane LCW & Conditioner Bottle Pump Top](https://beardoctane.com/collections/beard-conditioner/products/lcw-conditioner-bottle-pump-top-8oz-only)
+* [Beard Octane Neutral Beard Butta](https://beardoctane.com/collections/beard-butta/products/neutral-beard-butta)
+
+## Library
+
+* [Carnegie Library of Pittsburgh](https://www.carnegielibrary.org/)
+  * [Allegheny County Libraries Catalog](https://acl.bibliocommons.com/user/login)
+  * [Consumer Reports](https://search.ebscohost.com/login.aspx?authtype=ip,cpid&custid=s4663075&profile=crcro)
+  * [Udemy](https://link.gale.com/apps/UDEMY?u=ein_remote)
+* [Google Technical Writing Courses](https://developers.google.com/tech-writing/)
 
 ## Misc
 
-* [511 PA Traffic Cameras](https://www.511pa.com/cctv) 
-  * [I-376 Parkway East](https://www.511pa.com/cctv?start=0&length=50&filters%5B0%5D%5Bi%5D=4&filters%5B0%5D%5Bs%5D=I-376+Parkway+East&order%5Bi%5D=1&order%5Bdir%5D=asc)
-  * [I-376 Parkway Central](https://www.511pa.com/cctv?start=0&length=50&filters%5B0%5D%5Bi%5D=4&filters%5B0%5D%5Bs%5D=I-376+Parkway+Central&order%5Bi%5D=1&order%5Bdir%5D=asc)
-  * [I-376 Parkway West](https://www.511pa.com/cctv?start=0&length=50&filters%5B0%5D%5Bi%5D=4&filters%5B0%5D%5Bs%5D=I-376+Parkway+West&order%5Bi%5D=1&order%5Bdir%5D=asc)
-  * [I-279 Parkway North](https://www.511pa.com/cctv?start=0&length=50&filters%5B0%5D%5Bi%5D=4&filters%5B0%5D%5Bs%5D=I-279+Parkway+North&order%5Bi%5D=1&order%5Bdir%5D=asc)
-  * [I-579 Crosstown Blvd](https://www.511pa.com/cctv?start=0&length=50&filters%5B0%5D%5Bi%5D=4&filters%5B0%5D%5Bs%5D=I-579&order%5Bi%5D=1&order%5Bdir%5D=asc)
-  * [I-76 PA Turnpike](https://www.511pa.com/cctv?start=0&length=50&filters%5B0%5D%5Bi%5D=4&filters%5B0%5D%5Bs%5D=Turnpike+%28I-76%29&order%5Bi%5D=1&order%5Bdir%5D=asc)
-  * [I-79 Southwestern Region](https://www.511pa.com/cctv?start=0&length=50&filters%5B0%5D%5Bi%5D=2&filters%5B0%5D%5Bs%5D=Southwestern+Region+%28Pittsburgh%29&filters%5B1%5D%5Bi%5D=4&filters%5B1%5D%5Bs%5D=I-79&order%5Bi%5D=1&order%5Bdir%5D=asc)
-  * [PA-28](https://www.511pa.com/cctv?start=0&length=50&filters%5B0%5D%5Bi%5D=4&filters%5B0%5D%5Bs%5D=PA+28&order%5Bi%5D=1&order%5Bdir%5D=asc)
-  * [PA-51](https://www.511pa.com/cctv?start=0&length=50&filters%5B0%5D%5Bi%5D=4&filters%5B0%5D%5Bs%5D=PA+51&order%5Bi%5D=1&order%5Bdir%5D=asc)
-  * [PA-51 / US-19](https://www.511pa.com/cctv?start=0&length=50&filters%5B0%5D%5Bi%5D=4&filters%5B0%5D%5Bs%5D=PA+51+%26+US+19&order%5Bi%5D=1&order%5Bdir%5D=asc)
-  * [PA-66 / Turnpike 66](https://www.511pa.com/cctv?start=0&length=50&filters%5B0%5D%5Bi%5D=4&filters%5B0%5D%5Bs%5D=PA+Turnpike+66&order%5Bi%5D=1&order%5Bdir%5D=asc)
-  * [PA-576 / Southern Beltway](https://www.511pa.com/cctv?start=0&length=50&filters%5B0%5D%5Bi%5D=4&filters%5B0%5D%5Bs%5D=Reedsdale+Street&order%5Bi%5D=1&order%5Bdir%5D=asc)
-  * [McKnight Road](https://www.511pa.com/cctv?start=0&length=50&filters%5B0%5D%5Bi%5D=4&filters%5B0%5D%5Bs%5D=McKnight+Rd&order%5Bi%5D=1&order%5Bdir%5D=asc)
-  * [Reedsdale St](https://www.511pa.com/cctv?start=0&length=50&filters%5B0%5D%5Bi%5D=4&filters%5B0%5D%5Bs%5D=Reedsdale+Street&order%5Bi%5D=1&order%5Bdir%5D=asc)
-  * [William Penn Highway](https://www.511pa.com/cctv?start=0&length=50&filters%5B0%5D%5Bi%5D=4&filters%5B0%5D%5Bs%5D=SR+2048&order%5Bi%5D=1&order%5Bdir%5D=asc)
-  * [US-22](https://www.511pa.com/cctv?start=0&length=50&filters%5B0%5D%5Bi%5D=3&filters%5B0%5D%5Bs%5D=Allegheny&filters%5B1%5D%5Bi%5D=4&filters%5B1%5D%5Bs%5D=US+22&order%5Bi%5D=1&order%5Bdir%5D=asc)
-  
 * [Flying Toasters](https://www.bryanbraun.com/after-dark-css/all/flying-toasters.html)
-* [Suppose.TV](https://www.suppose.tv/)
-* [Google Technical Writing Courses](https://developers.google.com/tech-writing/)
 * [Explain Shell](https://explainshell.com/)
+* [Go Template](https://pkg.go.dev/text/template)
 * [JMESPath Specification](https://jmespath.org/specification.html)
-* [Edit CLI Editor](https://learn.microsoft.com/en-us/windows/edit/)
-* [Windows Package Manager (winget)](https://learn.microsoft.com/en-us/windows/package-manager/)
-* [Windows PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/)
-* [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/)
-* [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/)
+* [Horrible Therapist](https://theoatmeal.com/pages/horrible_therapist)
 
-### Data Stuff
+## Programming
 
-* [Mockaroo](https://www.mockaroo.com)
-* [Synthea](https://synthea.mitre.org)
-* [The Book of OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/) Observational Health Data Sciences and Informatics
-* [ODHSI OMOP CDM](https://ohdsi.github.io/CommonDataModel/) Observational Medical Outcomes Partnership (OMOP) Common Data Model (CDM)
+* [Microsoft Free Developer Offers](https://visualstudio.microsoft.com/free-developer-offers/)
+* [MongoDB University](https://university.mongodb.com/)
+* [Pluralsight](https://www.pluralsight.com/)
+* [Google Skills](https://www.skills.google/)
+* [Design Patterns](https://www.oodesign.com/)
+* [Logi Actions SDK](https://www.logitech.com/en-us/software/developer)
+* [Markdown Guide](https://www.markdownguide.org/)
 
-## Batch
+## Unicode
 
-.bat/.cmd
-
-### Parameter Extensions
-
-| %-modifier  | &nbsp;                                                   |
-| :---------- | :------------------------------------------------------- |
-| `%0`        | the batch file name/command                              |
-| `%*`        | all arguments after $0 (**Note:** unaffected by `shift`) |
-| `%1 .. %9`  | nth argument (if n is the number following `%`)          |
-| `%~f1`      | Expand `%1` to its fully-qualified path name             |
-| `%~d1`      | Expand `%1` to its drive component (i.e. `C:`)           |
-| `%~p1`      | Expand `%1` to its path component (i.e. `\directory\`)   |
-| `%~n1`      | Expand `%1` to its name/stem component                   |
-| `%~x1`      | Expand `%1` to its extension component                   |
-| `%~s1`      | Expand `%1` to its short (8.3) filename                  |
-| `%~a1`      | Expand `%1` to its file attributes                       |
-| `%~t1`      | Expand `%1` to its file timestamp                        |
-| `%~z1`      | Expand `%1` to its file size                             |
-| `%~$PATH:1` | Seardh $PATH for `%1`, expand to full path of 1st match  |
-
-* Modifiers apply only to arguments, not environment variables.
-* `%~` removes surrounding quotes from the argument before applying modifiers.
-* Combined modifiers are processed left‑to‑right.
-
-## Kubernetes
-
-* [kubernetes documentation](https://kubernetes.io/docs/home/)
-* [kubectl reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
-* [k3s cli tools](https://docs.k3s.io/cli)
-
-Get Traefik logs
-
-```sh
-kubectl logs -n kube-system -l app.kubernetes.io/name=traefik
-```
-
-Restart Traefik
-
-```sh
-kubectl rollout restart deployment traefik -n kube-system
-```
-
-## Networking
-
-### RFC 1918 Private Addresses
-
-* `10.0.0.0/8`
-* `172.16.0.0/12`
-* `192.168.0.0/16`
-
-### RFC 6598 Shared Address Space
-
-* `100.64.0.0/10`
-
-## Regular Expressions
-
-Metacharacters that must be escaped: `^` `[` `.` `$` `{` `*` `(` `)` `\` `+` `|` `?` `<` `>`
-
-| Anchors | &nbsp;            |
-| :------ | :---------------- |
-| `^`     | start of line     |
-| `$`     | end of line       |
-| `\A`    | start of string   |
-| `\Z`    | end of string     |
-| `\b`    | word boundary     |
-| `\B`    | not word boundary |
-| `\<`    | start of word ⚠️   |
-| `\>`    | end of word ⚠️     |
-
-| Quantifiers | &nbsp;                                                 |
-| :---------- | :----------------------------------------------------- |
-| `*`         | 0 or more                                              |
-| `*?`        | 0 or more, ungreedy                                    |
-| `+`         | 1 or more                                              |
-| `+?`        | 1 or more, ungreedy                                    |
-| `?`         | 0 or 1                                                 |
-| `??`        | 0 or 1, ungreedy                                       |
-| `{#}`       | Exacty # (e.g., `{3}` = exactly 3)                     |
-| `{#,}`      | # or more (e.g., `{3,}` = 3 or more)                   |
-| `{#,}?`     | # or more, ungreedy                                    |
-| `{#,#}`     | # to # matches, inclusive (e.g., `{3,5}` = 3, 4, or 5) |
-| `{#,#}?`    | # to # matches, inclusive and ungreedy                 |
-
-| Ranges | &nbsp;                                              |
-| :----- | :-------------------------------------------------- |
-| `.`    | any character, typically excluding newline/linefeed |
-| `|`    | or (e.g., `a | b` matches `a` or `b`)               |
-| `()`   | capturing group (e.g., `Date: (\d{4}-\d{2}-\d{2})`) |
-| `(?:)` | non-capturing/passive group (e.g., `(?:this|that)`) |
-| `[]`   | characer range                                      |
-| `[^]`  | negative characer range                             |
-
-| Character Class | &nbsp;                                                                            |
-| :-------------- | :-------------------------------------------------------------------------------- |
-| `\c`            | control character (e.g., ASCII 0-31 & 127), same as POSIX `[:word:]`              |
-| `\s`            | white space (e.g., `[\t\n\f\r ]` tab, newline, form feed, carriage returm, space) |
-| `\S`            | not white space                                                                   |
-| `\d`            | digit (e.g., `[0-9]`)                                                             |
-| `\D`            | not digit                                                                         |
-| `\w`            | word (e.g., `[A-Za-z0-9_]`)                                                       |
-| `\W`            | not word                                                                          |
-
-| Escape Sequences       | &nbsp;                                       |
-| :--------------------- | :------------------------------------------- |
-| `\\`                   | literal backslash `` ` ``                    |
-| `\t`                   | tab                                          |
-| `\n`                   | newline/linefeed                             |
-| `\r`                   | carriage return                              |
-| `\f`                   | form feed                                    |
-| `\a`                   | alarm/bell                                   |
-| `\xhh`                 | hexadecimal character `hh`                   |
-| `\xxx` `\oxxx` `\Oxxx` | octal character `xxx`                        |
-| `\Q`                   | quote (disable pattern metacharacters)       |
-| `\E`                   | end quote (re-enable pattern metacharacters) |
-
-| POSIX Character Class | &nbsp;                                                                                                                               |
-| :-------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
-| `[:upper:]`           | any uppercase character (e.g., `[A-Z]`)                                                                                              |
-| `[:lower:]`           | any lowercase character (e.g., `[a-z]`)                                                                                              |
-| `[:alpha:]`           | any alphabetical character (e.g., `[A-Za-z]`)                                                                                        |
-| `[:alnum:]`           | any alphanumeric character (e.g., `[A-Za-z0-9]`)                                                                                     |
-| `[:digit:]`           | any decimal digit (e.g., `[0-9]`)                                                                                                    |
-| `[:xdigit:]`          | any hexadecimal digit (e.g., `[0-9a-fA-F]`)                                                                                          |
-| `[:punct:]`           | any graphical character excluding "word" chartacters (e.g., ``[-!"#$%&'()*+,./:;<=>?@[\\\]^_`{\|}~]``)                               |
-| `[:blank:]`           | any horizontal whitespace character (e.g., space or tab `\t`)                                                                        |
-| `[:space:]`           | any whitespace character, similar to `\s`\ but also includes vertical tab `\X0B` / `\013`                                            |
-| `[:cntrl:]`           | any control character (ASCII 0-31 & 127), same as `\c`                                                                               |
-| `[:graph:]`           | any character that is graphical, that is, visible. This class consists of all alphanumeric characters and all punctuation characters |
-| `[:print:]`           | all printable characters, which is the set of all graphical characters plus those whitespace characters which are not also controls. |
-| `[:word:]`            | any "word" character (e.g., [A-Za-z0-9_]), same as `\w`                                                                              |
-
-| Backreferences ⚠️ | &nbsp;                  |
-| :--------------- | :---------------------- |
-| `$n` or `\n`     | nth capturing group     |
-| ``$` ``          | before matched string   |
-| `$'`             | after matched string    |
-| `$+`             | last matched string     |
-| `$&`             | entire matched string   |
-| `$_`             | entire input string     |
-| `$$`             | literal dollar sign `$` |
-
-⚠️ Not universally supported
-
-## SSL Certificates
-
-* [Certbot](https://certbot.eff.org/)
-  * [certbot-dns-cloudflare](https://certbot-dns-cloudflare.readthedocs.io/en/stable/)
-  * [Cloudflare DDNS](https://github.com/timothymiller/cloudflare-ddns)
-* [Let's Encrypt](https://letsencrypt.org/)
-
-### Using Certbot with unexposed domains
-
-cloudflare.ini:
-
-```text
-# Cloudflare API token used by Certbot
-dns_cloudflare_api_token = 0123456789abcdef0123456789abcdef
-```
-
-commands:
-
-```bash
-apt install certbot python-is-python3 python3-certbot-dns-cloudflare
-certbot certonly --dns-cloudflare --dns-cloudflare-credentials /path/to/cloudflare.ini -d domain.name.com -n
-```
-
-## Vi/Vim
-
-#### Change File Format in Vim
-
-* consider `dos2unix`
-
-```
-:e ++ff=dos
-:set ff=unix
-:wq
-```
+| Character | Code       |
+| :--       | :--        |
+| &#x2303;  | `&#x2303;` |
+| &#x2318;  | `&#x2318;` |
+| &#x2325;  | `&#x2325;` |
+| &#x21e7;  | `&#x21e7;` |
+| &#x232b;  | `&#x232b;` |
+| &#x21e5;  | `&#x21e5;` |
+| &#x25c0;  | `&#x25c0;` |
+| &#x25b6;  | `&#x25b6;` |
+| &#x25b2;  | `&#x25b2;` |
+| &#x25bc;  | `&#x25bc;` |
 
 ## Time Zones
 
