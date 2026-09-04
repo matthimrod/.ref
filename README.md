@@ -10,8 +10,6 @@ permalink: /
   }
 </style>
 
-[![Build and Deploy Workflow](https://gitea.matthimrod.com/matthimrod/.ref/actions/workflows/deploy.yaml/badge.svg?branch=main)](https://gitea.matthimrod.com/matthimrod/.ref/actions?workflow=deploy.yaml)
-
 * [Time Zones](#time-zones)
 
 ## MX Keys Mini Fn Key
