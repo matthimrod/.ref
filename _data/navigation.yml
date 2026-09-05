@@ -16,6 +16,8 @@ main:
 side:
   - title: "Programming"
     children:
+    - title: "Apple"
+      url: /apple/
     - title: "AWS"
       url: /aws/
     - title: "Azure"
@@ -39,6 +41,9 @@ side:
     children:
     - title: "HL7"
       url: /hl7/
+
+  - title: "Beard"
+    url: /beard/
 
   - title: "Linux"
     url: /linux/
@@ -68,3 +73,6 @@ side:
       url: /transit/#Parking-Options
     - title: "Food Options"
       url: /transit/#Food-Options
+
+  - title: 420
+    url: /420/
