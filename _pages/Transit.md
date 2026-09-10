@@ -91,6 +91,7 @@ permalink: /transit/
 ### 26th Street
 
 * [Cinderlands Warehouse](https://www.cinderlands.com/cinderlands-warehouse/) 2601 Smallman St
+  * 🤷 Pulled Pork Sandwich
 * [Pane è Pronto](https://paneepronto.com/) 2627 Penn Avenue
 * [The Dog Penn](https://www.thedogpenn.com/) 2614 Penn Avenue
 
@@ -104,7 +105,8 @@ permalink: /transit/
 ### 23rd Street
 
 * [Cork Factory](https://www.thecorkfactory.com/amenities/)
-  * [Juniper Grill](https://junipergrill.com/) 2350 Railroad Street
+  * ⏳[Juniper Grill](https://junipergrill.com/) 2350 Railroad Street
+    * 👍 1/2 Rotisserie Chicken and Avocado Salad + Bowl of Soup
   * [Atria's](https://atrias.com/) 2350 Railroad Street
   * [1930 by Atria's](https://www.1930byatrias.com/) (Cigar Bar) 2350 Railroad Street
   * [Coop De Ville](https://coopdevillepgh.com/) 2305 Smallman Street
@@ -119,7 +121,11 @@ permalink: /transit/
 ### 21st Street
 
 * [Phở Van Pittsburgh](https://www.orderphovanpgh.com/) 2120 Penn Avenue
+  * 👍 Pad Thai
 * [Luke Wholey's Wild Alaskan Grille](https://www.lukewholey.com/) 2106 Penn Avenue
+* [The Beerhive](https://www.thebeerhive.com/) 2117 Penn Avenue
+  * 👍 Chicken Little
+  * 👍 Strips & Chips
 * [La Prima Espresso Company](http://www.laprima.com/) 205 21st Street
 * [Colangelo's Pizza](http://colangelopgh.com/) 207 21st Street
 * [P&G's Pamela's Diner](https://pamelasdiner.com/) 60 21st Street
@@ -133,6 +139,7 @@ permalink: /transit/
 * [DeLuca's Diner](http://www.delucasinthestrip.com/) 2015 Penn Avenue
 * [My Sweet Lilly](http://mysweetlillypgh.com/) 2013 Penn Avenue
 * [Cafe Raymond](https://caferaymond.com/menu/) 2009 Penn Avenue
+  * 👍 2 Egg Breakfast w/ Blueberry Ricotta Pancake
 * [Allegheny Coffee & Tea Exchange](https://www.alleghenycoffee.com/menu) 2005 Penn Avenue
 * [Enrico Biscotti Co](https://www.enricobiscotti.com/) 2022 Penn Avenue
 
@@ -153,7 +160,7 @@ permalink: /transit/
   * [Aslin Beer Company](https://www.aslinbeer.com/) 1801 Smallman Street
 * [Iron Born Pizza & Pasta](http://ironbornpizza.com/) 1806 Smallman Street
 * [Novaria Coffee Co](http://novariacoffee.com/) 1812 Penn Avenue
-* [Primanti Bros. Restaurant and Bar](https://restaurants.primantibros.com/locations/pa/pittsburgh/46-18th-street) 46 18th Street
+* 👎 [Primanti Bros. Restaurant and Bar](https://restaurants.primantibros.com/locations/pa/pittsburgh/46-18th-street) 46 18th Street
 
 ### 17th Street
 
@@ -161,6 +168,9 @@ permalink: /transit/
   * [Playa Bowls](https://www.playabowls.com/) 1707 Smallman Street
   * [Puttshack](https://www.puttshack.com/) 1729 Smallman Street
   * [Shake Shack](https://shakeshack.com/) 1767 Smallman Street
+    * 👍 Bacon Cheeseburger
+    * 👍 Chicken Shack
+    * 👍 Cheese Fries
   * [Starbucks](https://www.starbucks.com/store-locator/store/1040149/strip-district-1701-smallman-street-pittsburgh-pa-152224407-us) 1701 Smallman Street
 * [Peppi's Old Tyme Sandwich Shop](http://peppisubs.com/) 1721 Penn Avenue
 * [Andy's Sushi Bar](https://wholeysmarket.com/pages/andys-sushi) (Inside Robert Wholey & Co) 1711 Penn Avenue
@@ -168,7 +178,7 @@ permalink: /transit/
 ### 16th Street
 
 * [The Terminal](https://www.stripdistrictterminal.com/)
-  * [Chipotle](https://www.chipotle.com/) 1685 Smallman Street
+  * 👎 [Chipotle](https://www.chipotle.com/) 1685 Smallman Street
   * [OddFellows Ice Cream Co.](https://www.oddfellowsnyc.com/) inside Posman Books 1637 Smallman Street
 * [Maiku Vietnamese Pho](https://www.maikuvietnamesepho.com/) 1611 Penn Avenue
 * [Aruba Island Bowls Cafe](https://arubaislandbowls.com/) 1601 Penn Avenue
