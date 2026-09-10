@@ -65,14 +65,15 @@ side:
       url: https://www.youtube.com/
 
   - title: "Getting Around"
-    url: /transit/
     children:
     - title: "PennDOT Cams"
-      url: /transit/#PennDOT-Cameras
+      url: /transit/
     - title: "Parking Options"
-      url: /transit/#Parking-Options
+      url: /strip/#Parking-Options
     - title: "Food Options"
-      url: /transit/#Food-Options
+      url: /strip/#Food-Options
+    - title: "Coffee Roasters"
+      url: /coffee/
 
   - title: 420
     url: /420/
