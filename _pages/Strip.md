@@ -60,7 +60,7 @@ permalink: /strip/
 
 ### 25th Street
 
-* [James Cafe](https://thejamescafe.com/) 2550 Smallman Street
+* ☕ [James Cafe](https://thejamescafe.com/) 2550 Smallman Street
 * [Pizzeria Davide](https://www.pizzeriadavide.com/pizzeria-davide-menu/) 2551 Penn Avenue Rear
 * [DiAnoia's Eatery](https://www.dianoiaseatery.com/) 2549 Penn Avenue
 * [Layali Cafe & Restaurant](http://layali-pgh.com/) 2533 Penn Avenue
@@ -89,21 +89,21 @@ permalink: /strip/
 * [The Beerhive](https://www.thebeerhive.com/) 2117 Penn Avenue
   * 👍 Chicken Little
   * 👍 Strips & Chips
-* [La Prima Espresso Company](http://www.laprima.com/) 205 21st Street
+* ☕ [La Prima Espresso Company](http://www.laprima.com/) 205 21st Street
 * [Colangelo's Pizza](http://colangelopgh.com/) 207 21st Street
 * [P&G's Pamela's Diner](https://pamelasdiner.com/) 60 21st Street
 
 ### 20th Street
 
 * [PaPa J's Twin Plaza](https://www.papajs.com/) 2016 Smallman Street
-* [De Fer Coffee & Tea](https://www.defer.coffee/strip-district) 2002 Smallman Street
+* ☕ [De Fer Coffee & Tea](https://www.defer.coffee/strip-district) 2002 Smallman Street
 * [Kaya](https://www.kaya.menu/) 2000 Smallman Street
 * [Caffé Mona](https://stripdistrict.caffemona.com/) 2019 Penn Avenue
 * [DeLuca's Diner](http://www.delucasinthestrip.com/) 2015 Penn Avenue
 * [My Sweet Lilly](http://mysweetlillypgh.com/) 2013 Penn Avenue
 * [Cafe Raymond](https://caferaymond.com/menu/) 2009 Penn Avenue
   * 👍 2 Egg Breakfast w/ Blueberry Ricotta Pancake
-* [Allegheny Coffee & Tea Exchange](https://www.alleghenycoffee.com/menu) 2005 Penn Avenue
+* ☕ [Allegheny Coffee & Tea Exchange](https://www.alleghenycoffee.com/menu) 2005 Penn Avenue
 * [Enrico Biscotti Co](https://www.enricobiscotti.com/) 2022 Penn Avenue
 
 ### 19th Street
@@ -122,7 +122,7 @@ permalink: /strip/
 * [The Terminal](https://www.stripdistrictterminal.com/)
   * [Aslin Beer Company](https://www.aslinbeer.com/) 1801 Smallman Street
 * [Iron Born Pizza & Pasta](http://ironbornpizza.com/) 1806 Smallman Street
-* [Novaria Coffee Co](http://novariacoffee.com/) 1812 Penn Avenue
+* ☕ [Novaria Coffee Co](http://novariacoffee.com/) 1812 Penn Avenue
 * 👎 [Primanti Bros. Restaurant and Bar](https://restaurants.primantibros.com/locations/pa/pittsburgh/46-18th-street) 46 18th Street
 
 ### 17th Street
@@ -134,7 +134,7 @@ permalink: /strip/
     * 👍 Bacon Cheeseburger
     * 👍 Chicken Shack
     * 👍 Cheese Fries
-  * [Starbucks](https://www.starbucks.com/store-locator/store/1040149/strip-district-1701-smallman-street-pittsburgh-pa-152224407-us) 1701 Smallman Street
+  * ☕ [Starbucks](https://www.starbucks.com/store-locator/store/1040149/strip-district-1701-smallman-street-pittsburgh-pa-152224407-us) 1701 Smallman Street
 * [Peppi's Old Tyme Sandwich Shop](http://peppisubs.com/) 1721 Penn Avenue
 * [Andy's Sushi Bar](https://wholeysmarket.com/pages/andys-sushi) (Inside Robert Wholey & Co) 1711 Penn Avenue
 
