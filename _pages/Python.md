@@ -1,6 +1,7 @@
 ---
 title: Python
 permalink: /python/
+classes: wide
 ---
 
 ## Sample Patterns

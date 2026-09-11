@@ -1,6 +1,7 @@
 ---
 title: Git
 permalink: /git/
+classes: wide
 ---
 
 Git Clone vis SSH Jumphost
@@ -9,9 +10,8 @@ Git Clone vis SSH Jumphost
 git -c core.sshCommand="ssh -J user@jumphost.com" clone git@gitea.matthimrod.com:username/repository.git
 ```
 
-## Git
+## Repostiory Operations
 
-| Repostiory Operations                                                     | &nbsp;                              |
 | :------------------------------------------------------------------------ | :---------------------------------- |
 | Create a new repository with the specified name                           | `git init [project name]`           |
 | Download a working copy of a repository locally                           | `git clone [url]`                   |
@@ -22,7 +22,8 @@ git -c core.sshCommand="ssh -J user@jumphost.com" clone git@gitea.matthimrod.com
 | Reset the working copy "HEAD" to the state at the given commit            | `git reset [commit]`                |
 | Reset the working copy "HEAD" to the given commit and discard the changes | `git reset --hard [commit]`         |
 
-| Commit Operations                                                        | &nbsp;                          |
+## Commit Operations
+
 | :----------------------------------------------------------------------- | :------------------------------ |
 | Capture a copy of the file(s) in preparation for committing              | `git add [file]`                |
 | Discard changes that have been made to the working copy                  | `git restore [file]`            |
@@ -37,7 +38,8 @@ git -c core.sshCommand="ssh -J user@jumphost.com" clone git@gitea.matthimrod.com
 | Download changes from the server to the local copy of the current branch | `git pull`                      |
 | Download a copy of changes to the repository from the server             | `git fetch`                     |
 
-| Stash Operations                                                    | &nbsp;                               |
+## Stash Operations
+
 | :------------------------------------------------------------------ | :----------------------------------- |
 | Store a temporary copy of all modified, tracked files               | `git stash [push] [-m "message"]`    |
 | Store a copy of all changed files (tracked, untracked, NOT ignored) | `git stash [push] -u [-m "message"]` |
@@ -46,7 +48,8 @@ git -c core.sshCommand="ssh -J user@jumphost.com" clone git@gitea.matthimrod.com
 | Restore the most recent entry from the stash                        | `git stash pop`                      |
 | Discard the most recent entry from the stash                        | `git stash drop`                     |
 
-| Branch Operations                                                            | &nbsp;                                   |
+## Branch Operations
+
 | :--------------------------------------------------------------------------- | :--------------------------------------- |
 | List the local branches in the current repository                            | `git branch [-l]`                        |
 | List the remote branches in the current repository                           | `git branch -r`                          |
@@ -57,7 +60,8 @@ git -c core.sshCommand="ssh -J user@jumphost.com" clone git@gitea.matthimrod.com
 | Combine the history from the specified branch into the current branch        | `git merge [branch]`                     |
 | Shows content differences between two branches                               | `git diff [first]...[second]`            |
 
-| Maintenance                                                 | &nbsp;                                                  |
+## Maintenance
+
 | :---------------------------------------------------------- | :------------------------------------------------------ |
 | Git Cleanup                                                 | `git gc`                                                |
 | Stop showing changes on a tracked file.                     | `git update-index --assume-unchanged [<file> ...]`      |
@@ -66,7 +70,7 @@ git -c core.sshCommand="ssh -J user@jumphost.com" clone git@gitea.matthimrod.com
 
 Note: Feature branches that originated locally and were merged via a merge request won't be automatically removed, but you can find these with git branch -vv. The remote will say "; gone".
 
-### Git Flow Extension
+## Git Flow Extension
 
 * [Git Flow](https://github.com/nvie/gitflow)
 * [Using git-flow to automate your git branching workflow](https://jeffkreeftmeijer.com/git-flow/)
@@ -84,16 +88,15 @@ Note: Feature branches that originated locally and were merged via a merge reque
 | release            | Used to prepare a release from develop to be merged with master/main. Created from develop and merged to master/main and back to develop. |
 | hotfix             | Used to quickly address necessary changes for the main branch. Created from master/main and merged back to master/main and to develop.    |
 
+### Git Flow Equivalents
 
-#### Git Flow Equivalents
-
-```
+```shell
 git flow feature start <feature-name>
 ---
 git checkout -b feature/<feature-name> develop
 ```
 
-```
+```shell
 git flow feature finish <feature-name>
 ---
 git checkout develop
@@ -101,13 +104,13 @@ git merge --no-ff feature/<feature-name>
 git branch -d feature/<feature-name>
 ```
 
-```
+```shell
 git flow release start <version>
 ---
 git checkout -b release/<version> develop
 ```
 
-```
+```shell
 git flow release finish <version>
 ---
 git checkout master
@@ -118,13 +121,13 @@ git merge --no-ff release/<version>
 git branch -d release/<version>
 ```
 
-```
+```shell
 git flow hotfix start <version>
 ---
 git checkout -b hotfix/<version> master
 ```
 
-```
+```shell
 git flow hotfix finish <version>
 ---
 git checkout master
@@ -135,53 +138,59 @@ git merge --no-ff hotfix/<version>
 git branch -d hotfix/<version>
 ```
 
-### Merging
-
-#### Merge & Squash 
+## Merge & Squash
 
 * Creates one clean commit in the target branch.
 * Leaves feature branch intact.
 
-```
+```shell
 git checkout develop
 git pull
 git merge --squash feature/name
 git commit -m "Add feature X"
 ```
 
-#### Interactive Rebase & Merge
+## Undo Pull (with merge) to Rebase
+
+If you pull changes and a merge is created, you can undo the merge and redo the pull with `--rebase` to keep the tree cleaner.
+
+```shell
+git reset --hard HEAD@{1}
+git pull --rebase
+```
+
+## Interactive Rebase & Merge
 
 * Pick and clen up commits before merging normally.
 * Rewrites commit history
 
-```
+```shell
 git checkout feature-branch
 git rebase -i main
 ```
 
 Pick/squash commits to combine.
 
-```
+```shell
 git checkout main
 git merge feature-branch
 ```
 
-#### Squash _n_ Commits
+## Squash Commits
 
 Rebase:
 
-```
+```shell
 git rebase -i HEAD~n
 ```
 
 Soft Reset:
 
-```
+```shell
 git reset --soft HEAD~n
 git commit -m "Message"
 ```
 
-
-### Git Cleanup
+## Git Cleanup
 
 Git Cleanup runs a number of housekeeping tasks within the current repository, such as compressing file revisions (to reduce disk space and increase performance), removing unreachable objects which may have been created from prior invocations of git add, packing refs, pruning reflog, rerere metadata or stale working trees. May also update ancillary indexes such as the commit-graph.

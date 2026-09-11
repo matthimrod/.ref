@@ -7,11 +7,6 @@ permalink: /linux/
   * [trzsz installation](https://trzsz.github.io/#installation)
   * [trzsz manual](https://trzsz.github.io/#trzsz-manual)
 * [ttyd](https://github.com/tsl0922/ttyd)
-* [Pimoroni Unicorn Hat HD](https://github.com/pimoroni/unicorn-hat-hd)
-* [Pimoroni Unicorn Hat Mini](https://github.com/pimoroni/unicornhatmini-python)
-* [Raspberry Pi Zero USB Gadget](https://learn.adafruit.com/turning-your-raspberry-pi-zero-into-a-usb-gadget)
-  * SHARED_ADDR is in /usr/bin/rpi-usb-gadget
-  * echo "dhcp-option=3" > /etc/NetworkManager/dnsmasq-shared.d/no-route.conf
 
 Copy single file with sudo
 
