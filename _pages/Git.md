@@ -75,44 +75,51 @@ Note: Feature branches that originated locally and were merged via a merge reque
 * [Git Flow](https://github.com/nvie/gitflow)
 * [Using git-flow to automate your git branching workflow](https://jeffkreeftmeijer.com/git-flow/)
 
-| Git Flow Operations                                                          | &nbsp;                                   |
+&nbsp;
+
+* [git-flow-next](https://git-flow.sh/)
+  * [github](https://github.com/gittower/git-flow-next)
+
+### Git Flow Operations
+
 | :--------------------------------------------------------------------------- | :--------------------------------------- |
 | Initialize Git Flow extensions                                               | `git flow init [-d]`                     |
 | Create a Git Flow feature branch                                             | `git flow feature start [feature-name]`  |
 | Finish a Git Flow feature branch (merge the changes and delete the branch)   | `git flow feature finish [feature-name]` |
 
-| Git Flow Workflows | &nbsp;                                                                                                                                    |
+&nbsp;
+
 | :----------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | init               | Initialize a new git repo with support for the branching model.                                                                           |
 | feature            | Used to add new features to the code. Created from develop and merged to develop.                                                         |
 | release            | Used to prepare a release from develop to be merged with master/main. Created from develop and merged to master/main and back to develop. |
 | hotfix             | Used to quickly address necessary changes for the main branch. Created from master/main and merged back to master/main and to develop.    |
 
-### Git Flow Equivalents
+#### Git Flow Command Equivalents
+
+**feature start**
 
 ```shell
-git flow feature start <feature-name>
----
 git checkout -b feature/<feature-name> develop
 ```
 
+**feature finish**
+
 ```shell
-git flow feature finish <feature-name>
----
 git checkout develop
 git merge --no-ff feature/<feature-name>
 git branch -d feature/<feature-name>
 ```
 
+**release start**
+
 ```shell
-git flow release start <version>
----
 git checkout -b release/<version> develop
 ```
 
+**release finish**
+
 ```shell
-git flow release finish <version>
----
 git checkout master
 git merge --no-ff release/<version>
 git tag <version>
@@ -121,15 +128,15 @@ git merge --no-ff release/<version>
 git branch -d release/<version>
 ```
 
+**hotfix start**
+
 ```shell
-git flow hotfix start <version>
----
 git checkout -b hotfix/<version> master
 ```
 
+**hotfix finish**
+
 ```shell
-git flow hotfix finish <version>
----
 git checkout master
 git merge --no-ff hotfix/<version>
 git tag <version>
@@ -138,7 +145,9 @@ git merge --no-ff hotfix/<version>
 git branch -d hotfix/<version>
 ```
 
-## Merge & Squash
+## Git Recipes
+
+### Merge & Squash
 
 * Creates one clean commit in the target branch.
 * Leaves feature branch intact.
@@ -150,7 +159,7 @@ git merge --squash feature/name
 git commit -m "Add feature X"
 ```
 
-## Undo Pull (with merge) to Rebase
+### Undo Pull (with merge) to Rebase
 
 If you pull changes and a merge is created, you can undo the merge and redo the pull with `--rebase` to keep the tree cleaner.
 
@@ -159,7 +168,7 @@ git reset --hard HEAD@{1}
 git pull --rebase
 ```
 
-## Interactive Rebase & Merge
+### Interactive Rebase & Merge
 
 * Pick and clen up commits before merging normally.
 * Rewrites commit history
@@ -176,7 +185,7 @@ git checkout main
 git merge feature-branch
 ```
 
-## Squash Commits
+### Squash Commits
 
 Rebase:
 
