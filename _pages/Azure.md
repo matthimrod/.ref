@@ -9,6 +9,7 @@ classes: wide
 
 ## Databricks
 
-* [Develop on Databricks](https://docs.databricks.com/aws/en/developers/)
-  * [Databricks SDK for Python](https://docs.databricks.com/aws/en/dev-tools/sdk-python)
-  * [Databricks Utilities](https://docs.databricks.com/aws/en/dev-tools/databricks-utils)
+* [Develop on Databricks](https://learn.microsoft.com/en-us/azure/databricks/developers//)
+  * [Databricks SDK for Python](https://learn.microsoft.com/en-us/azure/databricks/dev-tools/sdk-python)
+  * [Databricks Utilities](https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-utils)
+  * [Databricks SQL Language Reference](https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/)
