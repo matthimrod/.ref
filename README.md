@@ -12,23 +12,16 @@ permalink: /
 
 * [Time Zones](#time-zones)
 
-## MX Keys Mini Fn Key
-
-| Key               | Action                                            |
-| :---------------- | :------------------------------------------------ |
-| Fn + `O` (3 secs) | MacOs (&#x2325; Option and &#x2318; Command keys) |
-| Fn + `P` (3 secs) | Windows/Linux (Start and Alt keys)                |
-| Fn + `U` (3 secs) | Swap Special Characters (MacOS)                   |
-| Fn + `B`          | Pause/Break                                       |
-| Fn + &#x1f81c;    | Home                                              |
-| Fn + &#x1f81e;    | End                                               |
-| Fn + &#x1f81d;    | PgUp                                              |
-| Fn + &#x1f81f;    | PgDown                                            |
-
 ## AI
 
+* [ChatGPT](https://chatgpt.com/) ([OpenAI](https://openai.com/))
+* [Claude](https://claude.com/) ([Anthropic](https://www.anthropic.com/))
 * [Copilot](https://copilot.microsoft.com/)
+* [Cursor](https://cursor.com/) ([Anysphere](https://anysphere.inc/)/[SpaceXAI](https://x.ai/))
+* [Deepseek](https://www.deepseek.com/)
 * [Gemini](https://gemini.google.com/)
+* [GitHub Copilot](https://github.com/copilot)
+* [Hugging Face](https://huggingface.co/)
 
 ## Beard
 
