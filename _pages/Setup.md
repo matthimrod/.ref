@@ -4,13 +4,18 @@ permalink: /setup/
 ---
 
 * [Windows Package Manager (winget)](https://learn.microsoft.com/en-us/windows/package-manager/)
+* [Mac Homebrew Package Manager (brew)](https://brew.sh/)
 
 ## 7-zip
 
 * [7-zip](https://www.7-zip.org/)
 
-```shell
+```powershell
 winget install 7zip.7zip
+```
+
+```zsh
+brew install sevenzip
 ```
 
 ## Astral UV (Python)
@@ -27,6 +32,10 @@ irm https://astral.sh/uv/install.ps1 | iex
 
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+```zsh
+brew install uv
 ```
 
 ## AWS CLI & Session Manager
@@ -49,6 +58,11 @@ winget install Bitwarden.Bitwarden
 winget install Bitwarden.CLI
 ```
 
+```zsh
+brew install --cask bitwarden
+brew install bitwarden-cli
+```
+
 ## Cascadia Code
 
 * [Download](https://github.com/microsoft/cascadia-code/releases)
@@ -66,12 +80,20 @@ winget install GitHub.Copilot
 curl -fsSL https://gh.io/copilot-install | bash
 ```
 
+```zsh
+brew install --cask copilot-cli
+```
+
 ## Coreutils for Windows
 
 * [Coreutils for Windows](https://github.com/microsoft/coreutils)
 
 ```shell
 winget install Microsoft.Coreutils
+```
+
+```zsh
+brew install coreutils
 ```
 
 ## Cryptomator
@@ -96,12 +118,20 @@ winget install Cryptomator.Cryptomator
 winget install DBeaver.DBeaver.Community
 ```
 
+```zsh
+brew install --cask dbeaver-community
+```
+
 ## Discord
 
 * [Discord](https://discord.com/)
 
 ```shell
 winget install Discord.Discord
+```
+
+```zsh
+brew install --cask discord
 ```
 
 ## Docker
@@ -115,10 +145,18 @@ winget install Discord.Discord
 winget install Docker.DockerDesktop
 ```
 
+```zsh
+brew install --cask docker-desktop
+```
+
 ### Docker Engine
 
 * [Docker Engine Docs](https://docs.docker.com/engine/)
 * [Docker Engine Install](https://docs.docker.com/engine/install)
+
+```zsh
+brew install docker
+```
 
 ## Edit CLI Editor
 
@@ -136,12 +174,20 @@ winget install Microsoft.Edit
 winget install Git.Git
 ```
 
+```zsh
+brew install git
+```
+
 ## GitHub CLI
 
 * [GitHub CLI](https://cli.github.com/)
 
 ```shell
 winget install GitHub.cli
+```
+
+```zsh
+brew install gh
 ```
 
 ## Google Chrome
@@ -152,12 +198,26 @@ winget install GitHub.cli
 winget install Google.Chrome
 ```
 
+```zsh
+brew install --cask google-chrome
+```
+
+### Chrome/Edge Extensions
+
+* [Bitwareden](https://chromewebstore.google.com/detail/bitwarden-password-manage/nngceckbapebfimnlniiiahkandclblb)
+* [Dark Reader](https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh)
+* [Markdown Reader](https://chromewebstore.google.com/detail/markdown-reader/medapdbncneneejhbgcjceippjlfkmkg)
+
 ## Helm CLI
 
 * [Helm](https://helm.sh/)
 
 ```shell
 winget install Helm.Helm
+```
+
+```zsh
+brew install helm
 ```
 
 ## Irfanview & Plugins
@@ -181,6 +241,12 @@ winget install JetBrains.PyCharm
 winget install JetBrains.Toolbox
 ```
 
+```zsh
+brew install --cask intellij-idea
+brew install --cask pycharm
+brew install --cask jetbrains-toolbox
+```
+
 ## Kubernetes CLI (Kubectl)
 
 * [Kubernetes Tools](https://kubernetes.io/docs/tasks/tools/)
@@ -188,6 +254,10 @@ winget install JetBrains.Toolbox
 
 ```shell
 winget install Kubernetes.kubectl
+```
+
+```zsh
+brew install kubernetes-cli
 ```
 
 ## Logi Options+
@@ -198,12 +268,20 @@ winget install Kubernetes.kubectl
 winget install Logitech.OptionsPlus
 ```
 
+```zsh
+brew install --cask logi-options+
+```
+
 ### Alternative: OpenLogi
 
 * [OpenLogi](https://openlogi.org/)
   * [Install](https://openlogi.org/en#install)
   * [Download/Linux](https://openlogi.org/download/linux)
   * [Download/Windows](https://openlogi.org/download/windows)
+
+```zsh
+brew install --cask openlogi
+```
 
 ## NVM (NodeJS)
 
@@ -212,6 +290,12 @@ winget install Logitech.OptionsPlus
 
 ```shell
 winget install CoreyButler.NVMforWindows
+nvm install lts
+nvm use lts
+```
+
+```zsh
+brew install nvm
 nvm install lts
 nvm use lts
 ```
@@ -233,12 +317,20 @@ winget install Notepad++.Notepad++
 winget install Postman.Postman
 ```
 
+```zsh
+brew install --cask postman
+```
+
 ## PowerShell
 
 [Download](https://github.com/PowerShell/PowerShell/releases)
 
 ```shell
 winget install Microsoft.PowerShell
+```
+
+```zsh
+brew install powershell
 ```
 
 ### PowerToys
@@ -257,6 +349,10 @@ winget install Microsoft.PowerToys
 winget install JanDeDobbeleer.OhMyPosh
 ```
 
+```zsh
+brew install oh-my-posh
+```
+
 ### Posh-Git
 
 * [GitHub](https://github.com/dahlbyk/posh-git)
@@ -271,6 +367,18 @@ Install-Module posh-git
 
 ```shell
 winget install PuTTY.PuTTY
+```
+
+```zsh
+brew install putty
+```
+
+## SDKMAN!
+
+* [SDKMAN!](https://sdkman.io/)
+
+```zsh
+curl -s "https://get.sdkman.io" | zsh
 ```
 
 ## SDKMan for PowerShell
@@ -298,12 +406,20 @@ Import-Module posh-sdk
 winget install Microsoft.VisualStudioCode
 ```
 
+```zsh
+brew install --cask visual-studio-code
+```
+
 ## VLC Player
 
 * [VLC Player](https://www.videolan.org/vlc/)
 
 ```shell
 winget install VideoLAN.VLC
+```
+
+```zsh
+brew install --cask vlc
 ```
 
 ## Windows Terminal
@@ -321,6 +437,10 @@ winget install Microsoft.WindowsTerminal
 
 ```shell
 winget install Yubico.Authenticator
+```
+
+```zsh
+brew install --cask yubico-authenticator
 ```
 
 ## Windows & Office

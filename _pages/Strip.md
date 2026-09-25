@@ -88,6 +88,7 @@ permalink: /strip/
 * [Luke Wholey's Wild Alaskan Grille](https://www.lukewholey.com/) 2106 Penn Avenue
 * [The Beerhive](https://www.thebeerhive.com/) 2117 Penn Avenue
   * 👍 Chicken Little
+  * 👍 Smash Burger
   * 👍 Strips & Chips
 * ☕ [La Prima Espresso Company](http://www.laprima.com/) 205 21st Street
 * [Colangelo's Pizza](http://colangelopgh.com/) 207 21st Street
