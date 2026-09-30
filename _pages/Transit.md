@@ -3,6 +3,9 @@ title: Getting Around
 permalink: /transit/
 ---
 
+* [Churchill Valley Greenway](https://alleghenylandtrust.org/green-space/churchill-valley-greenway/)
+  * [Map](https://alleghenylandtrust.org/wp-content/uploads/2021/06/Churchill-Valley-Greenway-2021-6-30.pdf)
+
 ## PennDOT Cameras
 
 * [511 PA Traffic Cameras](https://www.511pa.com/cctv)

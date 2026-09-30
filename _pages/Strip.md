@@ -112,7 +112,8 @@ permalink: /strip/
 * [The Terminal](https://www.stripdistrictterminal.com/)
   * [PrimoHoagies](https://www.primohoagies.com/) 1901 Smallman Street
   * [Novo Asian Food Hall](https://novoasianfoodhall.com/) 1931 Smallman Street
-* [The PA Market](https://www.thepamarket.com/) 108 19th Street
+* ~~[The PA Market](https://www.thepamarket.com/) 108 19th Street~~
+  * PA Market is dead to me because they left me hungry on September 30, 2026.
 * [Bella Notte](http://www.bellanottepgh.com/food_menu) 1914 Penn Avenue
 * [PAN-CHA](http://www.pancha88.com/) (Bubble Tea) 1908 Penn Ave Unit B
 * [Little Bangkok in the Strip](https://www.littlebangkokpittsburgh.com/) 1906 Penn Avenue
