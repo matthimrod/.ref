@@ -452,6 +452,10 @@ brew install --cask yubico-authenticator
 irm https://get.activated.win | iex
 ```
 
+To skip setting up networking and/or linking a Microsoft account, open a command prompt by pressing `Shift` + `F10`. At the prompt either `OOBE\BYPASSNRO` or `start ms-cxh:localonly` should allow you to bypass setting up networking and creating a Microsoft account.
+
+### Non-Administrator Symbolic Links
+
 By default, Windows requires Administrator rights to create symbolic links. This can be changed in the Local Security Policy.
 
 * Open the Local Security Policy management console as Administrator (`%windir%\system32\secpol.msc /s`)

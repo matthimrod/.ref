@@ -6,10 +6,14 @@ classes: wide
 ---
 
 <style>
-  table tr:nth-child(even) { background-color: #f2f2f2 !important; }
-  @media (prefers-color-scheme: dark) {
-    table tr:nth-child(even) { background-color: #2d2d2d !important; }
+table tr:nth-child(even) { 
+  background-color: #f2f2f2 !important; 
+}
+@media (prefers-color-scheme: dark) {
+  table tr:nth-child(even) { 
+    background-color: #2d2d2d !important; 
   }
+}
 </style>
 
 * [Amazon Web Services In Plain English](https://expeditedsecurity.com/aws-in-plain-english/)
