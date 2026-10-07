@@ -14,6 +14,7 @@ classes: wide
 
 * [Azure Portal](https://portal.azure.com/)
 * [Azure CLI Reference](https://learn.microsoft.com/en-us/cli/azure/)
+  * [Azure CLI Installation](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
 * [Azure SDK for Python](https://github.com/Azure/azure-sdk-for-python)
   * [Python API overview](https://learn.microsoft.com/en-us/python/api/overview/azure/)
 * [Azure REST API Reference](https://learn.microsoft.com/en-us/rest/api/azure/)
