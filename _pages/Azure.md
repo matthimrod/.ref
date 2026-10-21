@@ -21,6 +21,13 @@ classes: wide
 * [Terraform AzureRM Provider](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
 * [Azurite (local Storage emulator)](https://github.com/Azure/Azurite)
 
+&nbsp;
+
+* [Bitbucket Pipelines](https://support.atlassian.com/bitbucket-cloud/docs/get-started-with-bitbucket-pipelines/)
+* [Bitbucket Pipelines configuration reference](https://support.atlassian.com/bitbucket-cloud/docs/bitbucket-pipelines-configuration-reference/)
+
+## Azure Native Services
+
 | Service                                                                                      | ≈ AWS                    | &nbsp;                                                                                                      | &nbsp;                                                                                                                        | &nbsp;                                                                              | &nbsp;                                                                                      | &nbsp;                                                                                                                                   |
 | :------------------------------------------------------------------------------------------- | :----------------------- | :---------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------- |
 | [API Management](https://azure.microsoft.com/en-us/products/api-management)                  | API Gateway              | [Docs](https://learn.microsoft.com/en-us/azure/api-management/)                                             | &nbsp;                                                                                                                        | [CLI](https://learn.microsoft.com/en-us/cli/azure/apim)                              | [REST](https://learn.microsoft.com/en-us/rest/api/apimanagement/)                           | [TF](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/api_management)                                     |
@@ -59,6 +66,16 @@ classes: wide
     * [Documentation](https://databricks-sdk-py.readthedocs.io/en/latest/)
   * [Databricks Utilities](https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-utils)
   * [Databricks SQL Language Reference](https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/)
+
+### LTS Versions
+
+| &nbsp; | Release Date     | End of Support   | Ubuntu Linux | Spark | Scala             | Python  | databricks-sdk | R     | Delta Lake |
+| :--    | :--              | :--              | :--          | :--   | :--               | :--     | :--            | :--   | :--        |
+| 15.4   | August 19, 2024  | August 19, 2027  | 22.04.4 LTS  | 3.5.0 | 2.12.15           | 3.11.11 | 0.20.0         | 4.3.2 | 3.2.0      |
+| 16.4   | May 9, 2025      | May 9, 2028      | 24.04.2 LTS  | 3.5.2 | 2.12.15 / 2.13.10 | 3.12.3  | 0.30.0         | 4.4.0 | 3.3.1      |
+| 17.3   | October 22, 2025 | October 22, 2028 | 24.04.3 LTS  | 4.0.0 | 2.13.16           | 3.12.3  | 0.49.0         | 4.4.2 | 4.0.0      |
+| 18     | June 10, 2026    | June 10, 2029    | 24.04.4 LTS  | 4.1.0 | 2.13.16           | 3.12.3  | 0.67.0         | 4.5.1 | 4.2.0      |
+
 
 ## AWS–Azure Secret Decoder Ring
 
