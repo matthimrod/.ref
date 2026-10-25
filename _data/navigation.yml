@@ -32,6 +32,8 @@ side:
       url: /java/
     - title: "JavaScript"
       url: /javascript/
+    - title: "PowerShell"
+      url: /powershell/
     - title: "Python"
       url: /python/
     - title: "Regular Expressions"
