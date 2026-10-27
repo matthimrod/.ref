@@ -464,3 +464,19 @@ By default, Windows requires Administrator rights to create symbolic links. This
   `Security Settings > Local Policies > User Rights Assignment`
 * In the policy window on the right, find "Create Symbolic Links".
 * Double-click the policy. Click "Add User or Group". Add your user.
+
+### Permissions for Windows OpenSSH Server
+
+```
+$user = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
+$sshPath = "$env:USERPROFILE\.ssh"
+
+# 1. Remove all inherited Windows permissions
+icacls $sshPath /inheritance:r
+
+# 2. Grant your user full control (fixes Git, VS Code, and local ssh client)
+icacls $sshPath /grant:r "$($user):(OI)(CI)F" /T
+
+# 3. Grant SYSTEM full control (allows the sshd service to read authorized_keys)
+icacls $sshPath /grant:r "SYSTEM:(OI)(CI)F" /T
+```
