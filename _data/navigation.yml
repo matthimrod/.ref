@@ -38,6 +38,8 @@ side:
       url: /python/
     - title: "Regular Expressions"
       url: /regex/
+    - title: "Security"
+      url: /security/
 
   - title: "Data"
     children:
