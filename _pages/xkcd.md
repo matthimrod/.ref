@@ -1,4 +1,8 @@
-# Classic xkcd
+---
+title: Classic xkcd
+permalink: /xkcd/
+classes: wide
+---
 
 ## Sandwich
 
