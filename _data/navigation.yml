@@ -79,5 +79,8 @@ side:
     - title: "Coffee Roasters"
       url: /coffee/
 
+  - title: xkcd
+    url: /xkcd/
+
   - title: 420
     url: /420/
