@@ -7,8 +7,12 @@ classes: wide
 Git Clone vis SSH Jumphost
 
 ```shell
-git -c core.sshCommand="ssh -J user@jumphost.com" clone git@gitea.matthimrod.com:username/repository.git
+git -c core.sshCommand="ssh -J user@matthimrod.com" clone git@gitea.matthimrod.com:username/repository.git
 ```
+
+* [Bitbucket Pipelines](https://support.atlassian.com/bitbucket-cloud/docs/get-started-with-bitbucket-pipelines/)
+* [Bitbucket Pipelines configuration reference](https://support.atlassian.com/bitbucket-cloud/docs/bitbucket-pipelines-configuration-reference/)
+
 
 ## Repostiory Operations
 

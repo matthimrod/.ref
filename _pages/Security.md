@@ -28,5 +28,11 @@ permalink: /security/
 ## CVE-2026-111497 Broccoli2Shell
 
 * [CVE](https://www.cve.org/CVERecord?id=CVE-2026-111497)
-* [MVD](https://nvd.nist.gov/vuln/detail/cve-2026-111497)
+* [NVD](https://nvd.nist.gov/vuln/detail/cve-2026-111497)
 * [https://broccoli2shell.com/](https://broccoli2shell.com/)
+
+## CVE-2026-123158 *sshole
+
+* [CVE](https://www.cve.org/CVERecord?id=CVE-2026-123158)
+* [NVD](https://nvd.nist.gov/vuln/detail/cve-2026-123158)
+* [sshhole.com](sshhole.com)
