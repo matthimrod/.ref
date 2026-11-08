@@ -685,6 +685,7 @@ winget install --id=astral-sh.uv  -e
   * [API Reference](https://pandas.pydata.org/docs/reference/index.html)
 * [pydantic](https://docs.pydantic.dev/latest/)
   * [github](https://github.com/pydantic/pydantic)
+* [pydantic-settings](https://pypi.org/project/pydantic-settings/)
 * [PySpark](https://spark.apache.org/docs/latest/api/python/index.html)
   * [API Reference](https://spark.apache.org/docs/latest/api/python/reference/index.html)
 * [SQLAlchemy](https://www.sqlalchemy.org/)
