@@ -718,7 +718,17 @@ a code {
   background: rgba(90, 247, 142, 0.1);
 }
 
-pre.highlight {
+.code-wrapper .highlighter-rouge,
+.code-wrapper .highlight {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+.code-wrapper pre,
+pre.highlight,
+.note-body pre {
   margin: 0 !important;
   padding: 1rem 1.15rem !important;
   background: transparent !important;
@@ -730,7 +740,9 @@ pre.highlight {
   scrollbar-color: var(--border) transparent;
 }
 
-pre.highlight code {
+.code-wrapper pre code,
+pre.highlight code,
+.note-body pre code {
   background: transparent !important;
   border: none !important;
   padding: 0 !important;

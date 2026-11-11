@@ -181,93 +181,6 @@
     }
   }
 
-  // --- Code Blocks & 1-Click Copy ---
-  const codeBlocks = document.querySelectorAll('div.highlighter-rouge, pre.highlight');
-  codeBlocks.forEach(block => {
-    // Check if this block is a Mermaid diagram
-    const isMermaid = block.classList.contains('language-mermaid') ||
-      block.querySelector('code.language-mermaid') ||
-      block.querySelector('pre.language-mermaid');
-    if (isMermaid) return; // Handled by Mermaid loader
-
-    const pre = block.tagName === 'PRE' ? block : block.querySelector('pre');
-    if (!pre) return;
-
-    // Detect language
-    let lang = 'CODE';
-    block.classList.forEach(cls => {
-      if (cls.startsWith('language-') && cls !== 'language-plaintext') {
-        lang = cls.replace('language-', '').toUpperCase();
-      }
-    });
-
-    const code = pre.querySelector('code');
-    if (code) {
-      code.classList.forEach(cls => {
-        if (cls.startsWith('language-') && cls !== 'language-plaintext') {
-          lang = cls.replace('language-', '').toUpperCase();
-        }
-      });
-    }
-
-    // Create wrapper and header
-    const wrapper = document.createElement('div');
-    wrapper.className = 'code-wrapper';
-
-    const header = document.createElement('div');
-    header.className = 'code-header';
-
-    const langSpan = document.createElement('span');
-    langSpan.className = 'code-lang';
-    langSpan.textContent = lang;
-
-    const copyBtn = document.createElement('button');
-    copyBtn.type = 'button';
-    copyBtn.className = 'copy-btn';
-    copyBtn.innerHTML = `
-      <svg viewBox="0 0 24 24" width="13" height="13" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-      </svg>
-      <span>Copy</span>
-    `;
-
-    copyBtn.addEventListener('click', async () => {
-      const textToCopy = (code || pre).innerText;
-      try {
-        await navigator.clipboard.writeText(textToCopy);
-        copyBtn.classList.add('copied');
-        copyBtn.innerHTML = `
-          <svg viewBox="0 0 24 24" width="13" height="13" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <polyline points="20 6 9 17 4 12"></polyline>
-          </svg>
-          <span>Copied!</span>
-        `;
-        setTimeout(() => {
-          copyBtn.classList.remove('copied');
-          copyBtn.innerHTML = `
-            <svg viewBox="0 0 24 24" width="13" height="13" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-            </svg>
-            <span>Copy</span>
-          `;
-        }, 2000);
-      } catch (err) {
-        console.error('Could not copy code:', err);
-      }
-    });
-
-    header.appendChild(langSpan);
-    header.appendChild(copyBtn);
-
-    // Replace in DOM
-    const parent = block.parentNode;
-    parent.insertBefore(wrapper, block);
-    wrapper.appendChild(header);
-    wrapper.appendChild(block);
-  });
-
   // --- Wrap Markdown Tables for Responsive Scrolling ---
   if (noteBody) {
     const tables = noteBody.querySelectorAll('table');
@@ -342,7 +255,7 @@
           }
         });
 
-        diagramData.forEach(async ({ wrap, code, id }) => {
+        diagramData.forEach(async ({ wrap, code }) => {
           try {
             wrap.innerHTML = `<pre class="mermaid">${code}</pre>`;
           } catch (e) {
@@ -359,5 +272,114 @@
     };
     document.head.appendChild(script);
   }
+
+  // --- Code Blocks & 1-Click Copy ---
+  const codeCandidates = document.querySelectorAll(
+    '.note-body div.highlighter-rouge, .note-body pre'
+  );
+
+  const codeBlocksToProcess = [];
+  codeCandidates.forEach(block => {
+    // Skip <pre> inside a <div class="highlighter-rouge"> to avoid double wrappers
+    if (block.tagName === 'PRE' && block.closest('div.highlighter-rouge')) {
+      return;
+    }
+    // Skip if already in a wrapper or part of Mermaid
+    if (
+      block.closest('.code-wrapper') ||
+      block.closest('.mermaid-container') ||
+      block.classList.contains('mermaid') ||
+      block.classList.contains('language-mermaid') ||
+      block.querySelector('.language-mermaid')
+    ) {
+      return;
+    }
+    codeBlocksToProcess.push(block);
+  });
+
+  codeBlocksToProcess.forEach(block => {
+    const pre = block.tagName === 'PRE' ? block : block.querySelector('pre');
+    if (!pre) return;
+    const code = pre.querySelector('code');
+
+    // Detect language from classes
+    let lang = '';
+    const findLang = (el) => {
+      if (!el) return '';
+      for (const cls of el.classList) {
+        if (cls.startsWith('language-')) {
+          const l = cls.replace('language-', '').trim();
+          if (l && l.toLowerCase() !== 'plaintext') {
+            return l.toUpperCase();
+          }
+        }
+      }
+      return '';
+    };
+
+    lang = findLang(block) || findLang(pre) || findLang(code);
+    if (!lang) {
+      lang = 'CODE';
+    }
+
+    // Create wrapper and header
+    const wrapper = document.createElement('div');
+    wrapper.className = 'code-wrapper';
+
+    const header = document.createElement('div');
+    header.className = 'code-header';
+
+    const langSpan = document.createElement('span');
+    langSpan.className = 'code-lang';
+    langSpan.textContent = lang;
+
+    const copyBtn = document.createElement('button');
+    copyBtn.type = 'button';
+    copyBtn.className = 'copy-btn';
+    copyBtn.innerHTML = `
+      <svg viewBox="0 0 24 24" width="13" height="13" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+      </svg>
+      <span>Copy</span>
+    `;
+
+    copyBtn.addEventListener('click', async () => {
+      const textToCopy = (code || pre).innerText.replace(/\n$/, '');
+      try {
+        await navigator.clipboard.writeText(textToCopy);
+        copyBtn.classList.add('copied');
+        copyBtn.innerHTML = `
+          <svg viewBox="0 0 24 24" width="13" height="13" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          <span>Copied!</span>
+        `;
+        setTimeout(() => {
+          copyBtn.classList.remove('copied');
+          copyBtn.innerHTML = `
+            <svg viewBox="0 0 24 24" width="13" height="13" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Copy</span>
+          `;
+        }, 2000);
+      } catch (err) {
+        console.error('Could not copy code:', err);
+      }
+    });
+
+    header.appendChild(langSpan);
+    header.appendChild(copyBtn);
+
+    // Replace in DOM
+    const parent = block.parentNode;
+    if (parent) {
+      parent.insertBefore(wrapper, block);
+      wrapper.appendChild(header);
+      wrapper.appendChild(block);
+    }
+  });
 })();
 
