@@ -135,6 +135,9 @@
   if (tocBox && tocList && noteBody) {
     const headings = noteBody.querySelectorAll('h2, h3');
     if (headings.length >= 2) {
+      let currentGroup = null;
+      let currentSublist = null;
+
       headings.forEach((heading, idx) => {
         if (!heading.id) {
           heading.id = heading.textContent
@@ -145,28 +148,54 @@
         }
 
         // Add clickable anchor to heading
-        const anchor = document.createElement('a');
-        anchor.className = 'header-anchor';
-        anchor.href = `#${heading.id}`;
-        anchor.setAttribute('aria-hidden', 'true');
-        anchor.textContent = '#';
-        heading.prepend(anchor);
+        if (!heading.querySelector('.header-anchor')) {
+          const anchor = document.createElement('a');
+          anchor.className = 'header-anchor';
+          anchor.href = `#${heading.id}`;
+          anchor.setAttribute('aria-hidden', 'true');
+          anchor.textContent = '#';
+          heading.prepend(anchor);
+        }
 
-        // Add item to TOC list
-        const li = document.createElement('li');
-        li.className = `toc-item toc-level-${heading.tagName.toLowerCase().slice(1)}`;
-        
-        const a = document.createElement('a');
-        a.className = 'toc-link';
-        a.href = `#${heading.id}`;
         // Clone heading text without anchor
         const clone = heading.cloneNode(true);
         const childAnchor = clone.querySelector('.header-anchor');
         if (childAnchor) childAnchor.remove();
-        a.textContent = clone.textContent.trim();
+        const titleText = clone.textContent.trim();
 
-        li.appendChild(a);
-        tocList.appendChild(li);
+        const level = heading.tagName.toLowerCase();
+
+        if (level === 'h2' || !currentGroup) {
+          currentGroup = document.createElement('li');
+          currentGroup.className = 'toc-group';
+
+          const a = document.createElement('a');
+          a.className = 'toc-link toc-parent';
+          a.href = `#${heading.id}`;
+          a.textContent = titleText;
+          currentGroup.appendChild(a);
+
+          currentSublist = null;
+          tocList.appendChild(currentGroup);
+        } else {
+          // h3 sub-heading under current h2 group
+          if (!currentSublist) {
+            currentSublist = document.createElement('ul');
+            currentSublist.className = 'toc-sublist';
+            currentGroup.appendChild(currentSublist);
+          }
+
+          const li = document.createElement('li');
+          li.className = 'toc-subitem';
+
+          const a = document.createElement('a');
+          a.className = 'toc-link';
+          a.href = `#${heading.id}`;
+          a.textContent = titleText;
+
+          li.appendChild(a);
+          currentSublist.appendChild(li);
+        }
       });
 
       tocBox.hidden = false;

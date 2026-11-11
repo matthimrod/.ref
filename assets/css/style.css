@@ -615,33 +615,64 @@ h3:hover .header-anchor {
 .toc-box.collapsed .toc-body { display: none; }
 .toc-box.collapsed .toc-toggle-indicator { transform: rotate(180deg); }
 
+.toc-body {
+  max-height: 48vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  padding-right: 0.25rem;
+}
+
 .toc-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-  gap: 0.25rem 1.25rem;
-  max-height: 40vh;
-  overflow-y: auto;
-  scrollbar-width: thin;
+  columns: 3 18rem;
+  column-gap: 2rem;
 }
 
-.toc-item {
-  padding: 0.12rem 0;
+.toc-group {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 0.75rem;
+  vertical-align: top;
+}
+
+.toc-group > .toc-link {
+  font-weight: 600;
   font-size: 0.88rem;
-}
-
-.toc-item.toc-level-3 {
-  padding-left: 0.85rem;
-  opacity: 0.85;
-}
-
-.toc-link {
   color: var(--text);
+  display: block;
+  padding: 0.12rem 0;
   text-decoration: none;
 }
-.toc-link:hover {
+
+.toc-group > .toc-link:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.toc-sublist {
+  list-style: none;
+  margin: 0.2rem 0 0.2rem 0;
+  padding: 0 0 0 0.75rem;
+  border-left: 2px solid var(--border);
+}
+
+.toc-subitem {
+  padding: 0.1rem 0;
+  font-size: 0.82rem;
+}
+
+.toc-subitem .toc-link {
+  color: var(--muted);
+  text-decoration: none;
+  display: block;
+  line-height: 1.4;
+}
+
+.toc-subitem .toc-link:hover {
   color: var(--accent);
   text-decoration: underline;
 }
@@ -892,7 +923,7 @@ tr:nth-child(even) td {
   }
 
   .toc-list {
-    grid-template-columns: 1fr;
+    columns: 1;
   }
 }
 
