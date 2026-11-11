@@ -718,8 +718,8 @@ a code {
   background: rgba(90, 247, 142, 0.1);
 }
 
-.code-wrapper .highlighter-rouge,
-.code-wrapper .highlight {
+.code-wrapper div.highlighter-rouge,
+.code-wrapper div.highlight {
   margin: 0 !important;
   padding: 0 !important;
   background: transparent !important;
@@ -727,6 +727,7 @@ a code {
 }
 
 .code-wrapper pre,
+.code-wrapper pre.highlight,
 pre.highlight,
 .note-body pre {
   margin: 0 !important;
@@ -741,6 +742,7 @@ pre.highlight,
 }
 
 .code-wrapper pre code,
+.code-wrapper pre.highlight code,
 pre.highlight code,
 .note-body pre code {
   background: transparent !important;
