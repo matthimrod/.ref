@@ -7,6 +7,9 @@
 (function () {
   'use strict';
 
+  if (window.__notes_theme_initialized) return;
+  window.__notes_theme_initialized = true;
+
   // --- Theme Management ---
   const themeToggle = document.getElementById('theme-toggle');
 
@@ -280,13 +283,20 @@
 
   const codeBlocksToProcess = [];
   codeCandidates.forEach(block => {
+    // Skip if already processed or inside an already processed element
+    if (
+      block.dataset.codeWrapped === 'true' ||
+      block.closest('[data-code-wrapped="true"]') ||
+      block.closest('.code-wrapper')
+    ) {
+      return;
+    }
     // Skip <pre> inside a <div class="highlighter-rouge"> to avoid double wrappers
     if (block.tagName === 'PRE' && block.closest('div.highlighter-rouge')) {
       return;
     }
-    // Skip if already in a wrapper or part of Mermaid
+    // Skip if part of Mermaid
     if (
-      block.closest('.code-wrapper') ||
       block.closest('.mermaid-container') ||
       block.classList.contains('mermaid') ||
       block.classList.contains('language-mermaid') ||
@@ -298,9 +308,12 @@
   });
 
   codeBlocksToProcess.forEach(block => {
+    block.dataset.codeWrapped = 'true';
     const pre = block.tagName === 'PRE' ? block : block.querySelector('pre');
     if (!pre) return;
+    pre.dataset.codeWrapped = 'true';
     const code = pre.querySelector('code');
+    if (code) code.dataset.codeWrapped = 'true';
 
     // Detect language from classes
     let lang = '';
@@ -325,6 +338,7 @@
     // Create wrapper and header
     const wrapper = document.createElement('div');
     wrapper.className = 'code-wrapper';
+    wrapper.dataset.codeWrapped = 'true';
 
     const header = document.createElement('div');
     header.className = 'code-header';
