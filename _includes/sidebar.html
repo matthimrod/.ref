@@ -1,0 +1,62 @@
+<aside id="site-sidebar" class="site-sidebar">
+  <div class="sidebar-search">
+    <div class="search-input-wrap">
+      <svg class="search-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <input type="search" id="note-filter" placeholder="Filter notes... (/)" aria-label="Filter notes list" autocomplete="off" spellcheck="false">
+      <button type="button" id="clear-filter" class="clear-btn" aria-label="Clear filter" hidden>&times;</button>
+    </div>
+  </div>
+
+  <nav class="sidebar-nav" aria-label="Notes Directory">
+    {% for section in site.data.navigation.side %}
+      <div class="nav-section">
+        {% if section.children %}
+          <div class="nav-section-title">
+            {% if section.url %}
+              <a href="{% if section.url contains '://' %}{{ section.url }}{% else %}{{ section.url | relative_url }}{% endif %}"
+                 class="nav-section-link {% if page.url == section.url %}active{% endif %}"
+                 {% if section.url contains '://' %}target="_blank" rel="noopener noreferrer"{% endif %}>
+                <span>{{ section.title }}</span>
+                {% if section.url contains '://' %}<span class="external-arrow" aria-hidden="true">↗</span>{% endif %}
+              </a>
+            {% else %}
+              <span class="nav-section-label">{{ section.title }}</span>
+            {% endif %}
+          </div>
+          <ul class="nav-section-list">
+            {% for item in section.children %}
+              {% assign is_external = false %}
+              {% if item.url contains '://' %}{% assign is_external = true %}{% endif %}
+              <li class="nav-item">
+                <a href="{% if is_external %}{{ item.url }}{% else %}{{ item.url | relative_url }}{% endif %}"
+                   class="nav-link {% if page.url == item.url %}active{% endif %}"
+                   {% if is_external %}target="_blank" rel="noopener noreferrer"{% endif %}>
+                  <span class="nav-link-text">{{ item.title }}</span>
+                  {% if is_external %}<span class="external-arrow" aria-hidden="true">↗</span>{% endif %}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          {% assign is_external = false %}
+          {% if section.url contains '://' %}{% assign is_external = true %}{% endif %}
+          <ul class="nav-section-list single-item-list">
+            <li class="nav-item">
+              <a href="{% if is_external %}{{ section.url }}{% else %}{{ section.url | relative_url }}{% endif %}"
+                 class="nav-link nav-standalone {% if page.url == section.url %}active{% endif %}"
+                 {% if is_external %}target="_blank" rel="noopener noreferrer"{% endif %}>
+                <span class="nav-link-text">{{ section.title }}</span>
+                {% if is_external %}<span class="external-arrow" aria-hidden="true">↗</span>{% endif %}
+              </a>
+            </li>
+          </ul>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </nav>
+</aside>
+<div id="sidebar-backdrop" class="sidebar-backdrop" aria-hidden="true"></div>
+

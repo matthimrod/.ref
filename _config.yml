@@ -1,22 +1,24 @@
-remote_theme: "mmistakes/minimal-mistakes@4.28.1"
-
-plugins:
-  - jekyll-include-cache
-  - jekyll-remote-theme
-  
-title: Notes (GitHub Version)
+locale: en-US
+title: Notes
 description: Matt's Reference Links
 
-url: "https://ref.matthimrod.com"
+url: "https://notes.matthimrod.com"
 baseurl: ""
 
-minimal_mistakes_skin: "dark"
-show_downloads: false
-enable_copy_code_button: true
+plugins:
+  - jekyll-feed
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    guess_lang: true
+
 include: ["_pages"]
+permalink: /:title/
 
 defaults:
-  # _pages
   - scope:
       path: ""
       type: pages
@@ -24,5 +26,10 @@ defaults:
       layout: single
       toc: true
       classes: wide
-      sidebar:
-        - nav: "side"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - vendor/
+  - .gitea/

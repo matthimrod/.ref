@@ -1,0 +1,40 @@
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <button id="sidebar-toggle" class="sidebar-toggle-btn" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg class="icon icon-menu" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <a class="site-brand" href="{{ '/' | relative_url }}">
+        <span class="brand-badge">⚡</span>
+        <span class="brand-title">{{ site.title }}</span>
+      </a>
+    </div>
+
+    <nav class="header-nav" aria-label="Quick links">
+      {% if site.data.navigation.main %}
+        {% for item in site.data.navigation.main %}
+          {% assign is_external = false %}
+          {% if item.url contains '://' %}{% assign is_external = true %}{% endif %}
+          <a href="{% if is_external %}{{ item.url }}{% else %}{{ item.url | relative_url }}{% endif %}"
+             class="header-nav-link {% if page.url == item.url %}active{% endif %}"
+             {% if is_external %}target="_blank" rel="noopener noreferrer"{% endif %}>
+            {{ item.title }}
+            {% if is_external %}<span class="external-arrow" aria-hidden="true">↗</span>{% endif %}
+          </a>
+        {% endfor %}
+      {% endif %}
+    </nav>
+
+    <div class="header-actions">
+      <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Toggle color theme" title="Toggle theme (Light / Dark)">
+        <span class="theme-icon light-icon" aria-hidden="true">☀️</span>
+        <span class="theme-icon dark-icon" aria-hidden="true">🌙</span>
+      </button>
+    </div>
+  </div>
+</header>
+
